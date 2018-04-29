@@ -39,6 +39,8 @@
             this.commissionBox = new MetroFramework.Controls.MetroTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.cancelBtn = new System.Windows.Forms.Button();
+            this.createBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -218,7 +220,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cancelBtn);
             this.groupBox1.Controls.Add(this.metroComboBox1);
+            this.groupBox1.Controls.Add(this.createBtn);
             this.groupBox1.Controls.Add(this.commissionBox);
             this.groupBox1.Controls.Add(this.metroLabel8);
             this.groupBox1.Controls.Add(this.addressBox);
@@ -248,6 +252,32 @@
             this.metroComboBox1.TabIndex = 47;
             this.metroComboBox1.UseSelectable = true;
             // 
+            // cancelBtn
+            // 
+            this.cancelBtn.BackColor = System.Drawing.Color.Tomato;
+            this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
+            this.cancelBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cancelBtn.Location = new System.Drawing.Point(193, 349);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(165, 46);
+            this.cancelBtn.TabIndex = 32;
+            this.cancelBtn.Text = "Cancel";
+            this.cancelBtn.UseVisualStyleBackColor = false;
+            // 
+            // createBtn
+            // 
+            this.createBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.createBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.createBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
+            this.createBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.createBtn.Location = new System.Drawing.Point(16, 349);
+            this.createBtn.Name = "createBtn";
+            this.createBtn.Size = new System.Drawing.Size(165, 46);
+            this.createBtn.TabIndex = 31;
+            this.createBtn.Text = "Add Customer";
+            this.createBtn.UseVisualStyleBackColor = false;
+            // 
             // Customer_TypeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -275,5 +305,7 @@
         private MetroFramework.Controls.MetroTextBox commissionBox;
         private System.Windows.Forms.GroupBox groupBox1;
         private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private System.Windows.Forms.Button cancelBtn;
+        private System.Windows.Forms.Button createBtn;
     }
 }
