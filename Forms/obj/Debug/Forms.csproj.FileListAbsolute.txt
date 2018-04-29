@@ -11,6 +11,7 @@ C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Software.exe.config
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CreateEmployee.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CreateJob.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.Customer_TypeForm.resources
+<<<<<<< HEAD
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.EmployeeForm.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.JobForm.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.Properties.Resources.resources
@@ -19,3 +20,12 @@ C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.c
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.csproj.CopyComplete
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.exe
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.pdb
+=======
+=======
+>>>>>>> 2e95f2a45a40bbd1b59e392f9a11c521bf5e38fd
+<<<<<<< HEAD
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.CreateEmployee.resources
+=======
+>>>>>>> 8d9561596aba4cb006c25d851b198f97e2de709f
+>>>>>>> 19365ddc2c38d52a3ae8eb61711db2bb2b70bb51
+>>>>>>> 02bcac4334ee378157b07bc57f0d67f7c3f53979
