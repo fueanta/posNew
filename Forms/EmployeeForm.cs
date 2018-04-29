@@ -134,7 +134,8 @@ namespace Forms
 
         private void jobComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (((Software.Model.Job)jobComboBox.SelectedItem).Id != 1)
+            /*
+             if (((Software.Model.Job)jobComboBox.SelectedItem).Id != 1)
             {
                 passBox.Enabled = false;
                 authorityBox.Enabled = false;
@@ -144,6 +145,7 @@ namespace Forms
                 passBox.Enabled = true;
                 authorityBox.Enabled = true;
             }
+             */
         }
     }
 }
