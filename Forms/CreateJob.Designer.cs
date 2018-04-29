@@ -125,7 +125,7 @@
             // 
             this.createBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             this.createBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.createBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
+            this.createBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.createBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.createBtn.Location = new System.Drawing.Point(23, 361);
             this.createBtn.Name = "createBtn";
@@ -139,7 +139,7 @@
             // 
             this.cancelBtn.BackColor = System.Drawing.Color.Tomato;
             this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
+            this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.cancelBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cancelBtn.Location = new System.Drawing.Point(200, 361);
             this.cancelBtn.Name = "cancelBtn";
@@ -161,6 +161,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.descriptionBox);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.groupBox1.Location = new System.Drawing.Point(23, 195);
             this.groupBox1.Name = "groupBox1";
