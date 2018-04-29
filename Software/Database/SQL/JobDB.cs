@@ -43,11 +43,20 @@ namespace Software.Database.SQL
             return job;
         }
 
+        public static void InsertJob(Model.Job job)
+        {
+            string query =
+                "BEGIN " +
+                "job_pkg.insert_job('" + job.Job_Title + "', " + job.Salary + ", '" + job.Description + "'); " +
+                "END;";
+            DB_Handler.ExecuteQuery(query);
+        }
+
         public static void UpdateJob(Model.Job job)
         {
             string query =
                 "BEGIN " +
-                "update_job(" + job.Id + ", '" + job.Job_Title + "', " + job.Salary + ", '" + job.Description + "'); " +
+                "job_pkg.update_job(" + job.Id + ", '" + job.Job_Title + "', " + job.Salary + ", '" + job.Description + "'); " +
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }
@@ -56,7 +65,7 @@ namespace Software.Database.SQL
         {
             string query =
                 "BEGIN " +
-                "delete_job(" + id +  "); " +
+                "job_pkg.delete_job(" + id +  "); " +
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }

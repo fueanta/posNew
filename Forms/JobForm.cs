@@ -48,7 +48,8 @@ namespace Forms
 
         private void newBtn_Click(object sender, EventArgs e)
         {
-            Clear();
+            new CreateJob().ShowDialog(this);
+            DoRefresh();
         }
 
         private void updateBtn_Click(object sender, EventArgs e)

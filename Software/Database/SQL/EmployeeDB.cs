@@ -37,11 +37,20 @@ namespace Software.Database.SQL
             return employee;
         }
 
+        public static void InsertEmployee(Model.Employee employee)
+        {
+            string query =
+                "BEGIN " +
+                "employee_pkg.insert_employee(" + employee.Name + "', '" + employee.Contact_No + "', '" + employee.Email + "', '" + employee.Address + "', '" + employee.Hire_Date.ToString(string.Format("dd/MMM/yyyy")) + "', " + employee.Commission + ", " + employee.Job_Id + ", '" + employee.Picture + "', '" + employee.Password + "', '" + employee.Authority + "'); " +
+                "END;";
+            DB_Handler.ExecuteQuery(query);
+        }
+
         public static void UpdateEmployee(Model.Employee employee)
         {
             string query =
                 "BEGIN " +
-                "update_employee(" + employee.Id + ", '" + employee.Name + "', '" + employee.Contact_No + "', '" + employee.Email + "', '" + employee.Address + "', '" + employee.Hire_Date.ToString(string.Format("dd/MMM/yyyy")) + "', " + employee.Commission + ", " + employee.Job_Id + ", '" + employee.Picture + "', '" + employee.Password + "', '" + employee.Authority + "'); " +
+                "employee_pkg.update_employee(" + employee.Id + ", '" + employee.Name + "', '" + employee.Contact_No + "', '" + employee.Email + "', '" + employee.Address + "', '" + employee.Hire_Date.ToString(string.Format("dd/MMM/yyyy")) + "', " + employee.Commission + ", " + employee.Job_Id + ", '" + employee.Picture + "', '" + employee.Password + "', '" + employee.Authority + "'); " +
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }
@@ -50,7 +59,7 @@ namespace Software.Database.SQL
         {
             string query =
                 "BEGIN " +
-                "delete_employee(" + id + "); " +
+                "employee_pkg.delete_employee(" + id + "); " +
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }
