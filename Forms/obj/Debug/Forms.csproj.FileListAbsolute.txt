@@ -19,3 +19,5 @@ E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
 E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csproj.CopyComplete
 E:\CSharpProject\posNew\Forms\obj\Debug\Forms.exe
 E:\CSharpProject\posNew\Forms\obj\Debug\Forms.pdb
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csprojResolveAssemblyReference.cache
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.Supplier.resources
