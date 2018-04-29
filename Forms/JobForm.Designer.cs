@@ -28,16 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JobForm));
-            this.jOBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.table = new MetroFramework.Controls.MetroGrid();
             this.searchBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroContextMenu1 = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.jobTitileBox = new MetroFramework.Controls.MetroTextBox();
             this.salaryBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
@@ -46,9 +43,7 @@
             this.newBtn = new MetroFramework.Controls.MetroButton();
             this.updateBtn = new MetroFramework.Controls.MetroButton();
             this.deleteBtn = new MetroFramework.Controls.MetroButton();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            ((System.ComponentModel.ISupportInitialize)(this.jOBBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -147,12 +142,6 @@
             this.metroLabel1.Size = new System.Drawing.Size(79, 25);
             this.metroLabel1.TabIndex = 2;
             this.metroLabel1.Text = "Job Title";
-            // 
-            // metroContextMenu1
-            // 
-            this.metroContextMenu1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.metroContextMenu1.Name = "metroContextMenu1";
-            this.metroContextMenu1.Size = new System.Drawing.Size(61, 4);
             // 
             // jobTitileBox
             // 
@@ -308,7 +297,6 @@
             this.Controls.Add(this.table);
             this.Name = "JobForm";
             this.Text = " Job Information";
-            ((System.ComponentModel.ISupportInitialize)(this.jOBBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -318,11 +306,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.BindingSource jOBBindingSource;
         private MetroFramework.Controls.MetroGrid table;
         private MetroFramework.Controls.MetroTextBox searchBox;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroContextMenu metroContextMenu1;
         private MetroFramework.Controls.MetroTextBox jobTitileBox;
         private MetroFramework.Controls.MetroTextBox salaryBox;
         private MetroFramework.Controls.MetroLabel metroLabel2;
@@ -331,7 +317,6 @@
         private MetroFramework.Controls.MetroButton newBtn;
         private MetroFramework.Controls.MetroButton updateBtn;
         private MetroFramework.Controls.MetroButton deleteBtn;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

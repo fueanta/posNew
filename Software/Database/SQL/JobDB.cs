@@ -10,13 +10,25 @@ namespace Software.Database.SQL
         public static List<Model.Job> GetAllJobs()
         {
             List<Model.Job> jobs = new List<Model.Job>();
-            string query = "SELECT * FROM JOB";
+            string query = "SELECT * FROM JOB ORDER BY ID";
             DataTable table = DB_Handler.GetDataTable(query);
             foreach(DataRow row in table.Rows)
             {
                 jobs.Add(RowToEntity(row));
             }
             return jobs;
+        }
+
+        public static List<string> GetAllJobTitles()
+        {
+            List<string> titles = new List<string>();
+            string query = "SELECT Job_Title FROM JOB ORDER BY ID";
+            DataTable table = DB_Handler.GetDataTable(query);
+            foreach (DataRow row in table.Rows)
+            {
+                titles.Add(row["Job_Title"].ToString());
+            }
+            return titles;
         }
 
         public static Model.Job RowToEntity(DataRow row)

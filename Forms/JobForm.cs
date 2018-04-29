@@ -12,11 +12,12 @@ namespace Forms
 {
     public partial class JobForm : MetroFramework.Forms.MetroForm
     {
+        List<Software.Model.Job> jobs = null;
         public JobForm()
         {
             InitializeComponent();
-            table.DataSource = Software.Database.SQL.JobDB.GetAllJobs();
-            
+            jobs = Software.Database.SQL.JobDB.GetAllJobs();
+            table.DataSource = jobs;
         }
 
         private void table_SelectionChanged(object sender, EventArgs e)
@@ -91,11 +92,8 @@ namespace Forms
 
         private void searchBox_TextChanged(object sender, EventArgs e)
         {
-            List<Software.Model.Job> jobs = Software.Database.SQL.JobDB.GetAllJobs();
-            List<Software.Model.Job> selectedJobs = jobs.Where(j => j.Job_Title.Contains(searchBox.Text)).ToList();
+            List<Software.Model.Job> selectedJobs = jobs.Where(j => j.Job_Title.ToLower().Contains(searchBox.Text.ToLower())).ToList();
             table.DataSource = selectedJobs;
-
-            DoRefresh();
         }
     }
 }

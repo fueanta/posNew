@@ -1,12 +1,110 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace Forms
 {
     public partial class EmployeeForm : MetroFramework.Forms.MetroForm
     {
+        List<Software.Model.Employee> employees = null;
+        List<Software.Model.Job> jobs = null;
         public EmployeeForm()
         {
             InitializeComponent();
+            employees = Software.Database.SQL.EmployeeDB.GetAllEmployees();
+            table.DataSource = employees;
+            jobs = Software.Database.SQL.JobDB.GetAllJobs();
+            jobComboBox.DataSource = jobs;
+            jobComboBox.ValueMember = "Id";
+            jobComboBox.DisplayMember = "Job_Title";
+        }
+
+        private void table_SelectionChanged(object sender, System.EventArgs e)
+        {
+            if (table.SelectedCells.Count > 0)
+            {
+                int selectedrowindex = table.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = table.Rows[selectedrowindex];
+                pictureBox.ImageLocation = Convert.ToString(selectedRow.Cells["Picture"].Value);
+                nameBox.Text = Convert.ToString(selectedRow.Cells["Name"].Value);
+                contactBox.Text = Convert.ToString(selectedRow.Cells["Contact_No"].Value);
+                emailBox.Text = Convert.ToString(selectedRow.Cells["Email"].Value);
+                addressBox.Text = Convert.ToString(selectedRow.Cells["Address"].Value);
+                commissionBox.Text = Convert.ToString(selectedRow.Cells["Commission"].Value);
+                passBox.Text = Convert.ToString(selectedRow.Cells["Password"].Value);
+                authorityBox.Text = Convert.ToString(selectedRow.Cells["Authority"].Value);
+                hireDateTime.Value = Convert.ToDateTime(selectedRow.Cells["Hire_Date"].Value);
+
+                Software.Model.Job job = jobs.Single(j => j.Id == Convert.ToInt32(Convert.ToString(selectedRow.Cells["Job_id"].Value)));
+                jobComboBox.SelectedIndex = jobComboBox.FindStringExact(job.Job_Title);
+            }
+        }
+
+        public void DoRefresh()
+        {
+            table.DataSource = Software.Database.SQL.EmployeeDB.GetAllEmployees();
+            //table.Refresh();            
+        }
+
+        public void Clear()
+        {
+            table.ClearSelection();
+            nameBox.Clear();
+            contactBox.Clear();
+            emailBox.Clear();
+            addressBox.Clear();
+            commissionBox.Clear();
+            passBox.Clear();
+            authorityBox.Clear();
+            jobComboBox.SelectedIndex = 0;
+            pictureBox.ImageLocation = "";
+            hireDateTime.Value = DateTime.Now;
+        }
+
+        private void newBtn_Click(object sender, EventArgs e)
+        {
+            Clear();
+
+            //DoRefresh();
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            DoRefresh();
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            int selectedrowindex = 0;
+            if (table.SelectedCells.Count > 0)
+            {
+                selectedrowindex = table.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = table.Rows[selectedrowindex];
+                int id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
+                Software.Database.SQL.EmployeeDB.DeleteEmployee(id);
+            }
+            else
+                MessageBox.Show("You must select a row to delete it!", "Invalid Selection");
+
+            DoRefresh();
+        }
+
+        private void browseBtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "images| *.JPG; *.PNG; *.GJF"; // you can add any other image type 
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox.ImageLocation = ofd.FileName;
+            }
+        }
+
+        private void searchBox_TextChanged(object sender, EventArgs e)
+        {
+            List<Software.Model.Employee> selectedEmployees = employees.Where(i => i.Name.ToLower().Contains(searchBox.Text.ToLower())).ToList();
+            table.DataSource = selectedEmployees;
         }
     }
 }

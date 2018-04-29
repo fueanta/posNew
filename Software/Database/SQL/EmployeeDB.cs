@@ -9,7 +9,7 @@ namespace Software.Database.SQL
         public static List<Model.Employee> GetAllEmployees()
         {
             List<Model.Employee> employees = new List<Model.Employee>();
-            string query = "SELECT * FROM Employee";
+            string query = "select * from employee order by id";
             DataTable table = DB_Handler.GetDataTable(query);
             foreach (DataRow row in table.Rows)
             {
@@ -24,7 +24,7 @@ namespace Software.Database.SQL
             {
                 Id = Int32.Parse(row["Id"].ToString()),
                 Name = row["Name"].ToString(),
-                Contact_No = row["Name"].ToString(),
+                Contact_No = row["Contact_No"].ToString(),
                 Email = row["Email"].ToString(),
                 Address = row["Address"].ToString(),
                 Hire_Date = Convert.ToDateTime(row["Hire_Date"]),
@@ -35,6 +35,15 @@ namespace Software.Database.SQL
                 Authority = row["Authority"].ToString(),
             };
             return employee;
+        }
+
+        public static void DeleteEmployee(int id)
+        {
+            string query =
+                "BEGIN " +
+                "delete_employee(" + id + "); " +
+                "END;";
+            DB_Handler.ExecuteQuery(query);
         }
     }
 }

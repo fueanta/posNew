@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Database\ORM\" />
+    <Folder Include="Resources\Employees\" />
     <Folder Include="Resources\Icons\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
