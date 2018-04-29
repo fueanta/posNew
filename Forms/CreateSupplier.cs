@@ -24,7 +24,7 @@ namespace Forms
 
         private void supplierBtn_Click(object sender, EventArgs e)
         {
-            MetroFramework.MetroMessageBox.Show(this, "Sucess", "Data Inserted Successfully", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            MetroFramework.MetroMessageBox.Show(this, "Success", "New Supplier Successfully", MessageBoxButtons.OK, MessageBoxIcon.Question);
         }
     }
 }
