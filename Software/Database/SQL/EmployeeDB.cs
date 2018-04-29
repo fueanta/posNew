@@ -41,7 +41,7 @@ namespace Software.Database.SQL
         {
             string query =
                 "BEGIN " +
-                "employee_pkg.insert_employee(" + employee.Name + "', '" + employee.Contact_No + "', '" + employee.Email + "', '" + employee.Address + "', '" + employee.Hire_Date.ToString(string.Format("dd/MMM/yyyy")) + "', " + employee.Commission + ", " + employee.Job_Id + ", '" + employee.Picture + "', '" + employee.Password + "', '" + employee.Authority + "'); " +
+                "employee_pkg.insert_employee('" + employee.Name + "', '" + employee.Contact_No + "', '" + employee.Email + "', '" + employee.Address + "', '" + employee.Hire_Date.ToString(string.Format("dd/MMM/yyyy")) + "', " + employee.Commission + ", " + employee.Job_Id + ", '" + employee.Picture + "', '" + employee.Password + "', '" + employee.Authority + "'); " +
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }

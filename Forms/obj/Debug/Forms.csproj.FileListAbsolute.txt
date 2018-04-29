@@ -18,3 +18,4 @@ C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Software.pdb
 C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Software.exe.config
 C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\MaterialSkin.dll
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CreateJob.resources
+C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CreateEmployee.resources

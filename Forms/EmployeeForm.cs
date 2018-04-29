@@ -65,9 +65,8 @@ namespace Forms
 
         private void newBtn_Click(object sender, EventArgs e)
         {
-            Clear();
-
-            //DoRefresh();
+            new CreateEmployee().ShowDialog(this);
+            DoRefresh();
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
