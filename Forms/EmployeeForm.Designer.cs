@@ -98,7 +98,7 @@
             this.searchBox.MaxLength = 32767;
             this.searchBox.Name = "searchBox";
             this.searchBox.PasswordChar = '\0';
-            this.searchBox.PromptText = "Search here ...";
+            this.searchBox.WaterMark = "Search here ...";
             this.searchBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.searchBox.SelectedText = "";
             this.searchBox.SelectionLength = 0;
