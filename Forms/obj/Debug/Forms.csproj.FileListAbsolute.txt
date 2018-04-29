@@ -41,3 +41,4 @@ E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csproj.CopyComplete
 =======
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CreateEmployee.resources
 >>>>>>> 2e95f2a45a40bbd1b59e392f9a11c521bf5e38fd
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.CreateEmployee.resources
