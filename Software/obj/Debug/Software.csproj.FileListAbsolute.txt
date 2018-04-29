@@ -2,12 +2,14 @@ C:\Users\Taqui\source\repos\POS\Software\bin\Debug\Software.exe.config
 C:\Users\Taqui\source\repos\POS\Software\bin\Debug\Software.exe
 C:\Users\Taqui\source\repos\POS\Software\bin\Debug\Software.pdb
 C:\Users\Taqui\source\repos\POS\Software\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.csprojResolveAssemblyReference.cache
 C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.Properties.Resources.resources
 C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.csproj.GenerateResource.cache
 C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.csproj.CoreCompileInputs.cache
 C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.csproj.CopyComplete
 C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.exe
 C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.pdb
+<<<<<<< HEAD
 C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.csprojResolveAssemblyReference.cache
 E:\CSharpProject\posNew\Software\bin\Debug\Software.exe.config
 E:\CSharpProject\posNew\Software\bin\Debug\Software.exe
@@ -19,3 +21,5 @@ E:\CSharpProject\posNew\Software\obj\Debug\Software.csproj.CoreCompileInputs.cac
 E:\CSharpProject\posNew\Software\obj\Debug\Software.csproj.CopyComplete
 E:\CSharpProject\posNew\Software\obj\Debug\Software.exe
 E:\CSharpProject\posNew\Software\obj\Debug\Software.pdb
+=======
+>>>>>>> a081447f187c3a0812857f6e3b169533d77caae2
