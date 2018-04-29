@@ -50,8 +50,8 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.cancelBtn = new MetroFramework.Controls.MetroButton();
-            this.createBtn = new MetroFramework.Controls.MetroButton();
+            this.createBtn = new System.Windows.Forms.Button();
+            this.cancelBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -449,28 +449,33 @@
             this.pictureBox.TabIndex = 15;
             this.pictureBox.TabStop = false;
             // 
-            // cancelBtn
-            // 
-            this.cancelBtn.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.cancelBtn.Location = new System.Drawing.Point(430, 604);
-            this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(115, 36);
-            this.cancelBtn.TabIndex = 20;
-            this.cancelBtn.Text = "Cancel";
-            this.cancelBtn.UseSelectable = true;
-            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
-            // 
             // createBtn
             // 
-            this.createBtn.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.createBtn.Highlight = true;
-            this.createBtn.Location = new System.Drawing.Point(250, 604);
+            this.createBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.createBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.createBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
+            this.createBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.createBtn.Location = new System.Drawing.Point(195, 604);
             this.createBtn.Name = "createBtn";
-            this.createBtn.Size = new System.Drawing.Size(115, 36);
-            this.createBtn.TabIndex = 19;
-            this.createBtn.Text = "Create";
-            this.createBtn.UseSelectable = true;
+            this.createBtn.Size = new System.Drawing.Size(165, 46);
+            this.createBtn.TabIndex = 32;
+            this.createBtn.Text = "Create Employee";
+            this.createBtn.UseVisualStyleBackColor = false;
             this.createBtn.Click += new System.EventHandler(this.createBtn_Click);
+            // 
+            // cancelBtn
+            // 
+            this.cancelBtn.BackColor = System.Drawing.Color.Tomato;
+            this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
+            this.cancelBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cancelBtn.Location = new System.Drawing.Point(397, 604);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(165, 46);
+            this.cancelBtn.TabIndex = 33;
+            this.cancelBtn.Text = "Cancel";
+            this.cancelBtn.UseVisualStyleBackColor = false;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // CreateEmployee
             // 
@@ -515,7 +520,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox;
-        private MetroFramework.Controls.MetroButton cancelBtn;
-        private MetroFramework.Controls.MetroButton createBtn;
+        private System.Windows.Forms.Button createBtn;
+        private System.Windows.Forms.Button cancelBtn;
     }
 }

@@ -19,8 +19,8 @@ namespace Forms
 
         private void cancelBtn_Click(object sender, EventArgs e)
         {
-            MetroFramework.MetroMessageBox.Show(this, "WARNING", "MESSAGE BOX", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //Close();
+            
+            Close();
         }
 
         private void createBtn_Click(object sender, EventArgs e)
@@ -32,6 +32,7 @@ namespace Forms
                 Description = descriptionBox.Text
             };
             Software.Database.SQL.JobDB.InsertJob(job);
+            MetroFramework.MetroMessageBox.Show(this, "Sucess", "Data Inserted Successfully", MessageBoxButtons.OK, MessageBoxIcon.Question);
             Close();
         }
     }
