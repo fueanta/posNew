@@ -18,5 +18,30 @@ C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Software.pdb
 C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Software.exe.config
 C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\MaterialSkin.dll
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CreateJob.resources
+<<<<<<< HEAD
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csprojResolveAssemblyReference.cache
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.CreateJob.resources
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.EmployeeForm.resources
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.JobForm.resources
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.Properties.Resources.resources
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csproj.GenerateResource.cache
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.exe
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.pdb
+E:\CSharpProject\posNew\Forms\bin\Debug\Forms.exe.config
+E:\CSharpProject\posNew\Forms\bin\Debug\Forms.exe
+E:\CSharpProject\posNew\Forms\bin\Debug\Forms.pdb
+E:\CSharpProject\posNew\Forms\bin\Debug\MetroFramework.Design.dll
+E:\CSharpProject\posNew\Forms\bin\Debug\MetroFramework.dll
+E:\CSharpProject\posNew\Forms\bin\Debug\MetroFramework.Fonts.dll
+E:\CSharpProject\posNew\Forms\bin\Debug\Software.exe
+E:\CSharpProject\posNew\Forms\bin\Debug\Software.pdb
+E:\CSharpProject\posNew\Forms\bin\Debug\Software.exe.config
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csproj.CopyComplete
+=======
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CreateEmployee.resources
+<<<<<<< HEAD
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.Customer_TypeForm.resources
+=======
+>>>>>>> 2e95f2a45a40bbd1b59e392f9a11c521bf5e38fd
+>>>>>>> 8d9561596aba4cb006c25d851b198f97e2de709f

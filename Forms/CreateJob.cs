@@ -19,7 +19,8 @@ namespace Forms
 
         private void cancelBtn_Click(object sender, EventArgs e)
         {
-            Close();
+            MetroFramework.MetroMessageBox.Show(this, "WARNING", "MESSAGE BOX", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //Close();
         }
 
         private void createBtn_Click(object sender, EventArgs e)
