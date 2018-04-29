@@ -72,7 +72,33 @@ namespace Forms
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
+            int selectedrowindex = 0;
+            if (table.SelectedCells.Count > 0)
+            {
+                Software.Model.Employee employee = new Software.Model.Employee();
+
+                selectedrowindex = table.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = table.Rows[selectedrowindex];
+
+                employee.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
+                employee.Name = nameBox.Text;
+                employee.Contact_No = contactBox.Text;
+                employee.Email = emailBox.Text;
+                employee.Address = addressBox.Text;
+                employee.Hire_Date = hireDateTime.Value;
+                employee.Commission = Convert.ToInt32(commissionBox.Text);
+                employee.Job_Id = ((Software.Model.Job)jobComboBox.SelectedItem).Id;
+                employee.Picture = pictureBox.ImageLocation;
+                employee.Password = passBox.Text;
+                employee.Authority = authorityBox.Text;
+
+                Software.Database.SQL.EmployeeDB.UpdateEmployee(employee);
+            }
+            else
+                MessageBox.Show("You must select a row to update its value!", "Invalid Selection");
+
             DoRefresh();
+            table.Rows[selectedrowindex].Selected = true;
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
@@ -105,6 +131,20 @@ namespace Forms
         {
             List<Software.Model.Employee> selectedEmployees = employees.Where(i => i.Name.ToLower().Contains(searchBox.Text.ToLower())).ToList();
             table.DataSource = selectedEmployees;
+        }
+
+        private void jobComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (((Software.Model.Job)jobComboBox.SelectedItem).Id != 1)
+            {
+                passBox.Enabled = false;
+                authorityBox.Enabled = false;
+            }
+            else
+            {
+                passBox.Enabled = true;
+                authorityBox.Enabled = true;
+            }
         }
     }
 }
