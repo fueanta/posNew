@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Taqui\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_POS.33397505.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Taqui\source\repos\POS" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="POS.sln" t="IncludeFlat" />
+      <e p="Software" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Database" t="Include">
+          <e p="DB_Conn.cs" t="Include" />
+          <e p="ORM" t="Include" />
+          <e p="SQL" t="Include">
+            <e p="DB_Handler.cs" t="Include" />
+            <e p="EmployeeDB.cs" t="Include" />
+            <e p="JobDB.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Form1.cs" t="Include" />
+        <e p="Form1.Designer.cs" t="Include" />
+        <e p="Model" t="Include">
+          <e p="Employee.cs" t="Include" />
+          <e p="Job.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Software.csproj" t="IncludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
