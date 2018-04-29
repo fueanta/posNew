@@ -94,6 +94,8 @@ namespace Forms
             List<Software.Model.Job> jobs = Software.Database.SQL.JobDB.GetAllJobs();
             List<Software.Model.Job> selectedJobs = jobs.Where(j => j.Job_Title.Contains(searchBox.Text)).ToList();
             table.DataSource = selectedJobs;
+
+            DoRefresh();
         }
     }
 }
