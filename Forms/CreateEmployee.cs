@@ -52,6 +52,7 @@ namespace Forms
             employee.Authority = authorityBox.Text;
 
             Software.Database.SQL.EmployeeDB.InsertEmployee(employee);
+            MetroFramework.MetroMessageBox.Show(this, "Your data has been updated successfully.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Question);
         }
 
         private void jobComboBox_SelectedIndexChanged(object sender, EventArgs e)
