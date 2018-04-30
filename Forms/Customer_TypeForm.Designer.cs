@@ -28,13 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-=======
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
->>>>>>> origin/master
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.contactBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
@@ -44,24 +40,6 @@
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.commissionBox = new MetroFramework.Controls.MetroTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-<<<<<<< HEAD
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
-            this.cancelBtn = new System.Windows.Forms.Button();
-            this.createBtn = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.Location = new System.Drawing.Point(16, 33);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(50, 25);
-            this.metroLabel1.TabIndex = 37;
-            this.metroLabel1.Text = "Type";
-            // 
-=======
             this.descriptionBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
@@ -78,7 +56,6 @@
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
->>>>>>> origin/master
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
@@ -245,19 +222,12 @@
             // 
             // groupBox1
             // 
-<<<<<<< HEAD
-            this.groupBox1.Controls.Add(this.cancelBtn);
-            this.groupBox1.Controls.Add(this.metroComboBox1);
-            this.groupBox1.Controls.Add(this.createBtn);
-            this.groupBox1.Controls.Add(this.commissionBox);
-=======
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.cancelBtn);
             this.groupBox1.Controls.Add(this.metroTextBox1);
             this.groupBox1.Controls.Add(this.createBtn);
             this.groupBox1.Controls.Add(this.commissionBox);
             this.groupBox1.Controls.Add(this.metroLabel6);
->>>>>>> origin/master
             this.groupBox1.Controls.Add(this.metroLabel8);
             this.groupBox1.Controls.Add(this.addressBox);
             this.groupBox1.Controls.Add(this.metroLabel3);
@@ -265,37 +235,16 @@
             this.groupBox1.Controls.Add(this.metroLabel4);
             this.groupBox1.Controls.Add(this.contactBox);
             this.groupBox1.Controls.Add(this.metroLabel2);
-<<<<<<< HEAD
-            this.groupBox1.Controls.Add(this.metroLabel1);
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.groupBox1.Location = new System.Drawing.Point(23, 73);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(544, 439);
-=======
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.groupBox1.Location = new System.Drawing.Point(431, 83);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(544, 519);
->>>>>>> origin/master
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Customer Type";
             // 
-<<<<<<< HEAD
-            // metroComboBox1
-            // 
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 24;
-            this.metroComboBox1.Location = new System.Drawing.Point(160, 33);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(162, 30);
-            this.metroComboBox1.TabIndex = 47;
-            this.metroComboBox1.UseSelectable = true;
-=======
             // descriptionBox
             // 
             this.descriptionBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -451,7 +400,6 @@
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Existing Customers";
->>>>>>> origin/master
             // 
             // cancelBtn
             // 
@@ -459,19 +407,11 @@
             this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
             this.cancelBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.cancelBtn.Location = new System.Drawing.Point(193, 349);
-            this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(165, 46);
-            this.cancelBtn.TabIndex = 32;
-            this.cancelBtn.Text = "Cancel";
-=======
             this.cancelBtn.Location = new System.Drawing.Point(364, 457);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(165, 46);
             this.cancelBtn.TabIndex = 34;
             this.cancelBtn.Text = "Delete";
->>>>>>> origin/master
             this.cancelBtn.UseVisualStyleBackColor = false;
             // 
             // createBtn
@@ -480,15 +420,6 @@
             this.createBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
             this.createBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.createBtn.Location = new System.Drawing.Point(16, 349);
-            this.createBtn.Name = "createBtn";
-            this.createBtn.Size = new System.Drawing.Size(165, 46);
-            this.createBtn.TabIndex = 31;
-            this.createBtn.Text = "Add Customer";
-            this.createBtn.UseVisualStyleBackColor = false;
-            // 
-=======
             this.createBtn.Location = new System.Drawing.Point(16, 457);
             this.createBtn.Name = "createBtn";
             this.createBtn.Size = new System.Drawing.Size(165, 46);
@@ -509,42 +440,28 @@
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
             // 
->>>>>>> origin/master
             // Customer_TypeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(651, 537);
-            this.Controls.Add(this.groupBox1);
-=======
             this.ClientSize = new System.Drawing.Size(1016, 625);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
->>>>>>> origin/master
             this.Name = "Customer_TypeForm";
             this.Text = "Customer Types";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-<<<<<<< HEAD
-=======
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
             this.groupBox3.ResumeLayout(false);
->>>>>>> origin/master
             this.ResumeLayout(false);
 
         }
 
         #endregion
-<<<<<<< HEAD
-
-        private MetroFramework.Controls.MetroLabel metroLabel1;
-=======
->>>>>>> origin/master
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroTextBox contactBox;
         private MetroFramework.Controls.MetroLabel metroLabel4;
@@ -554,9 +471,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroTextBox commissionBox;
         private System.Windows.Forms.GroupBox groupBox1;
-<<<<<<< HEAD
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
-=======
         private System.Windows.Forms.TextBox descriptionBox;
         private System.Windows.Forms.GroupBox groupBox2;
         private MetroFramework.Controls.MetroLabel metroLabel6;
@@ -565,7 +479,6 @@
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button1;
->>>>>>> origin/master
         private System.Windows.Forms.Button cancelBtn;
         private System.Windows.Forms.Button createBtn;
     }
