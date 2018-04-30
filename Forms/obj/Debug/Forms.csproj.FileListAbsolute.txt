@@ -47,3 +47,4 @@ E:\CSharpProject\posNew\Forms\obj\Debug\Forms.pdb
 E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csprojResolveAssemblyReference.cache
 E:\CSharpProject\posNew\Forms\obj\Debug\Forms.Supplier.resources
 >>>>>>> origin/master
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.CreateSupplier.resources
