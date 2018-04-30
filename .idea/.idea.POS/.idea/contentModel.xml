@@ -38,7 +38,8 @@
           <e p="Settings.Designer.cs" t="Include" />
           <e p="Settings.settings" t="Include" />
         </e>
-        <e p="Supplier.resx" t="Include" />
+        <e p="SupplierForm.cs" t="Include" />
+        <e p="SupplierForm.Designer.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="POS.sln" t="IncludeFlat" />
@@ -63,6 +64,7 @@
           <e p="Customer_Type.cs" t="Include" />
           <e p="Employee.cs" t="Include" />
           <e p="Job.cs" t="Include" />
+          <e p="Supplier.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
