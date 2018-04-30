@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Forms
 {
-    public partial class Supplier : MetroFramework.Forms.MetroForm
+    public partial class SupplierForm : MetroFramework.Forms.MetroForm
     {
-        public Supplier()
+        public SupplierForm()
         {
             InitializeComponent();
         }
