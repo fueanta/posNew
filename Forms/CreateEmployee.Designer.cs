@@ -459,7 +459,11 @@
             // 
             this.createBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             this.createBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+<<<<<<< HEAD
+            this.createBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
+=======
             this.createBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
+>>>>>>> origin/master
             this.createBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.createBtn.Location = new System.Drawing.Point(195, 604);
             this.createBtn.Name = "createBtn";
@@ -473,7 +477,11 @@
             // 
             this.cancelBtn.BackColor = System.Drawing.Color.Tomato;
             this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+<<<<<<< HEAD
+            this.cancelBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
+=======
             this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
+>>>>>>> origin/master
             this.cancelBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cancelBtn.Location = new System.Drawing.Point(397, 604);
             this.cancelBtn.Name = "cancelBtn";
