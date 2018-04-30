@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Forms.exe.config
 C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Forms.exe
 C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Forms.pdb
@@ -21,3 +22,28 @@ C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.c
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.csproj.CopyComplete
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.exe
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.pdb
+=======
+E:\CSharpProject\posNew\Forms\bin\Debug\Forms.exe.config
+E:\CSharpProject\posNew\Forms\bin\Debug\Forms.exe
+E:\CSharpProject\posNew\Forms\bin\Debug\Forms.pdb
+E:\CSharpProject\posNew\Forms\bin\Debug\MetroFramework.Design.dll
+E:\CSharpProject\posNew\Forms\bin\Debug\MetroFramework.dll
+E:\CSharpProject\posNew\Forms\bin\Debug\MetroFramework.Fonts.dll
+E:\CSharpProject\posNew\Forms\bin\Debug\Software.exe
+E:\CSharpProject\posNew\Forms\bin\Debug\Software.pdb
+E:\CSharpProject\posNew\Forms\bin\Debug\Software.exe.config
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.CreateCustomer.resources
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.CreateEmployee.resources
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.CreateJob.resources
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.Customer_TypeForm.resources
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.EmployeeForm.resources
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.JobForm.resources
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.Properties.Resources.resources
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csproj.GenerateResource.cache
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csproj.CopyComplete
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.exe
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.pdb
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csprojResolveAssemblyReference.cache
+E:\CSharpProject\posNew\Forms\obj\Debug\Forms.Supplier.resources
+>>>>>>> origin/master

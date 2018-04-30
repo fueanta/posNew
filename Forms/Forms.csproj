@@ -82,6 +82,12 @@
     <Compile Include="CreateJob.Designer.cs">
       <DependentUpon>CreateJob.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateSupplier.Designer.cs">
+      <DependentUpon>CreateSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer_TypeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier.Designer.cs">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </Compile>
+>>>>>>> origin/master
     <EmbeddedResource Include="CreateCustomer.resx">
       <DependentUpon>CreateCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateJob.resx">
       <DependentUpon>CreateJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateSupplier.resx">
+      <DependentUpon>CreateSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer_TypeForm.resx">
       <DependentUpon>Customer_TypeForm.cs</DependentUpon>
@@ -130,6 +148,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Supplier.resx">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

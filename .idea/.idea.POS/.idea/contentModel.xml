@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\Users\Taqui\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_POS.33397505.00" t="ExcludeRecursive" />
     <e p="C:\Users\Taqui\source\repos\POS" t="IncludeFlat">
+      <e p="Forms\Forms.csproj" t="IncludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="POS.sln" t="IncludeFlat" />
       <e p="Software" t="IncludeRecursive">
@@ -12,6 +13,8 @@
           <e p="DB_Conn.cs" t="Include" />
           <e p="ORM" t="Include" />
           <e p="SQL" t="Include">
+            <e p="Customer_TypeDB.cs" t="Include" />
+            <e p="CustomerDB.cs" t="Include" />
             <e p="DB_Handler.cs" t="Include" />
             <e p="EmployeeDB.cs" t="Include" />
             <e p="JobDB.cs" t="Include" />
@@ -20,6 +23,8 @@
         <e p="Form1.cs" t="Include" />
         <e p="Form1.Designer.cs" t="Include" />
         <e p="Model" t="Include">
+          <e p="Customer.cs" t="Include" />
+          <e p="Customer_Type.cs" t="Include" />
           <e p="Employee.cs" t="Include" />
           <e p="Job.cs" t="Include" />
         </e>
@@ -32,6 +37,10 @@
           <e p="Resources.resx" t="Include" />
           <e p="Settings.Designer.cs" t="Include" />
           <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="Employees" t="Include" />
+          <e p="Icons" t="Include" />
         </e>
         <e p="Software.csproj" t="IncludeRecursive" />
       </e>

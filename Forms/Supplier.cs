@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Forms
 {
-    public partial class Customer_TypeForm : MetroFramework.Forms.MetroForm
+    public partial class Supplier : MetroFramework.Forms.MetroForm
     {
-        public Customer_TypeForm()
+        public Supplier()
         {
             InitializeComponent();
         }
@@ -21,7 +21,5 @@ namespace Forms
         {
 
         }
-
-        
     }
 }

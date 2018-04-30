@@ -80,7 +80,7 @@
             this.groupBox1.Controls.Add(this.metroLabel1);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.groupBox1.Location = new System.Drawing.Point(61, 84);
             this.groupBox1.Name = "groupBox1";
@@ -103,7 +103,7 @@
             // hireDateTime
             // 
             this.hireDateTime.Location = new System.Drawing.Point(6, 21);
-            this.hireDateTime.MinimumSize = new System.Drawing.Size(0, 30);
+            this.hireDateTime.MinimumSize = new System.Drawing.Size(4, 30);
             this.hireDateTime.Name = "hireDateTime";
             this.hireDateTime.Size = new System.Drawing.Size(280, 30);
             this.hireDateTime.TabIndex = 57;
@@ -123,13 +123,19 @@
             // 
             // browseBtn
             // 
+            this.browseBtn.BackColor = System.Drawing.Color.RoyalBlue;
             this.browseBtn.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.browseBtn.Location = new System.Drawing.Point(451, 286);
+            this.browseBtn.ForeColor = System.Drawing.Color.Black;
+            this.browseBtn.Location = new System.Drawing.Point(451, 297);
             this.browseBtn.Name = "browseBtn";
             this.browseBtn.Size = new System.Drawing.Size(101, 36);
+            this.browseBtn.Style = MetroFramework.MetroColorStyle.White;
             this.browseBtn.TabIndex = 55;
             this.browseBtn.Text = "Browse";
+            this.browseBtn.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.browseBtn.UseCustomBackColor = true;
             this.browseBtn.UseSelectable = true;
+            this.browseBtn.UseStyleColors = true;
             this.browseBtn.Click += new System.EventHandler(this.browseBtn_Click);
             // 
             // authorityBox
@@ -435,16 +441,16 @@
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.groupBox2.Location = new System.Drawing.Point(382, 33);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(234, 234);
+            this.groupBox2.Size = new System.Drawing.Size(234, 256);
             this.groupBox2.TabIndex = 36;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Picture";
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox.Location = new System.Drawing.Point(6, 26);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(222, 207);
+            this.pictureBox.Size = new System.Drawing.Size(220, 220);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 15;
             this.pictureBox.TabStop = false;
@@ -453,7 +459,11 @@
             // 
             this.createBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             this.createBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+<<<<<<< HEAD
             this.createBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
+=======
+            this.createBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
+>>>>>>> origin/master
             this.createBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.createBtn.Location = new System.Drawing.Point(195, 604);
             this.createBtn.Name = "createBtn";
@@ -467,7 +477,11 @@
             // 
             this.cancelBtn.BackColor = System.Drawing.Color.Tomato;
             this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+<<<<<<< HEAD
             this.cancelBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
+=======
+            this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
+>>>>>>> origin/master
             this.cancelBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cancelBtn.Location = new System.Drawing.Point(397, 604);
             this.cancelBtn.Name = "cancelBtn";
