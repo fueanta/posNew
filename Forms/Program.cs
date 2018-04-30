@@ -16,7 +16,7 @@ namespace Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CreateCustomer());
+            Application.Run(new EmployeeForm());
         }
     }
 }
