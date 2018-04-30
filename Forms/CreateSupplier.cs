@@ -22,9 +22,20 @@ namespace Forms
             Close();
         }
 
-        private void supplierBtn_Click(object sender, EventArgs e)
+        private void createBtn_Click(object sender, EventArgs e)
         {
-            MetroFramework.MetroMessageBox.Show(this, "Success", "New Supplier Successfully", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            Software.Model.Supplier supplier = new Software.Model.Supplier();
+            supplier.Name = nameBox.Text;
+            supplier.Contact_No = contactBox.Text;
+            supplier.Email = emailBox.Text;
+            supplier.Address = addressBox.Text;
+            supplier.Date_Added = dateTime.Value;
+            supplier.Description = descriptionBox.Text;
+
+            Software.Database.SQL.SupplierDB.InsertSupplier(supplier);
+            MetroFramework.MetroMessageBox.Show(this, "Your data has been created.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Close();
         }
+
     }
 }

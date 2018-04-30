@@ -19,7 +19,7 @@ namespace Forms
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EmployeeForm());
+            Application.Run(new SupplierForm());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]

@@ -92,13 +92,11 @@ namespace Forms
                 employee.Authority = authorityBox.Text;
 
                 Software.Database.SQL.EmployeeDB.UpdateEmployee(employee);
-
-               
-
+            
                 MetroFramework.MetroMessageBox.Show(this, "Your data has been updated successfully.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
             else
-                MessageBox.Show("You must select a row to update its value!", "Invalid Selection");
+                MetroFramework.MetroMessageBox.Show(this, "You must select a row to update its value!", "Invalid Selection");
 
             DoRefresh();
             table.Rows[selectedrowindex].Selected = true;
