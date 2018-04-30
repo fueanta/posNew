@@ -17,7 +17,6 @@ C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.Customer_TypeForm.resource
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.EmployeeForm.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.JobForm.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.Properties.Resources.resources
-C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.Supplier.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.csproj.GenerateResource.cache
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.csproj.CopyComplete
