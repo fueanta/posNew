@@ -6,11 +6,11 @@ using System.Windows.Forms;
 
 namespace Forms
 {
-    public partial class EmployeeForm : MetroFramework.Forms.MetroForm
+    public partial class EmployeeViews : MetroFramework.Forms.MetroForm
     {
         List<Software.Model.Employee> employees = null;
         List<Software.Model.Job> jobs = null;
-        public EmployeeForm()
+        public EmployeeViews()
         {
             InitializeComponent();
             employees = Software.Database.SQL.EmployeeDB.GetAllEmployees();

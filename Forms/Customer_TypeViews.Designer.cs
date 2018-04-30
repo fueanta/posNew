@@ -1,6 +1,6 @@
 ﻿namespace Forms
 {
-    partial class Customer_TypeForm
+    partial class Customer_TypeViews
     {
         /// <summary>
         /// Required designer variable.

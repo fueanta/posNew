@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace Forms
 {
-    public partial class Customer_TypeForm : MetroFramework.Forms.MetroForm
+    public partial class FoodViews : MetroFramework.Forms.MetroForm
     {
-        public Customer_TypeForm()
+        public FoodViews()
         {
             InitializeComponent();
         }
 
-        private void createBtn_Click(object sender, EventArgs e)
+        private void FoodViews_Load(object sender, EventArgs e)
         {
 
         }
-
-        
     }
 }

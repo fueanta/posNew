@@ -1,6 +1,6 @@
 ﻿namespace Forms
 {
-    partial class JobForm
+    partial class JobViews
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JobForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JobViews));
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.jobTitileBox = new MetroFramework.Controls.MetroTextBox();
             this.salaryBox = new MetroFramework.Controls.MetroTextBox();

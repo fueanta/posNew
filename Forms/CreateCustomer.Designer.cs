@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.emailBox = new MetroFramework.Controls.MetroTextBox();
@@ -38,8 +37,6 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.nameBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.cancelBtn = new System.Windows.Forms.Button();
             this.createBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +52,6 @@
             this.groupBox1.Controls.Add(this.nameBox);
             this.groupBox1.Controls.Add(this.metroLabel1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.groupBox1.Location = new System.Drawing.Point(23, 63);
@@ -65,7 +61,7 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add New Customer";
             // 
-    // metroTextBox1
+            // metroTextBox1
             // 
             // 
             // 
@@ -123,7 +119,7 @@
             this.emailBox.CustomButton.Visible = false;
             this.emailBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.emailBox.Lines = new string[0];
-            this.emailBox.Location = new System.Drawing.Point(160, 147);
+            this.emailBox.Location = new System.Drawing.Point(160, 142);
             this.emailBox.MaxLength = 32767;
             this.emailBox.Name = "emailBox";
             this.emailBox.PasswordChar = '\0';
@@ -164,7 +160,7 @@
             this.contactBox.CustomButton.Visible = false;
             this.contactBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.contactBox.Lines = new string[0];
-            this.contactBox.Location = new System.Drawing.Point(160, 90);
+            this.contactBox.Location = new System.Drawing.Point(160, 85);
             this.contactBox.MaxLength = 32767;
             this.contactBox.Name = "contactBox";
             this.contactBox.PasswordChar = '\0';
@@ -183,7 +179,7 @@
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel2.Location = new System.Drawing.Point(16, 90);
+            this.metroLabel2.Location = new System.Drawing.Point(16, 85);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(103, 25);
             this.metroLabel2.TabIndex = 39;
@@ -205,7 +201,7 @@
             this.nameBox.CustomButton.Visible = false;
             this.nameBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.nameBox.Lines = new string[0];
-            this.nameBox.Location = new System.Drawing.Point(160, 33);
+            this.nameBox.Location = new System.Drawing.Point(160, 28);
             this.nameBox.MaxLength = 32767;
             this.nameBox.Name = "nameBox";
             this.nameBox.PasswordChar = '\0';
@@ -224,45 +220,12 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.Location = new System.Drawing.Point(16, 33);
+            this.metroLabel1.Location = new System.Drawing.Point(16, 28);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(60, 25);
             this.metroLabel1.TabIndex = 37;
             this.metroLabel1.Text = "Name";
             // 
-            // metroTextBox1
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(164, 1);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(113, 113);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(160, 199);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Multiline = true;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(278, 115);
-            this.metroTextBox1.TabIndex = 57;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-
             // createBtn
             // 
             this.createBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
@@ -281,7 +244,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(683, 603);
-            this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.createBtn);
             this.Controls.Add(this.groupBox1);
             this.Name = "CreateCustomer";
@@ -303,7 +265,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroTextBox nameBox;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private System.Windows.Forms.Button cancelBtn;
         private System.Windows.Forms.Button createBtn;
     }
 }

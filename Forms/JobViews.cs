@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Forms
 {
-    public partial class JobForm : MetroFramework.Forms.MetroForm
+    public partial class JobViews : MetroFramework.Forms.MetroForm
     {
         List<Software.Model.Job> jobs = null;
-        public JobForm()
+        public JobViews()
         {
             InitializeComponent();
             jobs = Software.Database.SQL.JobDB.GetAllJobs();
