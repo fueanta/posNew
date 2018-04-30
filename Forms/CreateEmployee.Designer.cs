@@ -93,7 +93,7 @@
             // 
             this.groupBox3.Controls.Add(this.hireDateTime);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.groupBox3.Location = new System.Drawing.Point(351, 378);
+            this.groupBox3.Location = new System.Drawing.Point(351, 381);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(292, 63);
             this.groupBox3.TabIndex = 58;
@@ -103,7 +103,7 @@
             // hireDateTime
             // 
             this.hireDateTime.Location = new System.Drawing.Point(6, 21);
-            this.hireDateTime.MinimumSize = new System.Drawing.Size(4, 30);
+            this.hireDateTime.MinimumSize = new System.Drawing.Size(0, 30);
             this.hireDateTime.Name = "hireDateTime";
             this.hireDateTime.Size = new System.Drawing.Size(280, 30);
             this.hireDateTime.TabIndex = 57;
@@ -126,7 +126,7 @@
             this.browseBtn.BackColor = System.Drawing.Color.RoyalBlue;
             this.browseBtn.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.browseBtn.ForeColor = System.Drawing.Color.Black;
-            this.browseBtn.Location = new System.Drawing.Point(451, 297);
+            this.browseBtn.Location = new System.Drawing.Point(448, 298);
             this.browseBtn.Name = "browseBtn";
             this.browseBtn.Size = new System.Drawing.Size(101, 36);
             this.browseBtn.Style = MetroFramework.MetroColorStyle.White;
@@ -459,14 +459,13 @@
             // 
             this.createBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             this.createBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-
             this.createBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.createBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.createBtn.Location = new System.Drawing.Point(195, 604);
+            this.createBtn.Location = new System.Drawing.Point(161, 604);
             this.createBtn.Name = "createBtn";
             this.createBtn.Size = new System.Drawing.Size(165, 46);
             this.createBtn.TabIndex = 32;
-            this.createBtn.Text = "Create Employee";
+            this.createBtn.Text = "Create";
             this.createBtn.UseVisualStyleBackColor = false;
             this.createBtn.Click += new System.EventHandler(this.createBtn_Click);
             // 
@@ -476,7 +475,7 @@
             this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.cancelBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cancelBtn.Location = new System.Drawing.Point(397, 604);
+            this.cancelBtn.Location = new System.Drawing.Point(468, 604);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(165, 46);
             this.cancelBtn.TabIndex = 33;
@@ -488,7 +487,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 664);
+            this.ClientSize = new System.Drawing.Size(796, 679);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.createBtn);
             this.Controls.Add(this.groupBox1);

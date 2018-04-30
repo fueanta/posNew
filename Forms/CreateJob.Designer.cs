@@ -45,7 +45,7 @@
             // 
             // 
             this.salaryBox.CustomButton.Image = null;
-            this.salaryBox.CustomButton.Location = new System.Drawing.Point(134, 2);
+            this.salaryBox.CustomButton.Location = new System.Drawing.Point(182, 2);
             this.salaryBox.CustomButton.Name = "";
             this.salaryBox.CustomButton.Size = new System.Drawing.Size(25, 25);
             this.salaryBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -64,7 +64,7 @@
             this.salaryBox.SelectionLength = 0;
             this.salaryBox.SelectionStart = 0;
             this.salaryBox.ShortcutsEnabled = true;
-            this.salaryBox.Size = new System.Drawing.Size(162, 30);
+            this.salaryBox.Size = new System.Drawing.Size(210, 30);
             this.salaryBox.TabIndex = 16;
             this.salaryBox.UseSelectable = true;
             this.salaryBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -86,7 +86,7 @@
             // 
             // 
             this.jobTitileBox.CustomButton.Image = null;
-            this.jobTitileBox.CustomButton.Location = new System.Drawing.Point(134, 2);
+            this.jobTitileBox.CustomButton.Location = new System.Drawing.Point(182, 2);
             this.jobTitileBox.CustomButton.Name = "";
             this.jobTitileBox.CustomButton.Size = new System.Drawing.Size(25, 25);
             this.jobTitileBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -105,7 +105,7 @@
             this.jobTitileBox.SelectionLength = 0;
             this.jobTitileBox.SelectionStart = 0;
             this.jobTitileBox.ShortcutsEnabled = true;
-            this.jobTitileBox.Size = new System.Drawing.Size(162, 30);
+            this.jobTitileBox.Size = new System.Drawing.Size(210, 30);
             this.jobTitileBox.TabIndex = 14;
             this.jobTitileBox.UseSelectable = true;
             this.jobTitileBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -127,11 +127,11 @@
             this.createBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.createBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.createBtn.Location = new System.Drawing.Point(23, 361);
+            this.createBtn.Location = new System.Drawing.Point(29, 350);
             this.createBtn.Name = "createBtn";
-            this.createBtn.Size = new System.Drawing.Size(165, 46);
+            this.createBtn.Size = new System.Drawing.Size(150, 50);
             this.createBtn.TabIndex = 29;
-            this.createBtn.Text = "Create Job";
+            this.createBtn.Text = "Create";
             this.createBtn.UseVisualStyleBackColor = false;
             this.createBtn.Click += new System.EventHandler(this.createBtn_Click);
             // 
@@ -141,9 +141,9 @@
             this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.cancelBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cancelBtn.Location = new System.Drawing.Point(200, 361);
+            this.cancelBtn.Location = new System.Drawing.Point(192, 350);
             this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(165, 46);
+            this.cancelBtn.Size = new System.Drawing.Size(150, 50);
             this.cancelBtn.TabIndex = 30;
             this.cancelBtn.Text = "Cancel";
             this.cancelBtn.UseVisualStyleBackColor = false;
@@ -152,10 +152,10 @@
             // descriptionBox
             // 
             this.descriptionBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descriptionBox.Location = new System.Drawing.Point(9, 30);
+            this.descriptionBox.Location = new System.Drawing.Point(15, 26);
             this.descriptionBox.Multiline = true;
             this.descriptionBox.Name = "descriptionBox";
-            this.descriptionBox.Size = new System.Drawing.Size(294, 98);
+            this.descriptionBox.Size = new System.Drawing.Size(294, 91);
             this.descriptionBox.TabIndex = 8;
             // 
             // groupBox1
@@ -165,7 +165,7 @@
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.groupBox1.Location = new System.Drawing.Point(23, 195);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(309, 134);
+            this.groupBox1.Size = new System.Drawing.Size(325, 134);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Description";
@@ -174,7 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(398, 493);
+            this.ClientSize = new System.Drawing.Size(374, 429);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.createBtn);
             this.Controls.Add(this.groupBox1);

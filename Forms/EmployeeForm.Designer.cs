@@ -29,17 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.searchBox = new MetroFramework.Controls.MetroTextBox();
-            this.table = new MetroFramework.Controls.MetroGrid();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.hireDateTime = new MetroFramework.Controls.MetroDateTime();
             this.jobComboBox = new MetroFramework.Controls.MetroComboBox();
-            this.browseBtn = new MetroFramework.Controls.MetroButton();
             this.authorityBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.passBox = new MetroFramework.Controls.MetroTextBox();
@@ -60,113 +56,25 @@
             this.newBtn = new System.Windows.Forms.Button();
             this.updateBtn = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.searchBox = new MetroFramework.Controls.MetroTextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.table = new MetroFramework.Controls.MetroGrid();
+            this.browseBtn = new MetroFramework.Controls.MetroButton();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             this.SuspendLayout();
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("metroButton1.BackgroundImage")));
-            this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.metroButton1.Location = new System.Drawing.Point(10, 31);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(27, 31);
-            this.metroButton1.TabIndex = 12;
-            this.metroButton1.UseSelectable = true;
-            // 
-            // searchBox
-            // 
-            this.searchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            // 
-            // 
-            // 
-            this.searchBox.CustomButton.Image = null;
-            this.searchBox.CustomButton.Location = new System.Drawing.Point(179, 1);
-            this.searchBox.CustomButton.Name = "";
-            this.searchBox.CustomButton.Size = new System.Drawing.Size(23, 23);
-            this.searchBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.searchBox.CustomButton.TabIndex = 1;
-            this.searchBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.searchBox.CustomButton.UseSelectable = true;
-            this.searchBox.CustomButton.Visible = false;
-            this.searchBox.DisplayIcon = true;
-            this.searchBox.Lines = new string[0];
-            this.searchBox.Location = new System.Drawing.Point(429, 53);
-            this.searchBox.MaxLength = 32767;
-            this.searchBox.Name = "searchBox";
-            this.searchBox.PasswordChar = '\0';
-            this.searchBox.WaterMark = "Search here ...";
-            this.searchBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.searchBox.SelectedText = "";
-            this.searchBox.SelectionLength = 0;
-            this.searchBox.SelectionStart = 0;
-            this.searchBox.ShortcutsEnabled = true;
-            this.searchBox.ShowClearButton = true;
-            this.searchBox.Size = new System.Drawing.Size(203, 25);
-            this.searchBox.TabIndex = 14;
-            this.searchBox.UseSelectable = true;
-            this.searchBox.WaterMark = "Search here ...";
-            this.searchBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.searchBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
-            // 
-            // table
-            // 
-            this.table.AllowUserToAddRows = false;
-            this.table.AllowUserToDeleteRows = false;
-            this.table.AllowUserToResizeRows = false;
-            this.table.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.table.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.table.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            this.table.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(230)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.table.DefaultCellStyle = dataGridViewCellStyle2;
-            this.table.EnableHeadersVisualStyles = false;
-            this.table.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.table.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.table.Location = new System.Drawing.Point(41, 84);
-            this.table.MultiSelect = false;
-            this.table.Name = "table";
-            this.table.ReadOnly = true;
-            this.table.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.table.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.table.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.table.RowTemplate.Height = 24;
-            this.table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.table.Size = new System.Drawing.Size(591, 462);
-            this.table.TabIndex = 13;
-            this.table.SelectionChanged += new System.EventHandler(this.table_SelectionChanged);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.browseBtn);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.jobComboBox);
-            this.groupBox1.Controls.Add(this.browseBtn);
             this.groupBox1.Controls.Add(this.authorityBox);
             this.groupBox1.Controls.Add(this.metroLabel5);
             this.groupBox1.Controls.Add(this.passBox);
@@ -186,9 +94,9 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.groupBox1.Location = new System.Drawing.Point(650, 51);
+            this.groupBox1.Location = new System.Drawing.Point(650, 34);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(672, 495);
+            this.groupBox1.Size = new System.Drawing.Size(672, 493);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Employee Information";
@@ -197,7 +105,7 @@
             // 
             this.groupBox3.Controls.Add(this.hireDateTime);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.groupBox3.Location = new System.Drawing.Point(351, 378);
+            this.groupBox3.Location = new System.Drawing.Point(351, 389);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(292, 63);
             this.groupBox3.TabIndex = 58;
@@ -224,17 +132,6 @@
             this.jobComboBox.UseSelectable = true;
             this.jobComboBox.ValueMember = "ID";
             this.jobComboBox.SelectedIndexChanged += new System.EventHandler(this.jobComboBox_SelectedIndexChanged);
-            // 
-            // browseBtn
-            // 
-            this.browseBtn.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.browseBtn.Location = new System.Drawing.Point(451, 286);
-            this.browseBtn.Name = "browseBtn";
-            this.browseBtn.Size = new System.Drawing.Size(101, 36);
-            this.browseBtn.TabIndex = 55;
-            this.browseBtn.Text = "Browse";
-            this.browseBtn.UseSelectable = true;
-            this.browseBtn.Click += new System.EventHandler(this.browseBtn_Click);
             // 
             // authorityBox
             // 
@@ -537,9 +434,9 @@
             // 
             this.groupBox2.Controls.Add(this.pictureBox);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.groupBox2.Location = new System.Drawing.Point(382, 33);
+            this.groupBox2.Location = new System.Drawing.Point(382, 21);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(234, 234);
+            this.groupBox2.Size = new System.Drawing.Size(234, 246);
             this.groupBox2.TabIndex = 36;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Picture";
@@ -548,7 +445,7 @@
             // 
             this.pictureBox.Location = new System.Drawing.Point(6, 21);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(222, 207);
+            this.pictureBox.Size = new System.Drawing.Size(222, 219);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 15;
             this.pictureBox.TabStop = false;
@@ -559,11 +456,11 @@
             this.newBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.newBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.newBtn.Location = new System.Drawing.Point(121, 570);
+            this.newBtn.Location = new System.Drawing.Point(121, 565);
             this.newBtn.Name = "newBtn";
             this.newBtn.Size = new System.Drawing.Size(165, 46);
             this.newBtn.TabIndex = 33;
-            this.newBtn.Text = "Create Employee";
+            this.newBtn.Text = "Create";
             this.newBtn.UseVisualStyleBackColor = false;
             this.newBtn.Click += new System.EventHandler(this.newBtn_Click);
             // 
@@ -573,7 +470,7 @@
             this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
             this.updateBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.updateBtn.Location = new System.Drawing.Point(807, 570);
+            this.updateBtn.Location = new System.Drawing.Point(904, 565);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(165, 46);
             this.updateBtn.TabIndex = 49;
@@ -587,7 +484,7 @@
             this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
             this.deleteBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deleteBtn.Location = new System.Drawing.Point(343, 570);
+            this.deleteBtn.Location = new System.Drawing.Point(378, 565);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(165, 46);
             this.deleteBtn.TabIndex = 50;
@@ -595,37 +492,159 @@
             this.deleteBtn.UseVisualStyleBackColor = false;
             this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(399, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 30);
+            this.pictureBox1.TabIndex = 52;
+            this.pictureBox1.TabStop = false;
+            // 
+            // searchBox
+            // 
+            this.searchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            // 
+            // 
+            // 
+            this.searchBox.CustomButton.Image = null;
+            this.searchBox.CustomButton.Location = new System.Drawing.Point(175, 2);
+            this.searchBox.CustomButton.Name = "";
+            this.searchBox.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.searchBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.searchBox.CustomButton.TabIndex = 1;
+            this.searchBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.searchBox.CustomButton.UseSelectable = true;
+            this.searchBox.CustomButton.Visible = false;
+            this.searchBox.DisplayIcon = true;
+            this.searchBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.searchBox.Lines = new string[0];
+            this.searchBox.Location = new System.Drawing.Point(429, 34);
+            this.searchBox.MaxLength = 32767;
+            this.searchBox.Name = "searchBox";
+            this.searchBox.PasswordChar = '\0';
+            this.searchBox.PromptText = "Search here ...";
+            this.searchBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.searchBox.SelectedText = "";
+            this.searchBox.SelectionLength = 0;
+            this.searchBox.SelectionStart = 0;
+            this.searchBox.ShortcutsEnabled = true;
+            this.searchBox.ShowClearButton = true;
+            this.searchBox.Size = new System.Drawing.Size(203, 30);
+            this.searchBox.TabIndex = 51;
+            this.searchBox.UseSelectable = true;
+            this.searchBox.WaterMark = "Search here ...";
+            this.searchBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.searchBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.table);
+            this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.groupBox4.Location = new System.Drawing.Point(32, 70);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(600, 457);
+            this.groupBox4.TabIndex = 53;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Existing Employees";
+            // 
+            // table
+            // 
+            this.table.AllowUserToAddRows = false;
+            this.table.AllowUserToDeleteRows = false;
+            this.table.AllowUserToResizeRows = false;
+            this.table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.table.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.table.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.table.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
+            this.table.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(230)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.table.DefaultCellStyle = dataGridViewCellStyle8;
+            this.table.EnableHeadersVisualStyles = false;
+            this.table.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.table.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.table.Location = new System.Drawing.Point(19, 31);
+            this.table.MultiSelect = false;
+            this.table.Name = "table";
+            this.table.ReadOnly = true;
+            this.table.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.table.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.table.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.table.RowTemplate.Height = 24;
+            this.table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.table.Size = new System.Drawing.Size(562, 408);
+            this.table.TabIndex = 18;
+            this.table.SelectionChanged += new System.EventHandler(this.table_SelectionChanged);
+            // 
+            // browseBtn
+            // 
+            this.browseBtn.BackColor = System.Drawing.Color.RoyalBlue;
+            this.browseBtn.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.browseBtn.ForeColor = System.Drawing.Color.Black;
+            this.browseBtn.Location = new System.Drawing.Point(450, 283);
+            this.browseBtn.Name = "browseBtn";
+            this.browseBtn.Size = new System.Drawing.Size(101, 36);
+            this.browseBtn.Style = MetroFramework.MetroColorStyle.White;
+            this.browseBtn.TabIndex = 59;
+            this.browseBtn.Text = "Browse";
+            this.browseBtn.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.browseBtn.UseCustomBackColor = true;
+            this.browseBtn.UseSelectable = true;
+            this.browseBtn.UseStyleColors = true;
+            this.browseBtn.Click += new System.EventHandler(this.browseBtn_Click);
+            // 
             // EmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1367, 639);
+            this.ClientSize = new System.Drawing.Size(1367, 653);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.searchBox);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.newBtn);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.searchBox);
-            this.Controls.Add(this.table);
-            this.Controls.Add(this.metroButton1);
             this.Name = "EmployeeForm";
             this.Text = " Employees";
-            ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroTextBox searchBox;
-        private MetroFramework.Controls.MetroGrid table;
         private System.Windows.Forms.GroupBox groupBox1;
-        private MetroFramework.Controls.MetroButton browseBtn;
         private MetroFramework.Controls.MetroTextBox authorityBox;
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroTextBox passBox;
@@ -649,6 +668,11 @@
         private System.Windows.Forms.Button newBtn;
         private System.Windows.Forms.Button updateBtn;
         private System.Windows.Forms.Button deleteBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private MetroFramework.Controls.MetroTextBox searchBox;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private MetroFramework.Controls.MetroGrid table;
+        private MetroFramework.Controls.MetroButton browseBtn;
     }
 }
 

@@ -46,7 +46,7 @@ namespace Forms
             descriptionBox.Clear();
         }
 
-        private void newBtn_Click(object sender, EventArgs e)
+        private void createBtn_Click(object sender, EventArgs e)
         {
             new CreateJob().ShowDialog(this);
             DoRefresh();
