@@ -5,27 +5,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.POS/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.POS/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.POS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.POS/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/POS/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/POS/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/POS/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/POS/v15/Server/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Forms/CreateCustomer.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/CreateCustomer.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Forms/CreateEmployee.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/CreateEmployee.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Forms/Customer_TypeForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/Customer_TypeForm.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Forms/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Forms/bin/Debug/Forms.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/bin/Debug/Forms.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Forms/bin/Debug/Forms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/bin/Debug/Forms.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Forms/bin/Debug/Software.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/bin/Debug/Software.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Forms/bin/Debug/Software.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/bin/Debug/Software.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Forms/obj/Debug/Forms.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/obj/Debug/Forms.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Forms/obj/Debug/Forms.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/obj/Debug/Forms.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Forms/obj/Debug/Forms.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/obj/Debug/Forms.csproj.GenerateResource.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Forms/obj/Debug/Forms.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/obj/Debug/Forms.csprojResolveAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Forms/obj/Debug/Forms.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/obj/Debug/Forms.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Forms/obj/Debug/Forms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Forms/obj/Debug/Forms.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Software/Database/DB_Conn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Database/DB_Conn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/Software.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Software/Software.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Software/bin/Debug/Software.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Software/bin/Debug/Software.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Software/bin/Debug/Software.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Software/bin/Debug/Software.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Software/obj/Debug/Software.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Software/obj/Debug/Software.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Software/obj/Debug/Software.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Software/obj/Debug/Software.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Software/obj/Debug/Software.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Software/obj/Debug/Software.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Software/obj/Debug/Software.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Software/obj/Debug/Software.csprojResolveAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Software/obj/Debug/Software.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Software/obj/Debug/Software.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Software/obj/Debug/Software.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Software/obj/Debug/Software.pdb" afterDir="false" />
     </list>
@@ -57,13 +49,24 @@
         <item name="POS" type="feb32156:DbDataSourceImpl" />
         <item name="POS: schema" type="ac44c5e0:OracleImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="POS" type="feb32156:DbDataSourceImpl" />
+        <item name="POS: schema" type="ac44c5e0:OracleImplModel$Schema" />
+        <item name="packages" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9ada9ef0-604f-4080-aa78-a008a9fc8310/console.sql">
+      <file leaf-file-name="EMPLOYEE_PKG.sql" pinned="false" current-in-tab="false">
+        <entry file="dbSrc:///91054cb5/9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/package/EMPLOYEE_PKG.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="EMPLOYEE_PKG.sql" pinned="false" current-in-tab="true">
+        <entry file="dbSrc:///91054cb5/9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/package/EMPLOYEE_PKG/body/EMPLOYEE_PKG.sql">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -100,35 +103,10 @@
     <option name="height" value="970" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="SolutionExplorer" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="POS (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="POS (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Forms" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="POS (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Software" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-file-system" value="false" />
-        <option name="show-all-items" value="false" />
-      </pane>
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
@@ -179,11 +157,13 @@
       <workItem from="1525065198888" duration="2896000" />
       <workItem from="1525070340803" duration="353000" />
       <workItem from="1525072303171" duration="3447000" />
+      <workItem from="1525083540341" duration="2588000" />
+      <workItem from="1525093069870" duration="1148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6881000" />
+    <option name="totallyTimeSpent" value="10617000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -206,10 +186,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32909605" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.2590604" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" weight="0.32909605" />
       <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.21275167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -218,8 +196,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32909605" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32909605" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -231,38 +211,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9ada9ef0-604f-4080-aa78-a008a9fc8310/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Program.cs" />
     <entry file="file://$PROJECT_DIR$/Application/Program.cs" />
     <entry file="file://$PROJECT_DIR$/Forms/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-          <folding>
-            <marker date="1525072531199" expanded="false" signature="6:124" ph="..." />
-            <marker date="1525072531199" expanded="true" signature="141:504" ph="{...}" />
-            <marker date="1525072531199" expanded="true" signature="168:502" ph="{...}" />
-            <marker date="1525072531199" expanded="true" signature="183:273" ph="/// The main entry point for the application. ... " />
-            <marker date="1525072531199" expanded="true" signature="320:496" ph="{...}" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="dbSrc:///91054cb5/9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/package/EMPLOYEE_PKG/body/EMPLOYEE_PKG.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbSrc:///91054cb5/9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/package/SUPPLIER_PKG/body/SUPPLIER_PKG.sql">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="dbSrc:///91054cb5/9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/package/ROTTEN_INGREDIENT_PKG.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -278,18 +234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbSrc:///91054cb5/9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/package/CUSTOMER_PKG.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="dbSrc:///91054cb5/9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/package/INGREDIENT_PKG.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="dbSrc:///91054cb5/9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/package/JOB_PKG.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="dbSrc:///91054cb5/9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/package/REPORT_PKG/body/REPORT_PKG.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="dbSrc:///91054cb5/9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/package/PURCHASE_PKG/body/PURCHASE_PKG.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -297,7 +241,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9ada9ef0-604f-4080-aa78-a008a9fc8310/console.sql">
+    <entry file="das://9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/sequence/CUSTOMER_SEQ">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/sequence/CUSTOMER_TYPE_SEQ">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/sequence/DATA_SEQ">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/sequence/DEMO_SEQ">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/table/CUSTOMER">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///91054cb5/9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/package/EMPLOYEE_PKG.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="dbSrc:///91054cb5/9ada9ef0-604f-4080-aa78-a008a9fc8310/schema/POS/package/EMPLOYEE_PKG/body/EMPLOYEE_PKG.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
