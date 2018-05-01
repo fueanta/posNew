@@ -8,6 +8,9 @@ C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.csproj.CoreCompileIn
 C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.csproj.CopyComplete
 C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.exe
 C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.pdb
+<<<<<<< HEAD
+C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.csprojResolveAssemblyReference.cache
+=======
 E:\CSharpProject\posNew\Software\bin\Debug\Software.exe.config
 E:\CSharpProject\posNew\Software\bin\Debug\Software.exe
 E:\CSharpProject\posNew\Software\bin\Debug\Software.pdb
@@ -18,3 +21,4 @@ E:\CSharpProject\posNew\Software\obj\Debug\Software.csproj.CoreCompileInputs.cac
 E:\CSharpProject\posNew\Software\obj\Debug\Software.csproj.CopyComplete
 E:\CSharpProject\posNew\Software\obj\Debug\Software.exe
 E:\CSharpProject\posNew\Software\obj\Debug\Software.pdb
+>>>>>>> 4d9e2a9af8c509c50c76512a0c32c156ba8a70ab
