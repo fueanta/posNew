@@ -2,5 +2,5 @@ Software/Database/DB_Conn.cs
 .vs/
 Forms/obj/Debug/
 Forms/bin/Debug/
-Forms/Properties
 .idea/
+*.csproj

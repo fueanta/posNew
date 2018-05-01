@@ -23,7 +23,7 @@ namespace Forms
 
         public void DoRefresh()
         {
-            period = Software.Database.SQL.PeriodDB.GetAllChangelog();
+            period = Software.Database.SQL.PeriodDB.GetAllPeriods(); // ?
             table.DataSource = period;
         }
 

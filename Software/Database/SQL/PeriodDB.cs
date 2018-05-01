@@ -9,7 +9,7 @@ namespace Software.Database.SQL
 {
     public class PeriodDB
     {
-        public static List<Model.Period> GetAllChangelog()
+        public static List<Model.Period> GetAllPeriods()
         {
             List<Model.Period> period = new List<Model.Period>();
             string query = "select * from PERIOD order by id";
@@ -26,7 +26,9 @@ namespace Software.Database.SQL
             Model.Period period = new Model.Period
             {
                 Id = Int32.Parse(row["Id"].ToString()),
-                Employee_Id = Int32.Parse(row["Employee_Id"].ToString()),               
+                Employee_Id = Int32.Parse(row["Employee_Id"].ToString()),
+                Login_Time = Convert.ToDateTime(row["Login_Time"]),
+                Logout_Time = Convert.ToDateTime(row["Logout_Time"])
             };
             return period;
         }
@@ -35,7 +37,7 @@ namespace Software.Database.SQL
         {
             string query =
                 "BEGIN " +
-                "period_pkg.insert_period('" + period.Employee_Id + "', '" + period.Login_Time + "', '" + period.Logout_Time + "'); " +
+                "period_pkg.insert_period(" + period.Employee_Id + ", '" + period.Login_Time.ToString(string.Format("dd/MMM/yyyy")) + "', '" + period.Logout_Time.ToString(string.Format("dd/MMM/yyyy")) + "'); " +
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }
@@ -44,7 +46,7 @@ namespace Software.Database.SQL
         {
             string query =
                 "BEGIN " +
-                "period_pkg.update_period('" + period.Id + "', '" + period.Employee_Id + "', '" + period.Login_Time + "', '" + period.Logout_Time + "'); " +
+                "period_pkg.update_period(" + period.Id + ", " + period.Employee_Id + ", '" + period.Login_Time.ToString(string.Format("dd/MMM/yyyy")) + "', '" + period.Logout_Time.ToString(string.Format("dd/MMM/yyyy")) + "'); " +
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }
