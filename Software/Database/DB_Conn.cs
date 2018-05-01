@@ -5,9 +5,9 @@ namespace Software.Database
     public static class DB_Conn
     {
         // connection string attributes
-        static string _data_source = "FuB-RoG:1521/XE";
+        static string _data_source = "Saif-Vivobook:1521/XE";
         static string _user_id = "POS";
-        static string _password = "pos";
+        static string _password = "123";
 
         // oracle connection string generator
         static string GetOracleConnectionString()

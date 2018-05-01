@@ -17,12 +17,11 @@ namespace Forms
             InitializeComponent();
         }
 
-        private void tileEmployeeManagerHRD_Click(object sender, EventArgs e)
+        private void tileCustomer_Click(object sender, EventArgs e)
         {
-            CustomersViews customer = new CustomersViews();
-            customer.Show();
+            CustomersViews cust = new CustomersViews();
+            cust.Show();
             this.Hide();
-            
         }
     }
 }
