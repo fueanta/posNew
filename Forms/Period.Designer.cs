@@ -259,6 +259,7 @@
             this.logoutDateTime.MinimumSize = new System.Drawing.Size(0, 30);
             this.logoutDateTime.Name = "logoutDateTime";
             this.logoutDateTime.Size = new System.Drawing.Size(243, 30);
+            this.logoutDateTime.Style = MetroFramework.MetroColorStyle.Lime;
             this.logoutDateTime.TabIndex = 84;
             // 
             // Period

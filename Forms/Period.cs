@@ -39,6 +39,7 @@ namespace Forms
                 logoutDateTime.Value = Convert.ToDateTime(selectedRow.Cells["LOGOUT_TIME"].Value);
                
             }
+
         }
     }
 }
