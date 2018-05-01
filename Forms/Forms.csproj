@@ -65,6 +65,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Changelog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changelog.Designer.cs">
+      <DependentUpon>Changelog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateChangelog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateChangelog.Designer.cs">
+      <DependentUpon>CreateChangelog.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +211,12 @@
     <Compile Include="Unit_TypeViews.Designer.cs">
       <DependentUpon>Unit_TypeViews.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Changelog.resx">
+      <DependentUpon>Changelog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateChangelog.resx">
+      <DependentUpon>CreateChangelog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateCustomer.resx">
       <DependentUpon>CreateCustomer.cs</DependentUpon>
     </EmbeddedResource>

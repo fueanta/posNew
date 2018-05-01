@@ -31,9 +31,9 @@
             this.nameBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.cancelBtn = new System.Windows.Forms.Button();
             this.createBtn = new System.Windows.Forms.Button();
+            this.datavalBox = new MetroFramework.Controls.MetroTextBox();
             this.SuspendLayout();
             // 
             // nameBox
@@ -87,38 +87,6 @@
             this.metroLabel2.TabIndex = 67;
             this.metroLabel2.Text = "Data Value";
             // 
-            // metroTextBox1
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(132, 1);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(113, 113);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(209, 159);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Multiline = true;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(246, 115);
-            this.metroTextBox1.TabIndex = 68;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // cancelBtn
             // 
             this.cancelBtn.BackColor = System.Drawing.Color.Tomato;
@@ -131,6 +99,7 @@
             this.cancelBtn.TabIndex = 70;
             this.cancelBtn.Text = "Cancel";
             this.cancelBtn.UseVisualStyleBackColor = false;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // createBtn
             // 
@@ -144,6 +113,38 @@
             this.createBtn.TabIndex = 69;
             this.createBtn.Text = "Create";
             this.createBtn.UseVisualStyleBackColor = false;
+            this.createBtn.Click += new System.EventHandler(this.createBtn_Click);
+            // 
+            // datavalBox
+            // 
+            // 
+            // 
+            // 
+            this.datavalBox.CustomButton.Image = null;
+            this.datavalBox.CustomButton.Location = new System.Drawing.Point(215, 2);
+            this.datavalBox.CustomButton.Name = "";
+            this.datavalBox.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.datavalBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.datavalBox.CustomButton.TabIndex = 1;
+            this.datavalBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.datavalBox.CustomButton.UseSelectable = true;
+            this.datavalBox.CustomButton.Visible = false;
+            this.datavalBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.datavalBox.Lines = new string[0];
+            this.datavalBox.Location = new System.Drawing.Point(212, 154);
+            this.datavalBox.MaxLength = 32767;
+            this.datavalBox.Name = "datavalBox";
+            this.datavalBox.PasswordChar = '\0';
+            this.datavalBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.datavalBox.SelectedText = "";
+            this.datavalBox.SelectionLength = 0;
+            this.datavalBox.SelectionStart = 0;
+            this.datavalBox.ShortcutsEnabled = true;
+            this.datavalBox.Size = new System.Drawing.Size(243, 30);
+            this.datavalBox.TabIndex = 66;
+            this.datavalBox.UseSelectable = true;
+            this.datavalBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.datavalBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // CreateData
             // 
@@ -152,8 +153,8 @@
             this.ClientSize = new System.Drawing.Size(599, 522);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.createBtn);
-            this.Controls.Add(this.metroTextBox1);
             this.Controls.Add(this.metroLabel2);
+            this.Controls.Add(this.datavalBox);
             this.Controls.Add(this.nameBox);
             this.Controls.Add(this.metroLabel1);
             this.Name = "CreateData";
@@ -168,8 +169,8 @@
         private MetroFramework.Controls.MetroTextBox nameBox;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private System.Windows.Forms.Button cancelBtn;
         private System.Windows.Forms.Button createBtn;
+        private MetroFramework.Controls.MetroTextBox datavalBox;
     }
 }

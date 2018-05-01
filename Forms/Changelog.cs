@@ -10,11 +10,10 @@ using System.Windows.Forms;
 
 namespace Forms
 {
-    public partial class DataViews : MetroFramework.Forms.MetroForm
+    public partial class Changelog : MetroFramework.Forms.MetroForm
     {
-        List<Software.Model.Data> Data = null;
-
-        public DataViews()
+        List<Software.Model.Changelog> changelogs = null;
+        public Changelog()
         {
             InitializeComponent();
             DoRefresh();
@@ -22,8 +21,8 @@ namespace Forms
 
         public void DoRefresh()
         {
-            Data = Software.Database.SQL.DataDB.GetAllChangelog();
-            table.DataSource = Data;
+            changelogs = Software.Database.SQL.ChangelogDB.GetAllChangelog();
+            table.DataSource = changelogs;
         }
 
         private void table_SelectionChanged(object sender, System.EventArgs e)
@@ -32,18 +31,13 @@ namespace Forms
             {
                 int selectedrowindex = table.SelectedCells[0].RowIndex;
                 DataGridViewRow selectedRow = table.Rows[selectedrowindex];
-                nameBox.Text = Convert.ToString(selectedRow.Cells["Data_Name"].Value);
-                valueBox.Text = Convert.ToString(selectedRow.Cells["Data_Value"].Value);                
+                idBox.Text = Convert.ToString(selectedRow.Cells["Id"].Value);
+                employeeBox.Text = Convert.ToString(selectedRow.Cells["Employee_Id"].Value);
+                DescriptionBox.Text = Convert.ToString(selectedRow.Cells["Description"].Value);
             }
         }
 
-        private void createBtn_Click(object sender, EventArgs e)
-        {
-            new CreateData().ShowDialog(this);
-            DoRefresh();
-        }
-
-        private void cancelBtn_Click(object sender, EventArgs e)
+        private void deleteBtn_Click(object sender, EventArgs e)
         {
             int selectedrowindex = 0;
             if (table.SelectedCells.Count > 0)
@@ -51,7 +45,7 @@ namespace Forms
                 selectedrowindex = table.SelectedCells[0].RowIndex;
                 DataGridViewRow selectedRow = table.Rows[selectedrowindex];
                 int id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
-                Software.Database.SQL.DataDB.DeleteData(id);
+                Software.Database.SQL.ChangelogDB.DeleteChangelog(id);
             }
             else
                 MetroFramework.MetroMessageBox.Show(this, "You must select a row to delete it!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -59,22 +53,23 @@ namespace Forms
             DoRefresh();
         }
 
-        private void UpdateBtn_Click(object sender, EventArgs e)
+
+        private void updateBtn_Click(object sender, EventArgs e)
         {
             int selectedrowindex = 0;
             if (table.SelectedCells.Count > 0)
             {
-                Software.Model.Data Data = new Software.Model.Data();
+                Software.Model.Changelog changelogs = new Software.Model.Changelog();
 
                 selectedrowindex = table.SelectedCells[0].RowIndex;
                 DataGridViewRow selectedRow = table.Rows[selectedrowindex];
 
-                Data.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
-                Data.Data_Name = nameBox.Text;
-                Data.Data_Value = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Data_Value"].Value));
+                changelogs.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
+                changelogs.Description = DescriptionBox.Text;
+                changelogs.Employee_Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Employee_Id"].Value));
+                
 
-
-                Software.Database.SQL.DataDB.UpdateData(Data);
+                Software.Database.SQL.ChangelogDB.UpdateChangelog(changelogs);
 
                 MetroFramework.MetroMessageBox.Show(this, "Your data has been updated successfully.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -83,6 +78,12 @@ namespace Forms
 
             DoRefresh();
             table.Rows[selectedrowindex].Selected = true;
+        }
+
+        private void newBtn_Click(object sender, EventArgs e)
+        {
+            new CreateChangelog().ShowDialog(this);
+            DoRefresh();
         }
     }
 }

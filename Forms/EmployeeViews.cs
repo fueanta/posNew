@@ -148,5 +148,10 @@ namespace Forms
             }
              */
         }
+
+        private void table_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
