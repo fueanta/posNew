@@ -1,6 +1,6 @@
 ﻿namespace Forms
 {
-    partial class DataVIews
+    partial class DataViews
     {
         /// <summary>
         /// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Forms
 {
-    public partial class DataVIews : MetroFramework.Forms.MetroForm
+    public partial class DataViews : MetroFramework.Forms.MetroForm
     {
-        public DataVIews()
+        public DataViews()
         {
             InitializeComponent();
         }
