@@ -191,6 +191,12 @@
     <Compile Include="JobViews.Designer.cs">
       <DependentUpon>JobViews.cs</DependentUpon>
     </Compile>
+    <Compile Include="Period.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Period.Designer.cs">
+      <DependentUpon>Period.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Purchase.cs">
@@ -273,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JobViews.resx">
       <DependentUpon>JobViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Period.resx">
+      <DependentUpon>Period.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
