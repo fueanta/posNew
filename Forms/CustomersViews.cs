@@ -17,8 +17,7 @@ namespace Forms
         public CustomersViews()
         {
             InitializeComponent();
-            customers = Software.Database.SQL.CustomerDB.GetAllCustomers();
-            table.DataSource = customers;
+            DoRefresh();
             types = Software.Database.SQL.Customer_TypeDB.GetAllCustomerTypes();
             typeComboBox.DataSource = types;
             typeComboBox.ValueMember = "Id";
@@ -45,8 +44,8 @@ namespace Forms
 
         public void DoRefresh()
         {
-            table.DataSource = Software.Database.SQL.CustomerDB.GetAllCustomers();
-            //table.Refresh();            
+            customers = Software.Database.SQL.CustomerDB.GetAllCustomers();
+            table.DataSource = customers;
         }
 
         private void createBtn_Click(object sender, EventArgs e)

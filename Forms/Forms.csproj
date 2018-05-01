@@ -119,6 +119,12 @@
     <Compile Include="CreateSupplier.Designer.cs">
       <DependentUpon>CreateSupplier.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateUnit_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUnit_Type.Designer.cs">
+      <DependentUpon>CreateUnit_Type.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomersViews.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateSupplier.resx">
       <DependentUpon>CreateSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUnit_Type.resx">
+      <DependentUpon>CreateUnit_Type.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomersViews.resx">
       <DependentUpon>CustomersViews.cs</DependentUpon>

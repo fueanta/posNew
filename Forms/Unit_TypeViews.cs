@@ -11,8 +11,7 @@ namespace Forms
         public Unit_TypeViews()
         {
             InitializeComponent();
-            types = Software.Database.SQL.Unit_TypeDB.GetAllUnit_Types();
-            table.DataSource = types;
+            DoRefresh();
         }
 
         private void table_SelectionChanged(object sender, System.EventArgs e)
@@ -28,12 +27,13 @@ namespace Forms
 
         public void DoRefresh()
         {
-            table.DataSource = Software.Database.SQL.Unit_TypeDB.GetAllUnit_Types();
-            //table.Refresh();            
+            types = Software.Database.SQL.Unit_TypeDB.GetAllUnit_Types();
+            table.DataSource = types;
         }
 
         private void createBtn_Click(object sender, EventArgs e)
         {
+            new CreateUnit_Type().ShowDialog(this);
             DoRefresh();
         }
 

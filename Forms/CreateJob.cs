@@ -32,7 +32,7 @@ namespace Forms
                 Description = descriptionBox.Text
             };
             Software.Database.SQL.JobDB.InsertJob(job);
-            MetroFramework.MetroMessageBox.Show(this, "Sucess", "Data Inserted Successfully", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            MetroFramework.MetroMessageBox.Show(this, "Sucess", "Data Inserted Successfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Close();
         }
     }

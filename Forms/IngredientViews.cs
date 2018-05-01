@@ -16,5 +16,10 @@ namespace Forms
         {
             InitializeComponent();
         }
+
+        private void newBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
