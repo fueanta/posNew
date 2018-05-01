@@ -19,9 +19,8 @@ namespace Forms
 
         private void createBtn_Click(object sender, EventArgs e)
         {
+            new CreateCustomer_Type().ShowDialog(this);
 
         }
-
-        
     }
 }
