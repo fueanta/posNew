@@ -32,6 +32,7 @@ C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Software.exe.config
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.csproj.CopyComplete
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.exe
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.pdb
+<<<<<<< HEAD
 E:\CSharpProject\posNew\Forms\bin\Debug\Forms.exe.config
 E:\CSharpProject\posNew\Forms\bin\Debug\Forms.exe
 E:\CSharpProject\posNew\Forms\bin\Debug\Forms.pdb
@@ -66,3 +67,6 @@ E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
 E:\CSharpProject\posNew\Forms\obj\Debug\Forms.csproj.CopyComplete
 E:\CSharpProject\posNew\Forms\obj\Debug\Forms.exe
 E:\CSharpProject\posNew\Forms\obj\Debug\Forms.pdb
+=======
+C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CreateCustomer.resources
+>>>>>>> 868fef008a199506b10e9a13b3fd2921b5060766
