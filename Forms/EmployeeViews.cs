@@ -92,7 +92,7 @@ namespace Forms
 
                 Software.Database.SQL.EmployeeDB.UpdateEmployee(employee);
             
-                MetroFramework.MetroMessageBox.Show(this, "Your data has been updated successfully.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MetroFramework.MetroMessageBox.Show(this, "Your data has been updated successfully.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
                 MetroFramework.MetroMessageBox.Show(this, "You must select a row to update its value!", "Invalid Selection");

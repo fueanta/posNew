@@ -28,8 +28,8 @@ namespace Forms
         {
             if (table.SelectedCells.Count > 0)
             {
-                int selectedrowindex = table.SelectedCells[0].RowIndex;
-                DataGridViewRow selectedRow = table.Rows[selectedrowindex];
+                int selectedRowIndex = table.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = table.Rows[selectedRowIndex];
                 pictureBox.ImageLocation = Convert.ToString(selectedRow.Cells["Picture"].Value);
                 nameBox.Text = Convert.ToString(selectedRow.Cells["Name"].Value);
                 contactBox.Text = Convert.ToString(selectedRow.Cells["Contact_No"].Value);
@@ -39,7 +39,6 @@ namespace Forms
                 Software.Model.Customer_Type type = types.Single(t => t.Id == Convert.ToInt32(Convert.ToString(selectedRow.Cells["Type_Id"].Value)));
                 typeComboBox.SelectedIndex = typeComboBox.FindStringExact(type.Type_Title);
             }
-
         }
 
         public void DoRefresh()
@@ -56,13 +55,13 @@ namespace Forms
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            int selectedrowindex = 0;
+            int selectedRowIndex = 0;
             if (table.SelectedCells.Count > 0)
             {
                 Software.Model.Customer customer = new Software.Model.Customer();
 
-                selectedrowindex = table.SelectedCells[0].RowIndex;
-                DataGridViewRow selectedRow = table.Rows[selectedrowindex];
+                selectedRowIndex = table.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = table.Rows[selectedRowIndex];
 
                 customer.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
                 customer.Name = nameBox.Text;
@@ -80,16 +79,16 @@ namespace Forms
                 MetroFramework.MetroMessageBox.Show(this, "You must select a row to update its value!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             DoRefresh();
-            table.Rows[selectedrowindex].Selected = true;
+            table.Rows[selectedRowIndex].Selected = true;
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
-            int selectedrowindex = 0;
+            int selectedRowIndex = 0;
             if (table.SelectedCells.Count > 0)
             {
-                selectedrowindex = table.SelectedCells[0].RowIndex;
-                DataGridViewRow selectedRow = table.Rows[selectedrowindex];
+                selectedRowIndex = table.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = table.Rows[selectedRowIndex];
                 int id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
                 Software.Database.SQL.CustomerDB.DeleteCustomer(id);
                 MetroFramework.MetroMessageBox.Show(this, "Data has been deleted!", "Successful!", MessageBoxButtons.OK, MessageBoxIcon.Information);

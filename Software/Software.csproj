@@ -55,6 +55,7 @@
     <Compile Include="Database\SQL\Customer_TypeDB.cs" />
     <Compile Include="Database\SQL\DB_Handler.cs" />
     <Compile Include="Database\SQL\EmployeeDB.cs" />
+    <Compile Include="Database\SQL\IngredientDB.cs" />
     <Compile Include="Database\SQL\JobDB.cs" />
     <Compile Include="Database\SQL\SupplierDB.cs" />
     <Compile Include="Database\SQL\Unit_TypeDB.cs" />
