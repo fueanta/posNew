@@ -86,8 +86,7 @@ namespace Forms
                 Software.Database.SQL.JobDB.DeleteJob(id);
             }
             else
-                MessageBox.Show("You must select a row to delete it!", "Invalid Selection");
-
+                MetroFramework.MetroMessageBox.Show(this, "You must select a row to delete it!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             DoRefresh();
         }
 

@@ -93,7 +93,7 @@ namespace Forms
 
                 Software.Database.SQL.EmployeeDB.UpdateEmployee(employee);
             
-                MetroFramework.MetroMessageBox.Show(this, "Your data has been updated successfully.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MetroFramework.MetroMessageBox.Show(this, "Your data has been updated successfully.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
                 MetroFramework.MetroMessageBox.Show(this, "You must select a row to update its value!", "Invalid Selection");
@@ -113,7 +113,7 @@ namespace Forms
                 Software.Database.SQL.EmployeeDB.DeleteEmployee(id);
             }
             else
-                MessageBox.Show("You must select a row to delete it!", "Invalid Selection");
+                MetroFramework.MetroMessageBox.Show(this, "You must select a row to delete it!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             DoRefresh();
         }

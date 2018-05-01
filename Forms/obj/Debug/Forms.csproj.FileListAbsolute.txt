@@ -8,7 +8,6 @@ C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CreateIngredient.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CreateJob.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CreateSupplier.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CustomersViews.resources
-C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CustomerTypeViews.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.Customer_TypeViews.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.DataVIews.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.EmployeePaymentViews.resources

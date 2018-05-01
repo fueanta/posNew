@@ -44,7 +44,7 @@ namespace Software.Database.SQL
         {
             string query =
                 "BEGIN " +
-                "customer_type_pkg.insert_customer_type(" + customer_Type.Id + ", '" + customer_Type.Type_Title + "', " + customer_Type.Order_Count + ", " + customer_Type.Total_Bill + ", " + customer_Type.Discount_Rate + "); " +
+                "customer_type_pkg.update_customer_type(" + customer_Type.Id + ", '" + customer_Type.Type_Title + "', " + customer_Type.Order_Count + ", " + customer_Type.Total_Bill + ", " + customer_Type.Discount_Rate + "); " +
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }

@@ -119,23 +119,17 @@
     <Compile Include="CustomersViews.Designer.cs">
       <DependentUpon>CustomersViews.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreateCustomerType.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerTypeViews.Designer.cs">
-      <DependentUpon>CreateCustomerType.cs</DependentUpon>
-    </Compile>
     <Compile Include="Customer_TypeViews.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Customer_TypeViews.Designer.cs">
       <DependentUpon>Customer_TypeViews.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataVIews.cs">
+    <Compile Include="DataViews.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataVIews.Designer.cs">
-      <DependentUpon>DataVIews.cs</DependentUpon>
+    <Compile Include="DataViews.Designer.cs">
+      <DependentUpon>DataViews.cs</DependentUpon>
     </Compile>
     <Compile Include="EmployeePaymentViews.cs">
       <SubType>Form</SubType>
@@ -208,14 +202,11 @@
     <EmbeddedResource Include="CustomersViews.resx">
       <DependentUpon>CustomersViews.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomerTypeViews.resx">
-      <DependentUpon>CreateCustomerType.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Customer_TypeViews.resx">
       <DependentUpon>Customer_TypeViews.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DataVIews.resx">
-      <DependentUpon>DataVIews.cs</DependentUpon>
+    <EmbeddedResource Include="DataViews.resx">
+      <DependentUpon>DataViews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeePaymentViews.resx">
       <DependentUpon>EmployeePaymentViews.cs</DependentUpon>
