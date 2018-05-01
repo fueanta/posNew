@@ -132,26 +132,5 @@ namespace Forms
             List<Software.Model.Employee> selectedEmployees = employees.Where(i => i.Name.ToLower().Contains(searchBox.Text.ToLower())).ToList();
             table.DataSource = selectedEmployees;
         }
-
-        private void jobComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            /*
-             if (((Software.Model.Job)jobComboBox.SelectedItem).Id != 1)
-            {
-                passBox.Enabled = false;
-                authorityBox.Enabled = false;
-            }
-            else
-            {
-                passBox.Enabled = true;
-                authorityBox.Enabled = true;
-            }
-             */
-        }
-
-        private void table_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
