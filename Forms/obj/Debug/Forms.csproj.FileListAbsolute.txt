@@ -20,3 +20,16 @@ C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.Properties.Resources.resou
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.SupplierForm.resources
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.csproj.GenerateResource.cache
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
+C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Forms.exe.config
+C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Forms.exe
+C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Forms.pdb
+C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\MaterialSkin.dll
+C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\MetroFramework.Design.dll
+C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\MetroFramework.dll
+C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Software.exe
+C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Software.pdb
+C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Software.exe.config
+C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.csproj.CopyComplete
+C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.exe
+C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.pdb
