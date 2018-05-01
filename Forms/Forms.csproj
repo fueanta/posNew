@@ -71,11 +71,35 @@
     <Compile Include="CreateCustomer_Type.Designer.cs">
       <DependentUpon>CreateCustomer_Type.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateData.Designer.cs">
+      <DependentUpon>CreateData.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CreateEmployee.Designer.cs">
       <DependentUpon>CreateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateEmployeePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateEmployeePayment.Designer.cs">
+      <DependentUpon>CreateEmployeePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateFood.Designer.cs">
+      <DependentUpon>CreateFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateIngredient.Designer.cs">
+      <DependentUpon>CreateIngredient.cs</DependentUpon>
     </Compile>
     <Compile Include="CreateJob.cs">
       <SubType>Form</SubType>
@@ -89,26 +113,68 @@
     <Compile Include="CreateSupplier.Designer.cs">
       <DependentUpon>CreateSupplier.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customer_TypeForm.cs">
+    <Compile Include="CustomersViews.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customer_TypeForm.Designer.cs">
-      <DependentUpon>Customer_TypeForm.cs</DependentUpon>
+    <Compile Include="CustomersViews.Designer.cs">
+      <DependentUpon>CustomersViews.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeForm.cs">
+    <Compile Include="CreateCustomerType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeForm.Designer.cs">
-      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    <Compile Include="CustomerTypeViews.Designer.cs">
+      <DependentUpon>CreateCustomerType.cs</DependentUpon>
     </Compile>
-    <Compile Include="JobForm.cs">
+    <Compile Include="Customer_TypeViews.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="JobForm.Designer.cs">
-      <DependentUpon>JobForm.cs</DependentUpon>
+    <Compile Include="Customer_TypeViews.Designer.cs">
+      <DependentUpon>Customer_TypeViews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataVIews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataVIews.Designer.cs">
+      <DependentUpon>DataVIews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeePaymentViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeePaymentViews.Designer.cs">
+      <DependentUpon>EmployeePaymentViews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeViews.Designer.cs">
+      <DependentUpon>EmployeeViews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodViews.Designer.cs">
+      <DependentUpon>FoodViews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngredientViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngredientViews.Designer.cs">
+      <DependentUpon>IngredientViews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobViews.Designer.cs">
+      <DependentUpon>JobViews.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase.Designer.cs">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </Compile>
     <Compile Include="SupplierForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,8 +184,20 @@
     <EmbeddedResource Include="CreateCustomer_Type.resx">
       <DependentUpon>CreateCustomer_Type.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreateData.resx">
+      <DependentUpon>CreateData.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateEmployee.resx">
       <DependentUpon>CreateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateEmployeePayment.resx">
+      <DependentUpon>CreateEmployeePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateFood.resx">
+      <DependentUpon>CreateFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateIngredient.resx">
+      <DependentUpon>CreateIngredient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateJob.resx">
       <DependentUpon>CreateJob.cs</DependentUpon>
@@ -127,14 +205,32 @@
     <EmbeddedResource Include="CreateSupplier.resx">
       <DependentUpon>CreateSupplier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Customer_TypeForm.resx">
-      <DependentUpon>Customer_TypeForm.cs</DependentUpon>
+    <EmbeddedResource Include="CustomersViews.resx">
+      <DependentUpon>CustomersViews.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeForm.resx">
-      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    <EmbeddedResource Include="CustomerTypeViews.resx">
+      <DependentUpon>CreateCustomerType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JobForm.resx">
-      <DependentUpon>JobForm.cs</DependentUpon>
+    <EmbeddedResource Include="Customer_TypeViews.resx">
+      <DependentUpon>Customer_TypeViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataVIews.resx">
+      <DependentUpon>DataVIews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeePaymentViews.resx">
+      <DependentUpon>EmployeePaymentViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeViews.resx">
+      <DependentUpon>EmployeeViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodViews.resx">
+      <DependentUpon>FoodViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngredientViews.resx">
+      <DependentUpon>IngredientViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobViews.resx">
+      <DependentUpon>JobViews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
