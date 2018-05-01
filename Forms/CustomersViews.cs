@@ -42,6 +42,81 @@ namespace Forms
             }
 
         }
+
+        public void DoRefresh()
+        {
+            table.DataSource = Software.Database.SQL.CustomerDB.GetAllCustomers();
+            //table.Refresh();            
+        }
+
+        private void createBtn_Click(object sender, EventArgs e)
+        {
+            new CreateCustomer().ShowDialog(this);
+            DoRefresh();
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            int selectedrowindex = 0;
+            if (table.SelectedCells.Count > 0)
+            {
+                Software.Model.Customer customer = new Software.Model.Customer();
+
+                selectedrowindex = table.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = table.Rows[selectedrowindex];
+
+                customer.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
+                customer.Name = nameBox.Text;
+                customer.Contact_No = contactBox.Text;
+                customer.Email = emailBox.Text;
+                customer.Address = addressBox.Text;
+                customer.Type_Id = ((Software.Model.Customer_Type)typeComboBox.SelectedItem).Id;
+                customer.Picture = pictureBox.ImageLocation;
+
+                Software.Database.SQL.CustomerDB.UpdateCustomer(customer);
+
+                MetroFramework.MetroMessageBox.Show(this, "Your data has been updated successfully.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+                MetroFramework.MetroMessageBox.Show(this, "You must select a row to update its value!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            DoRefresh();
+            table.Rows[selectedrowindex].Selected = true;
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            int selectedrowindex = 0;
+            if (table.SelectedCells.Count > 0)
+            {
+                selectedrowindex = table.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = table.Rows[selectedrowindex];
+                int id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
+                Software.Database.SQL.CustomerDB.DeleteCustomer(id);
+                MetroFramework.MetroMessageBox.Show(this, "Data has been deleted!", "Successful!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+                MetroFramework.MetroMessageBox.Show(this, "You must select a row to delete it!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            DoRefresh();
+        }
+
+        private void browseBtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "images| *.JPG; *.PNG; *.GJF"; // you can add any other image type 
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox.ImageLocation = ofd.FileName;
+            }
+        }
+
+        private void searchBox_TextChanged(object sender, EventArgs e)
+        {
+            List<Software.Model.Customer> selectedCustomers = customers.Where(c => c.Name.ToLower().Contains(searchBox.Text.ToLower())).ToList();
+            table.DataSource = selectedCustomers;
+        }
+
     }
 
 }
