@@ -32,3 +32,4 @@ C:\Users\Taqui\source\repos\POS\Forms\bin\Debug\Software.exe.config
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.csproj.CopyComplete
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.exe
 C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.pdb
+C:\Users\Taqui\source\repos\POS\Forms\obj\Debug\Forms.CreateCustomer.resources
