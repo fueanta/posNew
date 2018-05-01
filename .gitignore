@@ -1,5 +1,6 @@
 Software/Database/DB_Conn.cs
-.vs/POS/v15/
-Forms/obj/Debug
-Forms/Properties
+.vs/
+Forms/obj/Debug/
+Forms/bin/Debug/
 .idea/
+*.csproj

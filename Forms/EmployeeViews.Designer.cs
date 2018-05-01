@@ -148,7 +148,6 @@
             this.jobComboBox.TabIndex = 56;
             this.jobComboBox.UseSelectable = true;
             this.jobComboBox.ValueMember = "ID";
-            this.jobComboBox.SelectedIndexChanged += new System.EventHandler(this.jobComboBox_SelectedIndexChanged);
             // 
             // authorityBox
             // 
@@ -615,7 +614,6 @@
             this.table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.table.Size = new System.Drawing.Size(562, 408);
             this.table.TabIndex = 18;
-            this.table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.table_CellContentClick);
             this.table.SelectionChanged += new System.EventHandler(this.table_SelectionChanged);
             // 
             // EmployeeViews
