@@ -64,11 +64,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Changelog.cs" />
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\Customer_Type.cs" />
+    <Compile Include="Model\Data.cs" />
     <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\Employee_Payment.cs" />
+    <Compile Include="Model\Food.cs" />
+    <Compile Include="Model\Food_Ingredient.cs" />
+    <Compile Include="Model\Food_Type.cs" />
     <Compile Include="Model\Ingredient.cs" />
     <Compile Include="Model\Job.cs" />
+    <Compile Include="Model\Order_Food.cs" />
+    <Compile Include="Model\Period.cs" />
+    <Compile Include="Model\POS_Order.cs" />
+    <Compile Include="Model\POS_Purchase.cs" />
+    <Compile Include="Model\Purchase_Ingredient.cs" />
+    <Compile Include="Model\Report.cs" />
     <Compile Include="Model\Rotten_Ingredient.cs" />
     <Compile Include="Model\Supplier.cs" />
     <Compile Include="Model\Unit_Type.cs" />
