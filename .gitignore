@@ -3,3 +3,4 @@ Software/Database/DB_Conn.cs
 Forms/obj/Debug
 Forms/Properties
 .idea/
+*.csproj
