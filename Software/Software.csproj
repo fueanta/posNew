@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\DB_Conn.cs" />
+    <Compile Include="Database\SQL\ChangelogDB.cs" />
     <Compile Include="Database\SQL\CustomerDB.cs" />
     <Compile Include="Database\SQL\Customer_TypeDB.cs" />
     <Compile Include="Database\SQL\DB_Handler.cs" />
