@@ -155,6 +155,12 @@
     <Compile Include="FoodViews.Designer.cs">
       <DependentUpon>FoodViews.cs</DependentUpon>
     </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="IngredientViews.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FoodViews.resx">
       <DependentUpon>FoodViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IngredientViews.resx">
       <DependentUpon>IngredientViews.cs</DependentUpon>
