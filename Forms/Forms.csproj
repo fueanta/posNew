@@ -119,6 +119,12 @@
     <Compile Include="CreateSupplier.Designer.cs">
       <DependentUpon>CreateSupplier.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateUnit_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUnit_Type.Designer.cs">
+      <DependentUpon>CreateUnit_Type.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomersViews.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,12 @@
     <Compile Include="SupplierForm.Designer.cs">
       <DependentUpon>SupplierForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Unit_TypeViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit_TypeViews.Designer.cs">
+      <DependentUpon>Unit_TypeViews.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CreateCustomer.resx">
       <DependentUpon>CreateCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateSupplier.resx">
       <DependentUpon>CreateSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUnit_Type.resx">
+      <DependentUpon>CreateUnit_Type.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomersViews.resx">
       <DependentUpon>CustomersViews.cs</DependentUpon>
@@ -253,6 +268,9 @@
     </Compile>
     <EmbeddedResource Include="SupplierForm.resx">
       <DependentUpon>SupplierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit_TypeViews.resx">
+      <DependentUpon>Unit_TypeViews.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

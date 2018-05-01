@@ -10,28 +10,26 @@ using System.Windows.Forms;
 
 namespace Forms
 {
-    public partial class CreateJob : MetroFramework.Forms.MetroForm
+    public partial class CreateUnit_Type : MetroFramework.Forms.MetroForm
     {
-        public CreateJob()
+        public CreateUnit_Type()
         {
             InitializeComponent();
         }
 
         private void cancelBtn_Click(object sender, EventArgs e)
         {
-            
             Close();
         }
 
         private void createBtn_Click(object sender, EventArgs e)
         {
-            Software.Model.Job job = new Software.Model.Job
+            Software.Model.Unit_Type type = new Software.Model.Unit_Type
             {
-                Job_Title = jobTitileBox.Text,
-                Salary = Int32.Parse(salaryBox.Text),
-                Description = descriptionBox.Text
+                Name = nameBox.Text,
+                Symbol = symbolBox.Text
             };
-            Software.Database.SQL.JobDB.InsertJob(job);
+            Software.Database.SQL.Unit_TypeDB.InsertUnit_Type(type);
             MetroFramework.MetroMessageBox.Show(this, "Sucess", "Data Inserted Successfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Close();
         }

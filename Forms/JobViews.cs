@@ -16,8 +16,7 @@ namespace Forms
         public JobViews()
         {
             InitializeComponent();
-            jobs = Software.Database.SQL.JobDB.GetAllJobs();
-            table.DataSource = jobs;
+            DoRefresh();
         }
 
         private void table_SelectionChanged(object sender, EventArgs e)
@@ -33,9 +32,9 @@ namespace Forms
         }
 
         public void DoRefresh()
-        {            
-            table.DataSource = Software.Database.SQL.JobDB.GetAllJobs();
-            //table.Refresh();            
+        {
+            jobs = Software.Database.SQL.JobDB.GetAllJobs();
+            table.DataSource = jobs;
         }
 
         public void Clear()
@@ -86,7 +85,7 @@ namespace Forms
                 Software.Database.SQL.JobDB.DeleteJob(id);
             }
             else
-                MetroFramework.MetroMessageBox.Show(this, "You must select a row to delete it!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MetroFramework.MetroMessageBox.Show(this, "You must select a row to delete it!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Information);
             DoRefresh();
         }
 

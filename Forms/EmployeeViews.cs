@@ -13,8 +13,7 @@ namespace Forms
         public EmployeeViews()
         {
             InitializeComponent();
-            employees = Software.Database.SQL.EmployeeDB.GetAllEmployees();
-            table.DataSource = employees;
+            DoRefresh();
             jobs = Software.Database.SQL.JobDB.GetAllJobs();
             jobComboBox.DataSource = jobs;
             jobComboBox.ValueMember = "Id";
@@ -44,8 +43,8 @@ namespace Forms
 
         public void DoRefresh()
         {
-            table.DataSource = Software.Database.SQL.EmployeeDB.GetAllEmployees();
-            //table.Refresh();            
+            employees = Software.Database.SQL.EmployeeDB.GetAllEmployees();
+            table.DataSource = employees;
         }
 
         public void Clear()

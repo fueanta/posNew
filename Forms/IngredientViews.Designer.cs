@@ -385,6 +385,7 @@
             this.newBtn.TabIndex = 62;
             this.newBtn.Text = "Create";
             this.newBtn.UseVisualStyleBackColor = false;
+            this.newBtn.Click += new System.EventHandler(this.newBtn_Click);
             // 
             // IngredientViews
             // 
