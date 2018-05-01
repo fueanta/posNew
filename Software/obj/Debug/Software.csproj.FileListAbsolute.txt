@@ -8,3 +8,4 @@ C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.csproj.CoreCompileIn
 C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.csproj.CopyComplete
 C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.exe
 C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.pdb
+C:\Users\Taqui\source\repos\POS\Software\obj\Debug\Software.csprojResolveAssemblyReference.cache
