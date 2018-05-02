@@ -19,11 +19,7 @@ namespace Forms
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            Application.Run(new Chart());
-=======
-            Application.Run(new CreatePurchase());
->>>>>>> 70f657df5aaa41502cd23bf78acce5c4ec77279c
+            Application.Run(new HomePage());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]

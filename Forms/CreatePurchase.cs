@@ -159,5 +159,10 @@ namespace Forms
             MetroFramework.MetroMessageBox.Show(this, "Purchase has been added!", "Purchased Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Close();
         }
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

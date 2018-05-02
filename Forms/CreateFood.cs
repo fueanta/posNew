@@ -56,6 +56,12 @@ namespace Forms
             {
                 pictureBox.ImageLocation = ofd.FileName;
             }
+
         }
+
+        private void foodTypebtn_Click(object sender, EventArgs e) {
+            new CreateFood_Type().ShowDialog(this);
+        }
+
     }
 }

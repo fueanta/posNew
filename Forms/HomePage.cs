@@ -51,5 +51,25 @@ namespace Forms
         {
             new JobViews().ShowDialog(this);
         }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            new SupplierForm().ShowDialog(this);
+        }
+
+        private void metroTile3_Click(object sender, EventArgs e)
+        {
+            new Food_TypeViews().ShowDialog(this);
+        }
+
+        private void metroTile4_Click(object sender, EventArgs e)
+        {
+            new CreatePurchase().ShowDialog(this);
+        }
     }
 }

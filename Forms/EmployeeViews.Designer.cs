@@ -472,11 +472,7 @@
             this.newBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.newBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.newBtn.Location = new System.Drawing.Point(93, 565);
-=======
             this.newBtn.Location = new System.Drawing.Point(120, 565);
->>>>>>> 70f657df5aaa41502cd23bf78acce5c4ec77279c
             this.newBtn.Name = "newBtn";
             this.newBtn.Size = new System.Drawing.Size(165, 46);
             this.newBtn.TabIndex = 33;

@@ -29,19 +29,22 @@
         private void InitializeComponent()
         {
             this.tileJobs = new MetroFramework.Controls.MetroTile();
-            this.tileLogout = new MetroFramework.Controls.MetroTile();
             this.tileIngredients = new MetroFramework.Controls.MetroTile();
             this.tileFoods = new MetroFramework.Controls.MetroTile();
             this.tilePayment = new MetroFramework.Controls.MetroTile();
             this.tileEmployees = new MetroFramework.Controls.MetroTile();
             this.tileCustomerType = new MetroFramework.Controls.MetroTile();
             this.tileCustomer = new MetroFramework.Controls.MetroTile();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroTile2 = new MetroFramework.Controls.MetroTile();
+            this.metroTile3 = new MetroFramework.Controls.MetroTile();
+            this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // tileJobs
             // 
             this.tileJobs.ActiveControl = null;
-            this.tileJobs.Location = new System.Drawing.Point(383, 314);
+            this.tileJobs.Location = new System.Drawing.Point(548, 314);
             this.tileJobs.Name = "tileJobs";
             this.tileJobs.Size = new System.Drawing.Size(203, 164);
             this.tileJobs.Style = MetroFramework.MetroColorStyle.Purple;
@@ -50,21 +53,10 @@
             this.tileJobs.UseSelectable = true;
             this.tileJobs.Click += new System.EventHandler(this.tileJobs_Click);
             // 
-            // tileLogout
-            // 
-            this.tileLogout.ActiveControl = null;
-            this.tileLogout.Location = new System.Drawing.Point(592, 314);
-            this.tileLogout.Name = "tileLogout";
-            this.tileLogout.Size = new System.Drawing.Size(159, 164);
-            this.tileLogout.Style = MetroFramework.MetroColorStyle.Silver;
-            this.tileLogout.TabIndex = 31;
-            this.tileLogout.Text = "LOGOUT";
-            this.tileLogout.UseSelectable = true;
-            // 
             // tileIngredients
             // 
             this.tileIngredients.ActiveControl = null;
-            this.tileIngredients.Location = new System.Drawing.Point(213, 314);
+            this.tileIngredients.Location = new System.Drawing.Point(378, 314);
             this.tileIngredients.Name = "tileIngredients";
             this.tileIngredients.Size = new System.Drawing.Size(164, 164);
             this.tileIngredients.Style = MetroFramework.MetroColorStyle.Green;
@@ -132,13 +124,64 @@
             this.tileCustomer.UseSelectable = true;
             this.tileCustomer.Click += new System.EventHandler(this.tileCustomer_Click);
             // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            this.metroTile1.Location = new System.Drawing.Point(49, 520);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(158, 164);
+            this.metroTile1.Style = MetroFramework.MetroColorStyle.Purple;
+            this.metroTile1.TabIndex = 33;
+            this.metroTile1.Text = "Inventory";
+            this.metroTile1.UseSelectable = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
+            // 
+            // metroTile2
+            // 
+            this.metroTile2.ActiveControl = null;
+            this.metroTile2.Location = new System.Drawing.Point(213, 520);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(158, 164);
+            this.metroTile2.Style = MetroFramework.MetroColorStyle.Brown;
+            this.metroTile2.TabIndex = 34;
+            this.metroTile2.Text = "Supplier";
+            this.metroTile2.UseSelectable = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
+            // 
+            // metroTile3
+            // 
+            this.metroTile3.ActiveControl = null;
+            this.metroTile3.Location = new System.Drawing.Point(213, 314);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(158, 164);
+            this.metroTile3.Style = MetroFramework.MetroColorStyle.Silver;
+            this.metroTile3.TabIndex = 35;
+            this.metroTile3.Text = "Food Types";
+            this.metroTile3.UseSelectable = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
+            // 
+            // metroTile4
+            // 
+            this.metroTile4.ActiveControl = null;
+            this.metroTile4.Location = new System.Drawing.Point(378, 520);
+            this.metroTile4.Name = "metroTile4";
+            this.metroTile4.Size = new System.Drawing.Size(158, 164);
+            this.metroTile4.Style = MetroFramework.MetroColorStyle.Lime;
+            this.metroTile4.TabIndex = 36;
+            this.metroTile4.Text = "Purchase";
+            this.metroTile4.UseSelectable = true;
+            this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click);
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 594);
+            this.ClientSize = new System.Drawing.Size(863, 728);
+            this.Controls.Add(this.metroTile4);
+            this.Controls.Add(this.metroTile3);
+            this.Controls.Add(this.metroTile2);
+            this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.tileJobs);
-            this.Controls.Add(this.tileLogout);
             this.Controls.Add(this.tileIngredients);
             this.Controls.Add(this.tileFoods);
             this.Controls.Add(this.tilePayment);
@@ -155,12 +198,15 @@
         #endregion
 
         private MetroFramework.Controls.MetroTile tileJobs;
-        private MetroFramework.Controls.MetroTile tileLogout;
         private MetroFramework.Controls.MetroTile tileIngredients;
         private MetroFramework.Controls.MetroTile tileFoods;
         private MetroFramework.Controls.MetroTile tilePayment;
         private MetroFramework.Controls.MetroTile tileEmployees;
         private MetroFramework.Controls.MetroTile tileCustomerType;
         private MetroFramework.Controls.MetroTile tileCustomer;
+        private MetroFramework.Controls.MetroTile metroTile1;
+        private MetroFramework.Controls.MetroTile metroTile2;
+        private MetroFramework.Controls.MetroTile metroTile3;
+        private MetroFramework.Controls.MetroTile metroTile4;
     }
 }
