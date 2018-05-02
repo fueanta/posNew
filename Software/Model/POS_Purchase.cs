@@ -13,10 +13,8 @@ namespace Software.Model
         public DateTime Time { get; set; }
         public int Employee_Id { get; set; }
         public int Supplier_Id { get; set; }
-        public int Cost { get; set; }
+        public double Cost { get; set; }
         public int Discount_Rate { get; set; }
-        public int Total_Cost { get; set; }
-        
-
+        public double Total_Cost { get; set; }
     }
 }

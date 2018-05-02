@@ -53,13 +53,13 @@ namespace Forms
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            int selectedrowindex = 0;
+            int selectedRowIndex = 0;
             if (table.SelectedCells.Count > 0)
             {
                 Software.Model.Job job = new Software.Model.Job();
 
-                selectedrowindex = table.SelectedCells[0].RowIndex;
-                DataGridViewRow selectedRow = table.Rows[selectedrowindex];
+                selectedRowIndex = table.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = table.Rows[selectedRowIndex];
 
                 job.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
                 job.Job_Title = jobTitileBox.Text;
@@ -71,7 +71,8 @@ namespace Forms
                 MessageBox.Show("You must select a row to update its value!", "Invalid Selection");
            
             DoRefresh();
-            table.Rows[selectedrowindex].Selected = true;
+            table.CurrentCell = table.Rows[selectedRowIndex].Cells[0];
+            table.Rows[selectedRowIndex].Selected = true;
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)

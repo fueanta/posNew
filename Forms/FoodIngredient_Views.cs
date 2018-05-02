@@ -29,7 +29,10 @@ namespace Forms
             
             used = Software.Database.SQL.FoodIngredientDB.GetUsedIngredients(Id);
             table.DataSource = used;
+
             CalcInventoryCost();
+
+            DeleteFirstObj(); // taqui - patch
         }
 
         private void discardBtn_Click(object sender, EventArgs e)
@@ -39,50 +42,72 @@ namespace Forms
 
         private void pushRight_Click(object sender, EventArgs e)
         {
-            var ingredient = list.SelectedItem as Software.Model.Food_Ingredient;
-            if (!(ingredient is null))
+            if (unused.Count > 0)
             {
-                int remove_id = ingredient.Ingredient_Id;
-                unused.Remove(unused.SingleOrDefault(i => i.Ingredient_Id == remove_id));
-                list.DataSource = null;
-                list.DataSource = unused;
+                var ingredient = list.SelectedItem as Software.Model.Food_Ingredient;
+                if (!(ingredient is null))
+                {
+                    int remove_id = ingredient.Ingredient_Id;
+                    unused.Remove(unused.SingleOrDefault(i => i.Ingredient_Id == remove_id));
+                    list.DataSource = null;
+                    list.DataSource = unused;
+                }
+                used.Add(ingredient);
+                table.DataSource = null;
+                table.DataSource = used;
+                CalcInventoryCost();
+
+                table.CurrentCell = table.Rows[table.Rows.Count - 1].Cells[0];
+                table.Rows[table.Rows.Count - 1].Selected = true;
             }
-            used.Add(ingredient);
+        }
+
+        private void DeleteFirstObj() // taqui - patch
+        {
+            used.RemoveAt(0);
             table.DataSource = null;
             table.DataSource = used;
-            CalcInventoryCost();
-            table.Rows[table.Rows.Count - 1].Selected = true;
+
+            unused.RemoveAt(0);
+            list.DataSource = null;
+            list.DataSource = unused;
         }
 
         private void pushLeft_Click(object sender, EventArgs e)
         {
-            var ingredient = table.CurrentRow.DataBoundItem as Software.Model.Food_Ingredient;
-            if (!(ingredient is null))
+            if (table.RowCount > 0)
             {
-                int remove_id = ingredient.Ingredient_Id;
-                used.Remove(used.SingleOrDefault(i => i.Ingredient_Id == remove_id));
-                table.DataSource = null;
-                table.DataSource = used;
+                var ingredient = table.CurrentRow.DataBoundItem as Software.Model.Food_Ingredient;
+                if (!(ingredient is null))
+                {
+                    int remove_id = ingredient.Ingredient_Id;
+                    used.Remove(used.SingleOrDefault(i => i.Ingredient_Id == remove_id));
+                    table.DataSource = null;
+                    table.DataSource = used;
+                    ingredient.Amount = 0.0d;
+                    unused.Add(ingredient);
+                }
+                list.DataSource = null;
+                list.DataSource = unused;
+                CalcInventoryCost();
             }
-            ingredient.Amount = 0.0d;
-            unused.Add(ingredient);
-            list.DataSource = null;
-            list.DataSource = unused;
-            CalcInventoryCost();
         }
 
         private void changeBtn_Click(object sender, EventArgs e)
         {
-            var ingredient = (Software.Model.Food_Ingredient)table.CurrentRow.DataBoundItem;
-            ingredient.Amount = Convert.ToDouble(amountBox.Text);
-            if (check.Checked)
+            if (table.RowCount > 0 && table.CurrentRow != null)
             {
-                ingredient.Amount /= 1000;
-                amountBox.Text = ingredient.Amount.ToString();
-                check.Checked = false;
+                var ingredient = (Software.Model.Food_Ingredient)table.CurrentRow.DataBoundItem;
+                ingredient.Amount = Convert.ToDouble(amountBox.Text);
+                if (check.Checked)
+                {
+                    ingredient.Amount /= 1000;
+                    amountBox.Text = ingredient.Amount.ToString();
+                    check.Checked = false;
+                }
+                table.Refresh();
+                CalcInventoryCost();
             }
-            table.Refresh();
-            CalcInventoryCost();
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
