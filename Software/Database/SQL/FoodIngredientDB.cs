@@ -14,6 +14,7 @@ namespace Software.Database.SQL
             List<Model.Food_Ingredient> ingredients = new List<Model.Food_Ingredient>();
             string query = "select i.id, i.name, i.unit_cost from ingredient i where i.id not in (select i.id from ingredient i, food_ingredient fi where i.id = fi.ingredient_id and fi.food_id = " + Id + ") order by i.id";
             DataTable table = DB_Handler.GetDataTable(query);
+            ingredients.Add(new Model.Food_Ingredient { }); // taqui - patch
             foreach (DataRow row in table.Rows)
             {
                 ingredients.Add(RowToEntity2(row));
@@ -26,6 +27,7 @@ namespace Software.Database.SQL
             List<Model.Food_Ingredient> f_ingredients = new List<Model.Food_Ingredient>();
             string query = "select fi.Ingredient_Id, i.Name, i.unit_cost, fi.Amount from ingredient i, food_ingredient fi where i.id = fi.ingredient_id and fi.food_id = " + Id;
             DataTable table = DB_Handler.GetDataTable(query);
+            f_ingredients.Add(new Model.Food_Ingredient { }); // taqui - patch
             foreach (DataRow row in table.Rows)
             {
                 f_ingredients.Add(RowToEntity(row));
@@ -50,7 +52,6 @@ namespace Software.Database.SQL
         {
             Model.Food_Ingredient f_ingredient = new Model.Food_Ingredient
             {
-                //Food_Id = Int32.Parse(row["Food_Id"].ToString()),
                 Ingredient_Id = Int32.Parse(row["Id"].ToString()),
                 Ingredient_Name = row["Name"].ToString(),
                 Amount = 0.0d,
