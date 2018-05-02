@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Data;
+
 
 namespace Software.Database.SQL
 {
@@ -22,19 +26,19 @@ namespace Software.Database.SQL
         {
             Model.Employee employee = new Model.Employee
             {
-                Id = Int32.Parse(row["Id"].ToString()),
+                Id = Convert.ToInt32(row["ID"].ToString()),
                 Name = row["Name"].ToString(),
                 Contact_No = row["Contact_No"].ToString(),
                 Email = row["Email"].ToString(),
                 Address = row["Address"].ToString(),
                 Hire_Date = Convert.ToDateTime(row["Hire_Date"]),
-                Commission = Int32.Parse(row["Commission"].ToString()),
-                Job_Id = Int32.Parse(row["Job_Id"].ToString()),
+                Commission = Convert.ToInt32(row["Commission"].ToString()),
+                Job_Id = Convert.ToInt32(row["Job_Id"].ToString()),
                 Picture = row["Picture"].ToString(),
                 Password = row["Password"].ToString(),
                 Authority = row["Authority"].ToString(),
             };
-            return employee;
+            return employee; 
         }
 
         public static void InsertEmployee(Model.Employee employee)
@@ -61,6 +65,11 @@ namespace Software.Database.SQL
                 "BEGIN " +
                 "employee_pkg.delete_employee(" + id + "); " +
                 "END;";
+            DB_Handler.ExecuteQuery(query);
+        }
+
+        public static void loginQuery(string query)
+        {
             DB_Handler.ExecuteQuery(query);
         }
     }

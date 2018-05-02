@@ -32,6 +32,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MaterialSkin">
       <HintPath>..\..\Solution\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
@@ -54,6 +59,7 @@
     <Reference Include="System.DirectoryServices.Protocols" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,6 +76,12 @@
     </Compile>
     <Compile Include="Changelog.Designer.cs">
       <DependentUpon>Changelog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart.Designer.cs">
+      <DependentUpon>Chart.cs</DependentUpon>
     </Compile>
     <Compile Include="CreateChangelog.cs">
       <SubType>Form</SubType>
@@ -209,6 +221,12 @@
     <Compile Include="JobViews.Designer.cs">
       <DependentUpon>JobViews.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Form.Designer.cs">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Period.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +255,9 @@
     </Compile>
     <EmbeddedResource Include="Changelog.resx">
       <DependentUpon>Changelog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart.resx">
+      <DependentUpon>Chart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateChangelog.resx">
       <DependentUpon>CreateChangelog.cs</DependentUpon>
@@ -307,6 +328,9 @@
     <EmbeddedResource Include="JobViews.resx">
       <DependentUpon>JobViews.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login Form.resx">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Period.resx">
       <DependentUpon>Period.cs</DependentUpon>
     </EmbeddedResource>
@@ -326,6 +350,7 @@
     <EmbeddedResource Include="Unit_TypeViews.resx">
       <DependentUpon>Unit_TypeViews.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -345,6 +370,15 @@
       <Project>{df11e9a6-33c1-4cbe-8089-8e3718faa808}</Project>
       <Name>Software</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginIconAppl.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

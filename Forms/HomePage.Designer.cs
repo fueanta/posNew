@@ -48,6 +48,7 @@
             this.tileJobs.TabIndex = 32;
             this.tileJobs.Text = "Jobs";
             this.tileJobs.UseSelectable = true;
+            this.tileJobs.Click += new System.EventHandler(this.tileJobs_Click);
             // 
             // tileLogout
             // 
@@ -70,6 +71,7 @@
             this.tileIngredients.TabIndex = 28;
             this.tileIngredients.Text = "Ingredients";
             this.tileIngredients.UseSelectable = true;
+            this.tileIngredients.Click += new System.EventHandler(this.tileIngredients_Click);
             // 
             // tileFoods
             // 
@@ -81,6 +83,7 @@
             this.tileFoods.TabIndex = 30;
             this.tileFoods.Text = "Food Items";
             this.tileFoods.UseSelectable = true;
+            this.tileFoods.Click += new System.EventHandler(this.tileFoods_Click);
             // 
             // tilePayment
             // 
@@ -92,6 +95,7 @@
             this.tilePayment.TabIndex = 29;
             this.tilePayment.Text = "Payroll";
             this.tilePayment.UseSelectable = true;
+            this.tilePayment.Click += new System.EventHandler(this.tilePayment_Click);
             // 
             // tileEmployees
             // 
@@ -102,6 +106,7 @@
             this.tileEmployees.TabIndex = 27;
             this.tileEmployees.Text = "Employees";
             this.tileEmployees.UseSelectable = true;
+            this.tileEmployees.Click += new System.EventHandler(this.tileEmployees_Click);
             // 
             // tileCustomerType
             // 
@@ -113,6 +118,7 @@
             this.tileCustomerType.TabIndex = 26;
             this.tileCustomerType.Text = "Customer Type";
             this.tileCustomerType.UseSelectable = true;
+            this.tileCustomerType.Click += new System.EventHandler(this.tileCustomerType_Click);
             // 
             // tileCustomer
             // 

@@ -91,7 +91,7 @@ namespace Forms
                 employee.Authority = authorityBox.Text;
 
                 Software.Database.SQL.EmployeeDB.UpdateEmployee(employee);
-            
+
                 MetroFramework.MetroMessageBox.Show(this, "Your data has been updated successfully.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -132,5 +132,7 @@ namespace Forms
             List<Software.Model.Employee> selectedEmployees = employees.Where(i => i.Name.ToLower().Contains(searchBox.Text.ToLower())).ToList();
             table.DataSource = selectedEmployees;
         }
+
+        
     }
 }
