@@ -7,9 +7,15 @@ using System.Threading.Tasks;
 namespace Software.Model
 {
     public class Purchase_Ingredient
-    {
-        public int Purchase_ID { get; set; }
+    {        
+        public string Ingredient_Name { get; set; }
+        public double Amount { get; set; }
+        public int Unit_Cost { get; set; }
         public int Ingredient_ID { get; set; }
-        public int Amount { get; set; }
+
+        public override string ToString()
+        {
+            return Ingredient_Name;
+        }
     }
 }
