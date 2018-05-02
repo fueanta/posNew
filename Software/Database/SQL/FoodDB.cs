@@ -33,8 +33,8 @@ namespace Software.Database.SQL
                 Discount_Rate = Int32.Parse(row["Discount_Rate"].ToString()),
                 Availability = row["Availability"].ToString(),
                 Other_Charges = Int32.Parse(row["Other_Charges"].ToString()),
-                Stock_Count = Int32.Parse(row["Stock_Count"].ToString()),
-                Picture = row["Name"].ToString()
+                //Stock_Count = Int32.Parse(row["Stock_Count"].ToString()),
+                Picture = row["Picture"].ToString()
             };
             return food;
         }
@@ -43,7 +43,7 @@ namespace Software.Database.SQL
         {
             string query =
                 "BEGIN " +
-                "food_pkg.insert_food('" + food.Name + "', " + food.Price + ", '" + food.Description + "', " + food.Type_Id + ", " + food.Discount_Rate + ", '" + food.Availability + "', " + food.Other_Charges + ", " + food.Stock_Count + ", '" + food.Picture + "'); " +
+                "food_pkg.insert_food('" + food.Name + "', " + food.Price + ", '" + food.Description + "', " + food.Type_Id + ", " + food.Discount_Rate + ", '" + food.Availability + "', " + food.Other_Charges + ", '" + food.Picture + "'); " +
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }
@@ -52,7 +52,7 @@ namespace Software.Database.SQL
         {
             string query =
                 "BEGIN " +
-                "food_pkg.update_food(" + food.Id + ", '" + food.Name + "', " + food.Price + ", '" + food.Description + "', " + food.Type_Id + ", " + food.Discount_Rate + ", '" + food.Availability + "', " + food.Other_Charges + ", " + food.Stock_Count + ", '" + food.Picture + "'); " +
+                "food_pkg.update_food(" + food.Id + ", '" + food.Name + "', " + food.Price + ", '" + food.Description + "', " + food.Type_Id + ", " + food.Discount_Rate + ", '" + food.Availability + "', " + food.Other_Charges + ", '" + food.Picture + "'); " +
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }

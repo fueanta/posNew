@@ -1,4 +1,6 @@
-﻿namespace Software.Model
+﻿using System.Collections;
+
+namespace Software.Model
 {
     public class Ingredient
     {
@@ -7,6 +9,7 @@
         public string Description { get; set; }
         public int Unit_Cost { get; set; }
         public double Amount { get; set; }        
-        public int Unit_Id { get; set; }        
+        public int Unit_Id { get; set; }
+
     }
 }
