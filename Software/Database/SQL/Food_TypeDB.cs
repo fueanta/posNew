@@ -45,7 +45,7 @@ namespace Software.Database.SQL
         {
             string query =
                 "BEGIN " +
-                "food_type_pkg.update_food_type(" + food_Type.Id + ", " + food_Type.Type_Name + "', '" + food_Type.Description + "'); " +
+                "food_type_pkg.update_food_type(" + food_Type.Id + ", '" + food_Type.Type_Name + "', '" + food_Type.Description + "'); " +
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }

@@ -113,6 +113,12 @@
     <Compile Include="CreateFood.Designer.cs">
       <DependentUpon>CreateFood.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateFood_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateFood_Type.Designer.cs">
+      <DependentUpon>CreateFood_Type.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateIngredient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,11 +173,23 @@
     <Compile Include="EmployeeViews.Designer.cs">
       <DependentUpon>EmployeeViews.cs</DependentUpon>
     </Compile>
+    <Compile Include="FoodIngredient_Views.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodIngredient_Views.Designer.cs">
+      <DependentUpon>FoodIngredient_Views.cs</DependentUpon>
+    </Compile>
     <Compile Include="FoodViews.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FoodViews.Designer.cs">
       <DependentUpon>FoodViews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Food_TypeViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Food_TypeViews.Designer.cs">
+      <DependentUpon>Food_TypeViews.cs</DependentUpon>
     </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
@@ -241,6 +259,9 @@
     <EmbeddedResource Include="CreateFood.resx">
       <DependentUpon>CreateFood.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreateFood_Type.resx">
+      <DependentUpon>CreateFood_Type.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateIngredient.resx">
       <DependentUpon>CreateIngredient.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,8 +289,14 @@
     <EmbeddedResource Include="EmployeeViews.resx">
       <DependentUpon>EmployeeViews.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FoodIngredient_Views.resx">
+      <DependentUpon>FoodIngredient_Views.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FoodViews.resx">
       <DependentUpon>FoodViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Food_TypeViews.resx">
+      <DependentUpon>Food_TypeViews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>

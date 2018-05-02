@@ -70,13 +70,13 @@ namespace Forms
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            int selectedrowindex = 0;
+            int selectedRowIndex = 0;
             if (table.SelectedCells.Count > 0)
             {
                 Software.Model.Employee employee = new Software.Model.Employee();
 
-                selectedrowindex = table.SelectedCells[0].RowIndex;
-                DataGridViewRow selectedRow = table.Rows[selectedrowindex];
+                selectedRowIndex = table.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = table.Rows[selectedRowIndex];
 
                 employee.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
                 employee.Name = nameBox.Text;
@@ -98,21 +98,21 @@ namespace Forms
                 MetroFramework.MetroMessageBox.Show(this, "You must select a row to update its value!", "Invalid Selection");
 
             DoRefresh();
-            table.Rows[selectedrowindex].Selected = true;
+            table.Rows[selectedRowIndex].Selected = true;
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
-            int selectedrowindex = 0;
+            int selectedRowIndex = 0;
             if (table.SelectedCells.Count > 0)
             {
-                selectedrowindex = table.SelectedCells[0].RowIndex;
-                DataGridViewRow selectedRow = table.Rows[selectedrowindex];
+                selectedRowIndex = table.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = table.Rows[selectedRowIndex];
                 int id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
                 Software.Database.SQL.EmployeeDB.DeleteEmployee(id);
             }
             else
-                MetroFramework.MetroMessageBox.Show(this, "You must select a row to delete it!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MetroFramework.MetroMessageBox.Show(this, "You must select a row to delete it!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             DoRefresh();
         }
