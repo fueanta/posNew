@@ -89,6 +89,7 @@ namespace Forms
                 MetroFramework.MetroMessageBox.Show(this, "You must select a row to update its value!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             DoRefresh();
+            table.CurrentCell = table.Rows[selectedRowIndex].Cells[0];
             table.Rows[selectedRowIndex].Selected = true;
         }
 

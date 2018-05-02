@@ -47,13 +47,13 @@ namespace Forms
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            int selectedrowindex = 0;
+            int selectedRowIndex = 0;
             if (table.SelectedCells.Count > 0)
             {
                 Software.Model.Customer_Type type = new Software.Model.Customer_Type();
 
-                selectedrowindex = table.SelectedCells[0].RowIndex;
-                DataGridViewRow selectedRow = table.Rows[selectedrowindex];
+                selectedRowIndex = table.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = table.Rows[selectedRowIndex];
 
                 type.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
                 type.Type_Title = typeTitleBox.Text;
@@ -66,7 +66,8 @@ namespace Forms
                 MetroFramework.MetroMessageBox.Show(this, "You must select a row to update its value!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             DoRefresh();
-            table.Rows[selectedrowindex].Selected = true;
+            table.CurrentCell = table.Rows[selectedRowIndex].Cells[0];
+            table.Rows[selectedRowIndex].Selected = true;
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
