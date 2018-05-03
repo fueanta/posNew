@@ -8,3 +8,4 @@ E:\CSharpProject\posNew\Software\obj\Debug\Software.csproj.CoreCompileInputs.cac
 E:\CSharpProject\posNew\Software\obj\Debug\Software.csproj.CopyComplete
 E:\CSharpProject\posNew\Software\obj\Debug\Software.exe
 E:\CSharpProject\posNew\Software\obj\Debug\Software.pdb
+E:\CSharpProject\posNew\Software\obj\Debug\Software.csprojResolveAssemblyReference.cache

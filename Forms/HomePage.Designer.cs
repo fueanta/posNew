@@ -35,7 +35,6 @@
             this.tileEmployees = new MetroFramework.Controls.MetroTile();
             this.tileCustomerType = new MetroFramework.Controls.MetroTile();
             this.tileCustomer = new MetroFramework.Controls.MetroTile();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
@@ -62,7 +61,7 @@
             this.tileIngredients.Size = new System.Drawing.Size(164, 164);
             this.tileIngredients.Style = MetroFramework.MetroColorStyle.Green;
             this.tileIngredients.TabIndex = 28;
-            this.tileIngredients.Text = "Ingredients";
+            this.tileIngredients.Text = "Ingredients Inventory";
             this.tileIngredients.UseSelectable = true;
             this.tileIngredients.Click += new System.EventHandler(this.tileIngredients_Click);
             // 
@@ -125,22 +124,10 @@
             this.tileCustomer.UseSelectable = true;
             this.tileCustomer.Click += new System.EventHandler(this.tileCustomer_Click);
             // 
-            // metroTile1
-            // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(49, 520);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(158, 164);
-            this.metroTile1.Style = MetroFramework.MetroColorStyle.Purple;
-            this.metroTile1.TabIndex = 33;
-            this.metroTile1.Text = "Inventory";
-            this.metroTile1.UseSelectable = true;
-            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
-            // 
             // metroTile2
             // 
             this.metroTile2.ActiveControl = null;
-            this.metroTile2.Location = new System.Drawing.Point(213, 520);
+            this.metroTile2.Location = new System.Drawing.Point(49, 509);
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(158, 164);
             this.metroTile2.Style = MetroFramework.MetroColorStyle.Brown;
@@ -164,7 +151,7 @@
             // metroTile4
             // 
             this.metroTile4.ActiveControl = null;
-            this.metroTile4.Location = new System.Drawing.Point(378, 520);
+            this.metroTile4.Location = new System.Drawing.Point(214, 509);
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.Size = new System.Drawing.Size(158, 164);
             this.metroTile4.Style = MetroFramework.MetroColorStyle.Lime;
@@ -176,7 +163,7 @@
             // metroTile5
             // 
             this.metroTile5.ActiveControl = null;
-            this.metroTile5.Location = new System.Drawing.Point(548, 520);
+            this.metroTile5.Location = new System.Drawing.Point(384, 509);
             this.metroTile5.Name = "metroTile5";
             this.metroTile5.Size = new System.Drawing.Size(158, 164);
             this.metroTile5.Style = MetroFramework.MetroColorStyle.Black;
@@ -194,7 +181,6 @@
             this.Controls.Add(this.metroTile4);
             this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.metroTile2);
-            this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.tileJobs);
             this.Controls.Add(this.tileIngredients);
             this.Controls.Add(this.tileFoods);
@@ -218,7 +204,6 @@
         private MetroFramework.Controls.MetroTile tileEmployees;
         private MetroFramework.Controls.MetroTile tileCustomerType;
         private MetroFramework.Controls.MetroTile tileCustomer;
-        private MetroFramework.Controls.MetroTile metroTile1;
         private MetroFramework.Controls.MetroTile metroTile2;
         private MetroFramework.Controls.MetroTile metroTile3;
         private MetroFramework.Controls.MetroTile metroTile4;
