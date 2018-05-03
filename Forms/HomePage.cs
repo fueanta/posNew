@@ -71,5 +71,10 @@ namespace Forms
         {
             new CreatePurchase().ShowDialog(this);
         }
+
+        private void metroTile5_Click(object sender, EventArgs e)
+        {
+            new Unit_TypeViews().ShowDialog(this);
+        }
     }
 }
