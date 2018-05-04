@@ -31,10 +31,10 @@
             this.cancelBtn = new System.Windows.Forms.Button();
             this.createBtn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.symbolBox = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.nameBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.nameBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.symbolBox = new MetroFramework.Controls.MetroTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,46 +81,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Unit Details";
             // 
-            // symbolBox
+            // metroLabel1
             // 
-            // 
-            // 
-            // 
-            this.symbolBox.CustomButton.Image = null;
-            this.symbolBox.CustomButton.Location = new System.Drawing.Point(182, 2);
-            this.symbolBox.CustomButton.Name = "";
-            this.symbolBox.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.symbolBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.symbolBox.CustomButton.TabIndex = 1;
-            this.symbolBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.symbolBox.CustomButton.UseSelectable = true;
-            this.symbolBox.CustomButton.Visible = false;
-            this.symbolBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.symbolBox.Lines = new string[0];
-            this.symbolBox.Location = new System.Drawing.Point(130, 82);
-            this.symbolBox.MaxLength = 32767;
-            this.symbolBox.Name = "symbolBox";
-            this.symbolBox.PasswordChar = '\0';
-            this.symbolBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.symbolBox.SelectedText = "";
-            this.symbolBox.SelectionLength = 0;
-            this.symbolBox.SelectionStart = 0;
-            this.symbolBox.ShortcutsEnabled = true;
-            this.symbolBox.Size = new System.Drawing.Size(210, 30);
-            this.symbolBox.TabIndex = 34;
-            this.symbolBox.UseSelectable = true;
-            this.symbolBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.symbolBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel2.Location = new System.Drawing.Point(15, 82);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(109, 25);
-            this.metroLabel2.TabIndex = 33;
-            this.metroLabel2.Text = "Unit Symbol";
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel1.Location = new System.Drawing.Point(15, 32);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(97, 25);
+            this.metroLabel1.TabIndex = 31;
+            this.metroLabel1.Text = "Unit Name";
             // 
             // nameBox
             // 
@@ -153,15 +122,46 @@
             this.nameBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.nameBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroLabel1
+            // metroLabel2
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.Location = new System.Drawing.Point(15, 32);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(97, 25);
-            this.metroLabel1.TabIndex = 31;
-            this.metroLabel1.Text = "Unit Name";
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel2.Location = new System.Drawing.Point(15, 82);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(109, 25);
+            this.metroLabel2.TabIndex = 33;
+            this.metroLabel2.Text = "Unit Symbol";
+            // 
+            // symbolBox
+            // 
+            // 
+            // 
+            // 
+            this.symbolBox.CustomButton.Image = null;
+            this.symbolBox.CustomButton.Location = new System.Drawing.Point(182, 2);
+            this.symbolBox.CustomButton.Name = "";
+            this.symbolBox.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.symbolBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.symbolBox.CustomButton.TabIndex = 1;
+            this.symbolBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.symbolBox.CustomButton.UseSelectable = true;
+            this.symbolBox.CustomButton.Visible = false;
+            this.symbolBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.symbolBox.Lines = new string[0];
+            this.symbolBox.Location = new System.Drawing.Point(130, 82);
+            this.symbolBox.MaxLength = 32767;
+            this.symbolBox.Name = "symbolBox";
+            this.symbolBox.PasswordChar = '\0';
+            this.symbolBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.symbolBox.SelectedText = "";
+            this.symbolBox.SelectionLength = 0;
+            this.symbolBox.SelectionStart = 0;
+            this.symbolBox.ShortcutsEnabled = true;
+            this.symbolBox.Size = new System.Drawing.Size(210, 30);
+            this.symbolBox.TabIndex = 34;
+            this.symbolBox.UseSelectable = true;
+            this.symbolBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.symbolBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // CreateUnit_Type
             // 
@@ -171,6 +171,7 @@
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.createBtn);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "CreateUnit_Type";
             this.Text = "Create a new Unit";
             this.groupBox1.ResumeLayout(false);

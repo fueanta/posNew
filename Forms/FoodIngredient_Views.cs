@@ -117,6 +117,7 @@ namespace Forms
             {
                 Software.Database.SQL.FoodIngredientDB.InsertFoodIngredient(usedIngredient, Id);
             }
+            Software.Database.SQL.FoodDB.UpdateStockCount(Id);
             MetroFramework.MetroMessageBox.Show(this, "Inventory Binding has been changed!", "Updated Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Close();
         }

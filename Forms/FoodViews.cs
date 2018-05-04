@@ -44,7 +44,7 @@ namespace Forms
                 descriptionBox.Text = Convert.ToString(selectedRow.Cells["Description"].Value);
                 discountBox.Text = Convert.ToString(selectedRow.Cells["Discount_Rate"].Value);
                 chargesBox.Text = Convert.ToString(selectedRow.Cells["Other_Charges"].Value);
-                //stockBox.Text = Convert.ToString(selectedRow.Cells["Stock_Count"].Value);
+                stockBox.Text = Convert.ToString(selectedRow.Cells["Stock_Count"].Value);
 
                 var availability = Convert.ToString(selectedRow.Cells["Availability"].Value);
                 if (availability.Equals("Yes"))
@@ -89,21 +89,26 @@ namespace Forms
                 selectedRowIndex = table.SelectedCells[0].RowIndex;
                 DataGridViewRow selectedRow = table.Rows[selectedRowIndex];
 
-                food.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
-                food.Name = nameBox.Text;
-                food.Price = Convert.ToInt32(priceBox.Text);
-                food.Description = descriptionBox.Text;
-                food.Type_Id = ((Software.Model.Food_Type)typeComboBox.SelectedItem).Id;
-                food.Discount_Rate = Convert.ToInt32(discountBox.Text);
-                food.Availability = infoGroup.Controls.OfType<RadioButton>()
-                    .FirstOrDefault(r => r.Checked).Text;
-                food.Other_Charges = Convert.ToInt32(chargesBox.Text);
-                //food.Stock_Count = Convert.ToInt32(stockBox.Text);
-                food.Picture = pictureBox.ImageLocation;
-
-                Software.Database.SQL.FoodDB.UpdateFood(food);
-
-                MetroFramework.MetroMessageBox.Show(this, "Your data has been updated.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                try
+                {
+                    food.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
+                    food.Name = nameBox.Text;
+                    food.Price = Convert.ToInt32(priceBox.Text);
+                    food.Description = descriptionBox.Text;
+                    food.Type_Id = ((Software.Model.Food_Type)typeComboBox.SelectedItem).Id;
+                    food.Discount_Rate = Convert.ToInt32(discountBox.Text);
+                    food.Availability = infoGroup.Controls.OfType<RadioButton>()
+                        .FirstOrDefault(r => r.Checked).Text;
+                    food.Other_Charges = Convert.ToInt32(chargesBox.Text);
+                    //food.Stock_Count = Convert.ToInt32(stockBox.Text);
+                    food.Picture = pictureBox.ImageLocation;
+                    Software.Database.SQL.FoodDB.UpdateFood(food);
+                    MetroFramework.MetroMessageBox.Show(this, "Your data has been updated.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MetroFramework.MetroMessageBox.Show(this, "Your data could not be updated.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else
                 MetroFramework.MetroMessageBox.Show(this, "You must select a row to update its value!", "Invalid Selection");

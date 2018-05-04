@@ -158,6 +158,7 @@
             this.Controls.Add(this.DescriptionBox);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel3);
+            this.MaximizeBox = false;
             this.Name = "CreateChangelog";
             this.Text = "CreateChangelog";
             this.ResumeLayout(false);

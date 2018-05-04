@@ -284,6 +284,7 @@
             this.Controls.Add(this.newBtn);
             this.Controls.Add(this.table);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "Changelog";
             this.Text = "Changelog";
             ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();

@@ -95,9 +95,11 @@ namespace Forms
                 MetroFramework.MetroMessageBox.Show(this, "Data has been deleted!", "Successful!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
-                MetroFramework.MetroMessageBox.Show(this, "You must select a row to delete it!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MetroFramework.MetroMessageBox.Show(this, "You must select a row to delete it!", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             DoRefresh();
+            
+
         }
 
         private void browseBtn_Click(object sender, EventArgs e)

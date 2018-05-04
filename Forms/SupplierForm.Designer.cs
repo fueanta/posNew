@@ -447,6 +447,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.createBtn);
             this.Controls.Add(this.deleteBtn);
+            this.MaximizeBox = false;
             this.Name = "SupplierForm";
             this.Text = "Suppliers";
             this.groupBox3.ResumeLayout(false);

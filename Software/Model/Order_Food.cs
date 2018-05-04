@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace Software.Model
 {
-    class Order_Food
+    public class Order_Food
     {
-        public int Order_Id { get; set; }
-        public int Food_Id { get; set; }
+        public string Name { get; set; }
         public int Count { get; set; }
+        public double Unit_Price { get; set; }
+        public int Food_Id { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
+
     }
 }

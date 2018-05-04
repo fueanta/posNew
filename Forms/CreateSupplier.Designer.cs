@@ -309,6 +309,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(553, 752);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "CreateSupplier";
             this.Text = "Add a new supplier";
             this.groupBox1.ResumeLayout(false);

@@ -478,6 +478,7 @@
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.createBtn);
             this.Controls.Add(this.infoGroup);
+            this.MaximizeBox = false;
             this.Name = "CreateFood";
             this.Text = "Add a new Food Item";
             this.infoGroup.ResumeLayout(false);

@@ -259,6 +259,7 @@
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.createBtn);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "CreateCustomer_Type";
             this.Text = "Create New Customer Type";
             this.groupBox1.ResumeLayout(false);

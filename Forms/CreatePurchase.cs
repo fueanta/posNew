@@ -149,7 +149,7 @@ namespace Forms
                 Discount_Rate = Convert.ToInt32(discountBox.Text),
                 Total_Cost = Convert.ToDouble(totalBox.Text)
             };
-            Software.Database.SQL.PuchaseDB.InsertPurchase(purchase);
+            Software.Database.SQL.PurchaseDB.InsertPurchase(purchase);
 
             foreach (var ingredient in bucket_ingredients)
             {
@@ -157,6 +157,11 @@ namespace Forms
             }
             
             MetroFramework.MetroMessageBox.Show(this, "Purchase has been added!", "Purchased Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Close();
+        }
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
             Close();
         }
     }

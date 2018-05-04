@@ -182,6 +182,7 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.jobTitileBox);
             this.Controls.Add(this.metroLabel1);
+            this.MaximizeBox = false;
             this.Name = "CreateJob";
             this.Text = " Create a new Job";
             this.groupBox1.ResumeLayout(false);

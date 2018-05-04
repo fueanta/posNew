@@ -16,7 +16,7 @@ namespace Software.Model
         public int Type_Id { get; set; }
         public int Discount_Rate { get; set; }
         public int Other_Charges { get; set; }
-        //public int Stock_Count { get; set; }
+        public int Stock_Count { get; set; }
         public string Picture { get; set; }
     }
 }

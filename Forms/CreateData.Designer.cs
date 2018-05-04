@@ -157,6 +157,7 @@
             this.Controls.Add(this.datavalBox);
             this.Controls.Add(this.nameBox);
             this.Controls.Add(this.metroLabel1);
+            this.MaximizeBox = false;
             this.Name = "CreateData";
             this.Text = "Add a new data";
             this.ResumeLayout(false);

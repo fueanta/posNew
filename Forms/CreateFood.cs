@@ -27,20 +27,28 @@ namespace Forms
         private void createBtn_Click(object sender, EventArgs e)
         {
             Software.Model.Food food = new Software.Model.Food();
-            food.Name = nameBox.Text;
-            food.Price = Convert.ToInt32(priceBox.Text);
-            food.Description = descriptionBox.Text;
-            food.Availability = infoGroup.Controls.OfType<RadioButton>()
-                    .FirstOrDefault(r => r.Checked).Text;
-            food.Type_Id = ((Software.Model.Food_Type)typeComboBox.SelectedItem).Id;
-            food.Discount_Rate = Convert.ToInt32(discountBox.Text);
-            food.Other_Charges = Convert.ToInt32(chargesBox.Text);
-            //food.Stock_Count = Convert.ToInt32(stockBox.Text);
-            food.Picture = pictureBox.ImageLocation;
+            try
+            {
+                food.Name = nameBox.Text;
+                food.Price = Convert.ToInt32(priceBox.Text);
+                food.Description = descriptionBox.Text;
+                food.Availability = infoGroup.Controls.OfType<RadioButton>()
+                        .FirstOrDefault(r => r.Checked).Text;
+                food.Type_Id = ((Software.Model.Food_Type)typeComboBox.SelectedItem).Id;
+                food.Discount_Rate = Convert.ToInt32(discountBox.Text);
+                food.Other_Charges = Convert.ToInt32(chargesBox.Text);
+                //food.Stock_Count = Convert.ToInt32(stockBox.Text);
+                food.Picture = pictureBox.ImageLocation;
 
-            Software.Database.SQL.FoodDB.InsertFood(food);
-            MetroFramework.MetroMessageBox.Show(this, "Data has been inserted!", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Close();
+                Software.Database.SQL.FoodDB.InsertFood(food);
+                MetroFramework.MetroMessageBox.Show(this, "Data has been inserted!", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MetroFramework.MetroMessageBox.Show(this, "Your data could not be inserted!", "Invalid data!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
 
         private void cancelBtn_Click(object sender, EventArgs e)

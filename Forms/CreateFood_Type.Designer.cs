@@ -171,6 +171,7 @@
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.createBtn);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "CreateFood_Type";
             this.Text = "Create a new type of food";
             this.groupBox1.ResumeLayout(false);

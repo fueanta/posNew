@@ -295,6 +295,7 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.nameBox);
             this.Controls.Add(this.metroLabel1);
+            this.MaximizeBox = false;
             this.Name = "Food_TypeViews";
             this.Text = "Food Types";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

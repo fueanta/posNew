@@ -25,7 +25,7 @@ namespace Forms
         private void browseBtn_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "images| *.JPG; *.PNG; *.GJF"; // you can add any other image type 
+            ofd.Filter = "images| *.JPG; *.PNG; *.GIF"; // you can add any other image type 
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 pictureBox.ImageLocation = ofd.FileName;

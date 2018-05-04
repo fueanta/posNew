@@ -62,8 +62,10 @@
     <Compile Include="Database\SQL\Food_TypeDB.cs" />
     <Compile Include="Database\SQL\IngredientDB.cs" />
     <Compile Include="Database\SQL\JobDB.cs" />
+    <Compile Include="Database\SQL\OrderDB.cs" />
+    <Compile Include="Database\SQL\OrderFoodDB.cs" />
     <Compile Include="Database\SQL\PeriodDB.cs" />
-    <Compile Include="Database\SQL\PuchaseDB.cs" />
+    <Compile Include="Database\SQL\PurchaseDB.cs" />
     <Compile Include="Database\SQL\PurchaseIngredientDB.cs" />
     <Compile Include="Database\SQL\Rotten_IngredientDB.cs" />
     <Compile Include="Database\SQL\SupplierDB.cs" />
@@ -96,6 +98,7 @@
     <Compile Include="Model\Unit_Type.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\ApplicationHelper.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

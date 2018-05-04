@@ -1,6 +1,6 @@
 ﻿namespace Forms
 {
-    partial class CreatePurchase
+    partial class PurchaseView
     {
         /// <summary>
         /// Required designer variable.
@@ -31,27 +31,26 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.pushLeft = new System.Windows.Forms.Button();
-            this.pushRight = new System.Windows.Forms.Button();
-            this.cancelBtn = new System.Windows.Forms.Button();
-            this.purchaseBtn = new System.Windows.Forms.Button();
+            this.totalLabel = new MetroFramework.Controls.MetroLabel();
+            this.generateBtn = new System.Windows.Forms.Button();
+            this.deleteBtn = new System.Windows.Forms.Button();
+            this.createBtn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.check = new MetroFramework.Controls.MetroCheckBox();
-            this.changeBtn = new System.Windows.Forms.Button();
-            this.amountBox = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.table = new MetroFramework.Controls.MetroGrid();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.ingredientList = new System.Windows.Forms.ListBox();
+            this.fromTime = new MetroFramework.Controls.MetroDateTime();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
+            this.toTime = new MetroFramework.Controls.MetroDateTime();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.employeeBox = new MetroFramework.Controls.MetroTextBox();
+            this.supplierBox = new MetroFramework.Controls.MetroTextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.descriptionBox = new MetroFramework.Controls.MetroTextBox();
             this.totalBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.costBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.supplierBox = new MetroFramework.Controls.MetroComboBox();
-            this.employeeBox = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.timeBox = new MetroFramework.Controls.MetroDateTime();
             this.discountBox = new MetroFramework.Controls.MetroTextBox();
@@ -65,147 +64,74 @@
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pushLeft
+            // totalLabel
             // 
-            this.pushLeft.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.pushLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pushLeft.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.pushLeft.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pushLeft.Location = new System.Drawing.Point(338, 294);
-            this.pushLeft.Name = "pushLeft";
-            this.pushLeft.Size = new System.Drawing.Size(61, 35);
-            this.pushLeft.TabIndex = 67;
-            this.pushLeft.Text = "<<";
-            this.pushLeft.UseVisualStyleBackColor = false;
-            this.pushLeft.Click += new System.EventHandler(this.pushLeft_Click);
+            this.totalLabel.AutoSize = true;
+            this.totalLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.totalLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.totalLabel.Location = new System.Drawing.Point(339, 577);
+            this.totalLabel.Name = "totalLabel";
+            this.totalLabel.Size = new System.Drawing.Size(58, 25);
+            this.totalLabel.TabIndex = 93;
+            this.totalLabel.Text = "Cost :";
             // 
-            // pushRight
+            // generateBtn
             // 
-            this.pushRight.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.pushRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pushRight.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.pushRight.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pushRight.Location = new System.Drawing.Point(338, 234);
-            this.pushRight.Name = "pushRight";
-            this.pushRight.Size = new System.Drawing.Size(61, 35);
-            this.pushRight.TabIndex = 66;
-            this.pushRight.Text = ">>";
-            this.pushRight.UseVisualStyleBackColor = false;
-            this.pushRight.Click += new System.EventHandler(this.pushRight_Click);
+            this.generateBtn.BackColor = System.Drawing.Color.ForestGreen;
+            this.generateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.generateBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
+            this.generateBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.generateBtn.Location = new System.Drawing.Point(232, 658);
+            this.generateBtn.Name = "generateBtn";
+            this.generateBtn.Size = new System.Drawing.Size(165, 46);
+            this.generateBtn.TabIndex = 92;
+            this.generateBtn.Text = "Generate";
+            this.generateBtn.UseVisualStyleBackColor = false;
+            this.generateBtn.Click += new System.EventHandler(this.generateBtn_Click_1);
             // 
-            // cancelBtn
+            // deleteBtn
             // 
-            this.cancelBtn.BackColor = System.Drawing.Color.Tomato;
-            this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
-            this.cancelBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cancelBtn.Location = new System.Drawing.Point(490, 520);
-            this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(165, 46);
-            this.cancelBtn.TabIndex = 65;
-            this.cancelBtn.Text = "Cancel";
-            this.cancelBtn.UseVisualStyleBackColor = false;
-            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
+            this.deleteBtn.BackColor = System.Drawing.Color.Tomato;
+            this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
+            this.deleteBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.deleteBtn.Location = new System.Drawing.Point(415, 658);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(165, 46);
+            this.deleteBtn.TabIndex = 91;
+            this.deleteBtn.Text = "Delete";
+            this.deleteBtn.UseVisualStyleBackColor = false;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
-            // purchaseBtn
+            // createBtn
             // 
-            this.purchaseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            this.purchaseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.purchaseBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.purchaseBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.purchaseBtn.Location = new System.Drawing.Point(182, 520);
-            this.purchaseBtn.Name = "purchaseBtn";
-            this.purchaseBtn.Size = new System.Drawing.Size(165, 46);
-            this.purchaseBtn.TabIndex = 64;
-            this.purchaseBtn.Text = "Purchase";
-            this.purchaseBtn.UseVisualStyleBackColor = false;
-            this.purchaseBtn.Click += new System.EventHandler(this.purchaseBtn_Click);
+            this.createBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.createBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.createBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.createBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.createBtn.Location = new System.Drawing.Point(48, 658);
+            this.createBtn.Name = "createBtn";
+            this.createBtn.Size = new System.Drawing.Size(165, 46);
+            this.createBtn.TabIndex = 90;
+            this.createBtn.Text = "Create";
+            this.createBtn.UseVisualStyleBackColor = false;
+            this.createBtn.Click += new System.EventHandler(this.createBtn_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.check);
-            this.groupBox2.Controls.Add(this.changeBtn);
-            this.groupBox2.Controls.Add(this.amountBox);
-            this.groupBox2.Controls.Add(this.metroLabel8);
             this.groupBox2.Controls.Add(this.table);
-            this.groupBox2.Location = new System.Drawing.Point(434, 47);
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.groupBox2.Location = new System.Drawing.Point(29, 68);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(382, 433);
-            this.groupBox2.TabIndex = 63;
+            this.groupBox2.Size = new System.Drawing.Size(570, 492);
+            this.groupBox2.TabIndex = 89;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Bucket Box";
-            // 
-            // check
-            // 
-            this.check.AutoSize = true;
-            this.check.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.check.Location = new System.Drawing.Point(40, 373);
-            this.check.Name = "check";
-            this.check.Size = new System.Drawing.Size(186, 20);
-            this.check.TabIndex = 61;
-            this.check.Text = "Use Small(gm, litre) Unit";
-            this.check.UseSelectable = true;
-            // 
-            // changeBtn
-            // 
-            this.changeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            this.changeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changeBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.changeBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.changeBtn.Location = new System.Drawing.Point(275, 376);
-            this.changeBtn.Name = "changeBtn";
-            this.changeBtn.Size = new System.Drawing.Size(90, 39);
-            this.changeBtn.TabIndex = 59;
-            this.changeBtn.Text = "Change";
-            this.changeBtn.UseVisualStyleBackColor = false;
-            this.changeBtn.Click += new System.EventHandler(this.changeBtn_Click);
-            // 
-            // amountBox
-            // 
-            // 
-            // 
-            // 
-            this.amountBox.CustomButton.Image = null;
-            this.amountBox.CustomButton.Location = new System.Drawing.Point(91, 2);
-            this.amountBox.CustomButton.Name = "";
-            this.amountBox.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.amountBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.amountBox.CustomButton.TabIndex = 1;
-            this.amountBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.amountBox.CustomButton.UseSelectable = true;
-            this.amountBox.CustomButton.Visible = false;
-            this.amountBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.amountBox.Lines = new string[0];
-            this.amountBox.Location = new System.Drawing.Point(137, 322);
-            this.amountBox.MaxLength = 32767;
-            this.amountBox.Name = "amountBox";
-            this.amountBox.PasswordChar = '\0';
-            this.amountBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.amountBox.SelectedText = "";
-            this.amountBox.SelectionLength = 0;
-            this.amountBox.SelectionStart = 0;
-            this.amountBox.ShortcutsEnabled = true;
-            this.amountBox.Size = new System.Drawing.Size(119, 30);
-            this.amountBox.TabIndex = 48;
-            this.amountBox.UseSelectable = true;
-            this.amountBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.amountBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel8
-            // 
-            this.metroLabel8.AutoSize = true;
-            this.metroLabel8.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel8.Location = new System.Drawing.Point(40, 322);
-            this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(77, 25);
-            this.metroLabel8.TabIndex = 47;
-            this.metroLabel8.Text = "Amount";
+            this.groupBox2.Text = "Purchases Within Time Range ";
             // 
             // table
             // 
             this.table.AllowUserToAddRows = false;
             this.table.AllowUserToDeleteRows = false;
-            this.table.AllowUserToResizeColumns = false;
             this.table.AllowUserToResizeRows = false;
             this.table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.table.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -232,7 +158,7 @@
             this.table.EnableHeadersVisualStyles = false;
             this.table.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.table.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.table.Location = new System.Drawing.Point(6, 23);
+            this.table.Location = new System.Drawing.Point(19, 31);
             this.table.MultiSelect = false;
             this.table.Name = "table";
             this.table.ReadOnly = true;
@@ -248,50 +174,142 @@
             this.table.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.table.RowTemplate.Height = 24;
             this.table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.table.Size = new System.Drawing.Size(370, 281);
-            this.table.TabIndex = 19;
+            this.table.Size = new System.Drawing.Size(532, 441);
+            this.table.TabIndex = 18;
             this.table.SelectionChanged += new System.EventHandler(this.table_SelectionChanged);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.ingredientList);
-            this.groupBox1.Location = new System.Drawing.Point(32, 70);
+            this.groupBox1.Controls.Add(this.fromTime);
+            this.groupBox1.Controls.Add(this.metroLabel9);
+            this.groupBox1.Controls.Add(this.toTime);
+            this.groupBox1.Controls.Add(this.metroLabel8);
+            this.groupBox1.Location = new System.Drawing.Point(638, 25);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(271, 410);
-            this.groupBox1.TabIndex = 62;
+            this.groupBox1.Size = new System.Drawing.Size(347, 134);
+            this.groupBox1.TabIndex = 88;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Available Ingredients";
+            this.groupBox1.Text = "Select Time Range";
             // 
-            // ingredientList
+            // fromTime
             // 
-            this.ingredientList.FormattingEnabled = true;
-            this.ingredientList.ItemHeight = 16;
-            this.ingredientList.Location = new System.Drawing.Point(22, 31);
-            this.ingredientList.Name = "ingredientList";
-            this.ingredientList.Size = new System.Drawing.Size(225, 356);
-            this.ingredientList.TabIndex = 60;
+            this.fromTime.Location = new System.Drawing.Point(101, 31);
+            this.fromTime.MinimumSize = new System.Drawing.Size(0, 30);
+            this.fromTime.Name = "fromTime";
+            this.fromTime.Size = new System.Drawing.Size(200, 30);
+            this.fromTime.TabIndex = 77;
+            // 
+            // metroLabel9
+            // 
+            this.metroLabel9.AutoSize = true;
+            this.metroLabel9.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel9.Location = new System.Drawing.Point(38, 81);
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.Size = new System.Drawing.Size(30, 25);
+            this.metroLabel9.TabIndex = 80;
+            this.metroLabel9.Text = "To";
+            // 
+            // toTime
+            // 
+            this.toTime.Location = new System.Drawing.Point(101, 81);
+            this.toTime.MinimumSize = new System.Drawing.Size(0, 30);
+            this.toTime.Name = "toTime";
+            this.toTime.Size = new System.Drawing.Size(200, 30);
+            this.toTime.TabIndex = 78;
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel8.Location = new System.Drawing.Point(14, 31);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(54, 25);
+            this.metroLabel8.TabIndex = 79;
+            this.metroLabel8.Text = "From";
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.employeeBox);
+            this.groupBox3.Controls.Add(this.supplierBox);
             this.groupBox3.Controls.Add(this.groupBox4);
             this.groupBox3.Controls.Add(this.totalBox);
             this.groupBox3.Controls.Add(this.metroLabel7);
             this.groupBox3.Controls.Add(this.costBox);
             this.groupBox3.Controls.Add(this.metroLabel1);
-            this.groupBox3.Controls.Add(this.supplierBox);
-            this.groupBox3.Controls.Add(this.employeeBox);
             this.groupBox3.Controls.Add(this.metroLabel6);
             this.groupBox3.Controls.Add(this.timeBox);
             this.groupBox3.Controls.Add(this.discountBox);
             this.groupBox3.Controls.Add(this.metroLabel5);
             this.groupBox3.Controls.Add(this.metroLabel4);
             this.groupBox3.Controls.Add(this.metroLabel2);
-            this.groupBox3.Location = new System.Drawing.Point(864, 47);
+            this.groupBox3.Location = new System.Drawing.Point(638, 186);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(347, 537);
-            this.groupBox3.TabIndex = 68;
+            this.groupBox3.TabIndex = 94;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Purchase Information";
+            // 
+            // employeeBox
+            // 
+            // 
+            // 
+            // 
+            this.employeeBox.CustomButton.Image = null;
+            this.employeeBox.CustomButton.Location = new System.Drawing.Point(176, 2);
+            this.employeeBox.CustomButton.Name = "";
+            this.employeeBox.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.employeeBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.employeeBox.CustomButton.TabIndex = 1;
+            this.employeeBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.employeeBox.CustomButton.UseSelectable = true;
+            this.employeeBox.CustomButton.Visible = false;
+            this.employeeBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.employeeBox.Lines = new string[0];
+            this.employeeBox.Location = new System.Drawing.Point(115, 102);
+            this.employeeBox.MaxLength = 32767;
+            this.employeeBox.Name = "employeeBox";
+            this.employeeBox.PasswordChar = '\0';
+            this.employeeBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.employeeBox.SelectedText = "";
+            this.employeeBox.SelectionLength = 0;
+            this.employeeBox.SelectionStart = 0;
+            this.employeeBox.ShortcutsEnabled = true;
+            this.employeeBox.Size = new System.Drawing.Size(204, 30);
+            this.employeeBox.TabIndex = 74;
+            this.employeeBox.UseSelectable = true;
+            this.employeeBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.employeeBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // supplierBox
+            // 
+            // 
+            // 
+            // 
+            this.supplierBox.CustomButton.Image = null;
+            this.supplierBox.CustomButton.Location = new System.Drawing.Point(176, 2);
+            this.supplierBox.CustomButton.Name = "";
+            this.supplierBox.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.supplierBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.supplierBox.CustomButton.TabIndex = 1;
+            this.supplierBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.supplierBox.CustomButton.UseSelectable = true;
+            this.supplierBox.CustomButton.Visible = false;
+            this.supplierBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.supplierBox.Lines = new string[0];
+            this.supplierBox.Location = new System.Drawing.Point(115, 164);
+            this.supplierBox.MaxLength = 32767;
+            this.supplierBox.Name = "supplierBox";
+            this.supplierBox.PasswordChar = '\0';
+            this.supplierBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.supplierBox.SelectedText = "";
+            this.supplierBox.SelectionLength = 0;
+            this.supplierBox.SelectionStart = 0;
+            this.supplierBox.ShortcutsEnabled = true;
+            this.supplierBox.Size = new System.Drawing.Size(204, 30);
+            this.supplierBox.TabIndex = 73;
+            this.supplierBox.UseSelectable = true;
+            this.supplierBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.supplierBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // groupBox4
             // 
@@ -419,26 +437,6 @@
             this.metroLabel1.TabIndex = 68;
             this.metroLabel1.Text = "Cost";
             // 
-            // supplierBox
-            // 
-            this.supplierBox.FormattingEnabled = true;
-            this.supplierBox.ItemHeight = 24;
-            this.supplierBox.Location = new System.Drawing.Point(115, 164);
-            this.supplierBox.Name = "supplierBox";
-            this.supplierBox.Size = new System.Drawing.Size(204, 30);
-            this.supplierBox.TabIndex = 67;
-            this.supplierBox.UseSelectable = true;
-            // 
-            // employeeBox
-            // 
-            this.employeeBox.FormattingEnabled = true;
-            this.employeeBox.ItemHeight = 24;
-            this.employeeBox.Location = new System.Drawing.Point(115, 102);
-            this.employeeBox.Name = "employeeBox";
-            this.employeeBox.Size = new System.Drawing.Size(204, 30);
-            this.employeeBox.TabIndex = 66;
-            this.employeeBox.UseSelectable = true;
-            // 
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
@@ -514,64 +512,64 @@
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel2.Location = new System.Drawing.Point(20, 102);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(89, 25);
+            this.metroLabel2.Size = new System.Drawing.Size(93, 25);
             this.metroLabel2.TabIndex = 51;
-            this.metroLabel2.Text = "Employer";
+            this.metroLabel2.Text = "Employee";
             // 
-            // CreatePurchase
+            // PurchaseView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1244, 607);
+            this.ClientSize = new System.Drawing.Size(1014, 758);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.pushLeft);
-            this.Controls.Add(this.pushRight);
-            this.Controls.Add(this.cancelBtn);
-            this.Controls.Add(this.purchaseBtn);
+            this.Controls.Add(this.totalLabel);
+            this.Controls.Add(this.generateBtn);
+            this.Controls.Add(this.deleteBtn);
+            this.Controls.Add(this.createBtn);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
-            this.Name = "CreatePurchase";
-            this.Text = "Purchase Ingredients";
+            this.Name = "PurchaseView";
+            this.Text = "Purchases";
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button pushLeft;
-        private System.Windows.Forms.Button pushRight;
-        private System.Windows.Forms.Button cancelBtn;
-        private System.Windows.Forms.Button purchaseBtn;
+        private MetroFramework.Controls.MetroLabel totalLabel;
+        private System.Windows.Forms.Button generateBtn;
+        private System.Windows.Forms.Button deleteBtn;
+        private System.Windows.Forms.Button createBtn;
         private System.Windows.Forms.GroupBox groupBox2;
-        private MetroFramework.Controls.MetroCheckBox check;
-        private System.Windows.Forms.Button changeBtn;
-        private MetroFramework.Controls.MetroTextBox amountBox;
-        private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroGrid table;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox ingredientList;
+        private MetroFramework.Controls.MetroDateTime fromTime;
+        private MetroFramework.Controls.MetroLabel metroLabel9;
+        private MetroFramework.Controls.MetroDateTime toTime;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
         private System.Windows.Forms.GroupBox groupBox3;
-        private MetroFramework.Controls.MetroTextBox discountBox;
-        private MetroFramework.Controls.MetroLabel metroLabel5;
-        private MetroFramework.Controls.MetroLabel metroLabel4;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroTextBox employeeBox;
+        private MetroFramework.Controls.MetroTextBox supplierBox;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private MetroFramework.Controls.MetroTextBox descriptionBox;
         private MetroFramework.Controls.MetroTextBox totalBox;
         private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroTextBox costBox;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroComboBox supplierBox;
-        private MetroFramework.Controls.MetroComboBox employeeBox;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroDateTime timeBox;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private MetroFramework.Controls.MetroTextBox descriptionBox;
+        private MetroFramework.Controls.MetroTextBox discountBox;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
     }
 }

@@ -233,6 +233,7 @@
             this.Controls.Add(this.hireDateTime);
             this.Controls.Add(this.metroTextBox1);
             this.Controls.Add(this.metroLabel3);
+            this.MaximizeBox = false;
             this.Name = "CreateEmployeePayment";
             this.Text = "Add a new payment";
             this.ResumeLayout(false);

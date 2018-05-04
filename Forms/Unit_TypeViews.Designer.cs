@@ -295,6 +295,7 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.nameBox);
             this.Controls.Add(this.metroLabel1);
+            this.MaximizeBox = false;
             this.Name = "Unit_TypeViews";
             this.Text = "Units";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -32,9 +32,9 @@ namespace Software.Database.SQL
                 Type_Id = Int32.Parse(row["Type_Id"].ToString()),
                 Discount_Rate = Int32.Parse(row["Discount_Rate"].ToString()),
                 Availability = row["Availability"].ToString(),
-                Other_Charges = Int32.Parse(row["Other_Charges"].ToString()),
-                //Stock_Count = Int32.Parse(row["Stock_Count"].ToString()),
-                Picture = row["Picture"].ToString()
+                Other_Charges = Int32.Parse(row["Other_Charges"].ToString()),                
+                Picture = row["Picture"].ToString(),
+                Stock_Count = Int32.Parse(row["Stock_Count"].ToString())
             };
             return food;
         }
@@ -65,5 +65,18 @@ namespace Software.Database.SQL
                 "END;";
             DB_Handler.ExecuteQuery(query);
         }
+
+        public static void UpdateStockCount(int Id)
+        {
+            string query =
+                "DECLARE " +
+                "COUNT number; " +
+                "BEGIN " +
+                "COUNT := generate_StockCount(" + Id + "); " +
+                "UPDATE food SET STOCK_COUNT = COUNT WHERE Id = " + Id + "; " +
+                "END;";
+            DB_Handler.ExecuteQuery(query);
+        }
+
     }
 }

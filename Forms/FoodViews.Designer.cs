@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FoodViews));
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.table = new MetroFramework.Controls.MetroGrid();
@@ -40,8 +40,15 @@
             this.updateBtn = new System.Windows.Forms.Button();
             this.createBtn = new System.Windows.Forms.Button();
             this.infoGroup = new System.Windows.Forms.GroupBox();
+            this.radioNo = new MaterialSkin.Controls.MaterialRadioButton();
+            this.radioYes = new MaterialSkin.Controls.MaterialRadioButton();
+            this.stockBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.chargesBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.browseBtn = new MetroFramework.Controls.MetroButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.descriptionBox = new MetroFramework.Controls.MetroTextBox();
             this.typeComboBox = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.discountBox = new MetroFramework.Controls.MetroTextBox();
@@ -54,13 +61,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.inventoryBtn = new System.Windows.Forms.Button();
-            this.descriptionBox = new MetroFramework.Controls.MetroTextBox();
-            this.stockBox = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.chargesBox = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.radioYes = new MaterialSkin.Controls.MaterialRadioButton();
-            this.radioNo = new MaterialSkin.Controls.MaterialRadioButton();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -91,23 +91,23 @@
             this.table.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.table.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.table.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(230)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(230)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.table.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.table.DefaultCellStyle = dataGridViewCellStyle2;
             this.table.EnableHeadersVisualStyles = false;
             this.table.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.table.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -116,14 +116,14 @@
             this.table.Name = "table";
             this.table.ReadOnly = true;
             this.table.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.table.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.table.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.table.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.table.RowTemplate.Height = 24;
             this.table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -250,6 +250,122 @@
             this.infoGroup.TabStop = false;
             this.infoGroup.Text = "Food Information";
             // 
+            // radioNo
+            // 
+            this.radioNo.AutoSize = true;
+            this.radioNo.Depth = 0;
+            this.radioNo.Font = new System.Drawing.Font("Roboto", 10F);
+            this.radioNo.Location = new System.Drawing.Point(244, 432);
+            this.radioNo.Margin = new System.Windows.Forms.Padding(0);
+            this.radioNo.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.radioNo.MouseState = MaterialSkin.MouseState.HOVER;
+            this.radioNo.Name = "radioNo";
+            this.radioNo.Ripple = true;
+            this.radioNo.Size = new System.Drawing.Size(52, 30);
+            this.radioNo.TabIndex = 65;
+            this.radioNo.TabStop = true;
+            this.radioNo.Text = "No";
+            this.radioNo.UseVisualStyleBackColor = true;
+            // 
+            // radioYes
+            // 
+            this.radioYes.AutoSize = true;
+            this.radioYes.Depth = 0;
+            this.radioYes.Font = new System.Drawing.Font("Roboto", 10F);
+            this.radioYes.Location = new System.Drawing.Point(160, 432);
+            this.radioYes.Margin = new System.Windows.Forms.Padding(0);
+            this.radioYes.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.radioYes.MouseState = MaterialSkin.MouseState.HOVER;
+            this.radioYes.Name = "radioYes";
+            this.radioYes.Ripple = true;
+            this.radioYes.Size = new System.Drawing.Size(59, 30);
+            this.radioYes.TabIndex = 64;
+            this.radioYes.TabStop = true;
+            this.radioYes.Text = "Yes";
+            this.radioYes.UseVisualStyleBackColor = true;
+            // 
+            // stockBox
+            // 
+            // 
+            // 
+            // 
+            this.stockBox.CustomButton.Image = null;
+            this.stockBox.CustomButton.Location = new System.Drawing.Point(134, 2);
+            this.stockBox.CustomButton.Name = "";
+            this.stockBox.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.stockBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.stockBox.CustomButton.TabIndex = 1;
+            this.stockBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.stockBox.CustomButton.UseSelectable = true;
+            this.stockBox.CustomButton.Visible = false;
+            this.stockBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.stockBox.Lines = new string[0];
+            this.stockBox.Location = new System.Drawing.Point(160, 372);
+            this.stockBox.MaxLength = 32767;
+            this.stockBox.Name = "stockBox";
+            this.stockBox.PasswordChar = '\0';
+            this.stockBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.stockBox.SelectedText = "";
+            this.stockBox.SelectionLength = 0;
+            this.stockBox.SelectionStart = 0;
+            this.stockBox.ShortcutsEnabled = true;
+            this.stockBox.Size = new System.Drawing.Size(162, 30);
+            this.stockBox.TabIndex = 63;
+            this.stockBox.UseSelectable = true;
+            this.stockBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.stockBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel5.Location = new System.Drawing.Point(16, 372);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(108, 25);
+            this.metroLabel5.TabIndex = 62;
+            this.metroLabel5.Text = "Stock Count";
+            // 
+            // chargesBox
+            // 
+            // 
+            // 
+            // 
+            this.chargesBox.CustomButton.Image = null;
+            this.chargesBox.CustomButton.Location = new System.Drawing.Point(134, 2);
+            this.chargesBox.CustomButton.Name = "";
+            this.chargesBox.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.chargesBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.chargesBox.CustomButton.TabIndex = 1;
+            this.chargesBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.chargesBox.CustomButton.UseSelectable = true;
+            this.chargesBox.CustomButton.Visible = false;
+            this.chargesBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.chargesBox.Lines = new string[0];
+            this.chargesBox.Location = new System.Drawing.Point(160, 302);
+            this.chargesBox.MaxLength = 32767;
+            this.chargesBox.Name = "chargesBox";
+            this.chargesBox.PasswordChar = '\0';
+            this.chargesBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.chargesBox.SelectedText = "";
+            this.chargesBox.SelectionLength = 0;
+            this.chargesBox.SelectionStart = 0;
+            this.chargesBox.ShortcutsEnabled = true;
+            this.chargesBox.Size = new System.Drawing.Size(162, 30);
+            this.chargesBox.TabIndex = 61;
+            this.chargesBox.UseSelectable = true;
+            this.chargesBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.chargesBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel6.Location = new System.Drawing.Point(16, 302);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(128, 25);
+            this.metroLabel6.TabIndex = 60;
+            this.metroLabel6.Text = "Other Charges";
+            // 
             // browseBtn
             // 
             this.browseBtn.BackColor = System.Drawing.Color.RoyalBlue;
@@ -277,6 +393,38 @@
             this.groupBox3.TabIndex = 58;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Description";
+            // 
+            // descriptionBox
+            // 
+            // 
+            // 
+            // 
+            this.descriptionBox.CustomButton.Image = null;
+            this.descriptionBox.CustomButton.Location = new System.Drawing.Point(198, 1);
+            this.descriptionBox.CustomButton.Name = "";
+            this.descriptionBox.CustomButton.Size = new System.Drawing.Size(81, 81);
+            this.descriptionBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.descriptionBox.CustomButton.TabIndex = 1;
+            this.descriptionBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.descriptionBox.CustomButton.UseSelectable = true;
+            this.descriptionBox.CustomButton.Visible = false;
+            this.descriptionBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.descriptionBox.Lines = new string[0];
+            this.descriptionBox.Location = new System.Drawing.Point(6, 26);
+            this.descriptionBox.MaxLength = 32767;
+            this.descriptionBox.Multiline = true;
+            this.descriptionBox.Name = "descriptionBox";
+            this.descriptionBox.PasswordChar = '\0';
+            this.descriptionBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.descriptionBox.SelectedText = "";
+            this.descriptionBox.SelectionLength = 0;
+            this.descriptionBox.SelectionStart = 0;
+            this.descriptionBox.ShortcutsEnabled = true;
+            this.descriptionBox.Size = new System.Drawing.Size(280, 83);
+            this.descriptionBox.TabIndex = 42;
+            this.descriptionBox.UseSelectable = true;
+            this.descriptionBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.descriptionBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // typeComboBox
             // 
@@ -467,155 +615,6 @@
             this.inventoryBtn.UseVisualStyleBackColor = false;
             this.inventoryBtn.Click += new System.EventHandler(this.inventoryBtn_Click);
             // 
-            // descriptionBox
-            // 
-            // 
-            // 
-            // 
-            this.descriptionBox.CustomButton.Image = null;
-            this.descriptionBox.CustomButton.Location = new System.Drawing.Point(198, 1);
-            this.descriptionBox.CustomButton.Name = "";
-            this.descriptionBox.CustomButton.Size = new System.Drawing.Size(81, 81);
-            this.descriptionBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.descriptionBox.CustomButton.TabIndex = 1;
-            this.descriptionBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.descriptionBox.CustomButton.UseSelectable = true;
-            this.descriptionBox.CustomButton.Visible = false;
-            this.descriptionBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.descriptionBox.Lines = new string[0];
-            this.descriptionBox.Location = new System.Drawing.Point(6, 26);
-            this.descriptionBox.MaxLength = 32767;
-            this.descriptionBox.Multiline = true;
-            this.descriptionBox.Name = "descriptionBox";
-            this.descriptionBox.PasswordChar = '\0';
-            this.descriptionBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.descriptionBox.SelectedText = "";
-            this.descriptionBox.SelectionLength = 0;
-            this.descriptionBox.SelectionStart = 0;
-            this.descriptionBox.ShortcutsEnabled = true;
-            this.descriptionBox.Size = new System.Drawing.Size(280, 83);
-            this.descriptionBox.TabIndex = 42;
-            this.descriptionBox.UseSelectable = true;
-            this.descriptionBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.descriptionBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // stockBox
-            // 
-            // 
-            // 
-            // 
-            this.stockBox.CustomButton.Image = null;
-            this.stockBox.CustomButton.Location = new System.Drawing.Point(134, 2);
-            this.stockBox.CustomButton.Name = "";
-            this.stockBox.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.stockBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.stockBox.CustomButton.TabIndex = 1;
-            this.stockBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.stockBox.CustomButton.UseSelectable = true;
-            this.stockBox.CustomButton.Visible = false;
-            this.stockBox.Enabled = false;
-            this.stockBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.stockBox.Lines = new string[0];
-            this.stockBox.Location = new System.Drawing.Point(160, 372);
-            this.stockBox.MaxLength = 32767;
-            this.stockBox.Name = "stockBox";
-            this.stockBox.PasswordChar = '\0';
-            this.stockBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.stockBox.SelectedText = "";
-            this.stockBox.SelectionLength = 0;
-            this.stockBox.SelectionStart = 0;
-            this.stockBox.ShortcutsEnabled = true;
-            this.stockBox.Size = new System.Drawing.Size(162, 30);
-            this.stockBox.TabIndex = 63;
-            this.stockBox.UseSelectable = true;
-            this.stockBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.stockBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel5
-            // 
-            this.metroLabel5.AutoSize = true;
-            this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel5.Location = new System.Drawing.Point(16, 372);
-            this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(108, 25);
-            this.metroLabel5.TabIndex = 62;
-            this.metroLabel5.Text = "Stock Count";
-            // 
-            // chargesBox
-            // 
-            // 
-            // 
-            // 
-            this.chargesBox.CustomButton.Image = null;
-            this.chargesBox.CustomButton.Location = new System.Drawing.Point(134, 2);
-            this.chargesBox.CustomButton.Name = "";
-            this.chargesBox.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.chargesBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.chargesBox.CustomButton.TabIndex = 1;
-            this.chargesBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.chargesBox.CustomButton.UseSelectable = true;
-            this.chargesBox.CustomButton.Visible = false;
-            this.chargesBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.chargesBox.Lines = new string[0];
-            this.chargesBox.Location = new System.Drawing.Point(160, 302);
-            this.chargesBox.MaxLength = 32767;
-            this.chargesBox.Name = "chargesBox";
-            this.chargesBox.PasswordChar = '\0';
-            this.chargesBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.chargesBox.SelectedText = "";
-            this.chargesBox.SelectionLength = 0;
-            this.chargesBox.SelectionStart = 0;
-            this.chargesBox.ShortcutsEnabled = true;
-            this.chargesBox.Size = new System.Drawing.Size(162, 30);
-            this.chargesBox.TabIndex = 61;
-            this.chargesBox.UseSelectable = true;
-            this.chargesBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.chargesBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel6
-            // 
-            this.metroLabel6.AutoSize = true;
-            this.metroLabel6.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel6.Location = new System.Drawing.Point(16, 302);
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(128, 25);
-            this.metroLabel6.TabIndex = 60;
-            this.metroLabel6.Text = "Other Charges";
-            // 
-            // radioYes
-            // 
-            this.radioYes.AutoSize = true;
-            this.radioYes.Depth = 0;
-            this.radioYes.Font = new System.Drawing.Font("Roboto", 10F);
-            this.radioYes.Location = new System.Drawing.Point(160, 432);
-            this.radioYes.Margin = new System.Windows.Forms.Padding(0);
-            this.radioYes.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.radioYes.MouseState = MaterialSkin.MouseState.HOVER;
-            this.radioYes.Name = "radioYes";
-            this.radioYes.Ripple = true;
-            this.radioYes.Size = new System.Drawing.Size(59, 30);
-            this.radioYes.TabIndex = 64;
-            this.radioYes.TabStop = true;
-            this.radioYes.Text = "Yes";
-            this.radioYes.UseVisualStyleBackColor = true;
-            // 
-            // radioNo
-            // 
-            this.radioNo.AutoSize = true;
-            this.radioNo.Depth = 0;
-            this.radioNo.Font = new System.Drawing.Font("Roboto", 10F);
-            this.radioNo.Location = new System.Drawing.Point(244, 432);
-            this.radioNo.Margin = new System.Windows.Forms.Padding(0);
-            this.radioNo.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.radioNo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.radioNo.Name = "radioNo";
-            this.radioNo.Ripple = true;
-            this.radioNo.Size = new System.Drawing.Size(52, 30);
-            this.radioNo.TabIndex = 65;
-            this.radioNo.TabStop = true;
-            this.radioNo.Text = "No";
-            this.radioNo.UseVisualStyleBackColor = true;
-            // 
             // FoodViews
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -629,6 +628,7 @@
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.createBtn);
             this.Controls.Add(this.infoGroup);
+            this.MaximizeBox = false;
             this.Name = "FoodViews";
             this.Text = "Food Items";
             this.groupBox4.ResumeLayout(false);

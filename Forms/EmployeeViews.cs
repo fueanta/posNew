@@ -68,31 +68,47 @@ namespace Forms
             DoRefresh();
         }
 
+       
+
         private void updateBtn_Click(object sender, EventArgs e)
         {
             int selectedRowIndex = 0;
             if (table.SelectedCells.Count > 0)
             {
-                Software.Model.Employee employee = new Software.Model.Employee();
+                if (Software.Resources.ApplicationHelper.IsValidEmail(emailBox.Text) == true)
+                {
+                    if (Software.Resources.ApplicationHelper.IsValidPassword(passBox.Text) == true)
+                    {
+                        Software.Model.Employee employee = new Software.Model.Employee();
 
-                selectedRowIndex = table.SelectedCells[0].RowIndex;
-                DataGridViewRow selectedRow = table.Rows[selectedRowIndex];
+                        selectedRowIndex = table.SelectedCells[0].RowIndex;
+                        DataGridViewRow selectedRow = table.Rows[selectedRowIndex];
 
-                employee.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
-                employee.Name = nameBox.Text;
-                employee.Contact_No = contactBox.Text;
-                employee.Email = emailBox.Text;
-                employee.Address = addressBox.Text;
-                employee.Hire_Date = hireDateTime.Value;
-                employee.Commission = Convert.ToInt32(commissionBox.Text);
-                employee.Job_Id = ((Software.Model.Job)jobComboBox.SelectedItem).Id;
-                employee.Picture = pictureBox.ImageLocation;
-                employee.Password = passBox.Text;
-                employee.Authority = authorityBox.Text;
+                        employee.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
+                        employee.Name = nameBox.Text;
+                        employee.Contact_No = contactBox.Text;
+                        employee.Email = emailBox.Text;
+                        employee.Address = addressBox.Text;
+                        employee.Hire_Date = hireDateTime.Value;
+                        employee.Commission = Convert.ToInt32(commissionBox.Text);
+                        employee.Job_Id = ((Software.Model.Job)jobComboBox.SelectedItem).Id;
+                        employee.Picture = pictureBox.ImageLocation;
+                        employee.Password = passBox.Text;
+                        employee.Authority = authorityBox.Text;
 
-                Software.Database.SQL.EmployeeDB.UpdateEmployee(employee);
-            
-                MetroFramework.MetroMessageBox.Show(this, "Your data has been updated successfully.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Software.Database.SQL.EmployeeDB.UpdateEmployee(employee);
+
+                        MetroFramework.MetroMessageBox.Show(this, "Your data has been updated successfully.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MetroFramework.MetroMessageBox.Show(this, "You must provide a valid password!", "Invalid Password");
+                    }
+                }
+                else
+                {
+                    MetroFramework.MetroMessageBox.Show(this, "You must provide a valid email!", "Invalid Email");
+                }
             }
             else
                 MetroFramework.MetroMessageBox.Show(this, "You must select a row to update its value!", "Invalid Selection");
@@ -132,6 +148,11 @@ namespace Forms
         {
             List<Software.Model.Employee> selectedEmployees = employees.Where(i => i.Name.ToLower().Contains(searchBox.Text.ToLower())).ToList();
             table.DataSource = selectedEmployees;
+        }
+
+        private void EmployeeViews_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

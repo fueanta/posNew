@@ -33,7 +33,6 @@
             this.hireDateTime = new MetroFramework.Controls.MetroDateTime();
             this.jobComboBox = new MetroFramework.Controls.MetroComboBox();
             this.browseBtn = new MetroFramework.Controls.MetroButton();
-            this.authorityBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.passBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
@@ -52,6 +51,7 @@
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.createBtn = new System.Windows.Forms.Button();
             this.cancelBtn = new System.Windows.Forms.Button();
+            this.authorityBox = new MetroFramework.Controls.MetroComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -60,10 +60,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.authorityBox);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.jobComboBox);
             this.groupBox1.Controls.Add(this.browseBtn);
-            this.groupBox1.Controls.Add(this.authorityBox);
             this.groupBox1.Controls.Add(this.metroLabel5);
             this.groupBox1.Controls.Add(this.passBox);
             this.groupBox1.Controls.Add(this.metroLabel6);
@@ -137,37 +137,6 @@
             this.browseBtn.UseSelectable = true;
             this.browseBtn.UseStyleColors = true;
             this.browseBtn.Click += new System.EventHandler(this.browseBtn_Click);
-            // 
-            // authorityBox
-            // 
-            // 
-            // 
-            // 
-            this.authorityBox.CustomButton.Image = null;
-            this.authorityBox.CustomButton.Location = new System.Drawing.Point(134, 2);
-            this.authorityBox.CustomButton.Name = "";
-            this.authorityBox.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.authorityBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.authorityBox.CustomButton.TabIndex = 1;
-            this.authorityBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.authorityBox.CustomButton.UseSelectable = true;
-            this.authorityBox.CustomButton.Visible = false;
-            this.authorityBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.authorityBox.Lines = new string[0];
-            this.authorityBox.Location = new System.Drawing.Point(160, 435);
-            this.authorityBox.MaxLength = 32767;
-            this.authorityBox.Name = "authorityBox";
-            this.authorityBox.PasswordChar = '\0';
-            this.authorityBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.authorityBox.SelectedText = "";
-            this.authorityBox.SelectionLength = 0;
-            this.authorityBox.SelectionStart = 0;
-            this.authorityBox.ShortcutsEnabled = true;
-            this.authorityBox.Size = new System.Drawing.Size(162, 30);
-            this.authorityBox.TabIndex = 52;
-            this.authorityBox.UseSelectable = true;
-            this.authorityBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.authorityBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel5
             // 
@@ -483,6 +452,18 @@
             this.cancelBtn.UseVisualStyleBackColor = false;
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
+            // authorityBox
+            // 
+            this.authorityBox.DisplayMember = "ID";
+            this.authorityBox.FormattingEnabled = true;
+            this.authorityBox.ItemHeight = 24;
+            this.authorityBox.Location = new System.Drawing.Point(160, 435);
+            this.authorityBox.Name = "authorityBox";
+            this.authorityBox.Size = new System.Drawing.Size(162, 30);
+            this.authorityBox.TabIndex = 59;
+            this.authorityBox.UseSelectable = true;
+            this.authorityBox.ValueMember = "ID";
+            // 
             // CreateEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -491,6 +472,7 @@
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.createBtn);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "CreateEmployee";
             this.Text = "Create New Employee";
             this.groupBox1.ResumeLayout(false);
@@ -509,7 +491,6 @@
         private MetroFramework.Controls.MetroDateTime hireDateTime;
         private MetroFramework.Controls.MetroComboBox jobComboBox;
         private MetroFramework.Controls.MetroButton browseBtn;
-        private MetroFramework.Controls.MetroTextBox authorityBox;
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroTextBox passBox;
         private MetroFramework.Controls.MetroLabel metroLabel6;
@@ -528,5 +509,6 @@
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Button createBtn;
         private System.Windows.Forms.Button cancelBtn;
+        private MetroFramework.Controls.MetroComboBox authorityBox;
     }
 }

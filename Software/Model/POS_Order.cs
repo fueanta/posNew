@@ -12,10 +12,10 @@ namespace Software.Model
         public string Description { get; set; }
         public DateTime Place_Time { get; set; }
         public int Employee_ID { get; set; }
-        public int Bill { get; set; }
+        public double Bill { get; set; }
         public int Discount_Rate { get; set; }
-        public int Other_Charges { get; set; }
-        public int Total_Bill { get; set; }
+        public double Other_Charges { get; set; }
+        public double Total_Bill { get; set; }
         public string CardNumber { get; set; }
 
     }
