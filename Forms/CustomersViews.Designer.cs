@@ -199,7 +199,7 @@
             this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
             this.updateBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.updateBtn.Location = new System.Drawing.Point(904, 546);
+            this.updateBtn.Location = new System.Drawing.Point(650, 546);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(165, 46);
             this.updateBtn.TabIndex = 67;

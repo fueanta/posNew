@@ -536,7 +536,7 @@
             this.searchBox.DisplayIcon = true;
             this.searchBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.searchBox.Lines = new string[0];
-            this.searchBox.Location = new System.Drawing.Point(429, 34);
+            this.searchBox.Location = new System.Drawing.Point(411, 34);
             this.searchBox.MaxLength = 32767;
             this.searchBox.Name = "searchBox";
             this.searchBox.PasswordChar = '\0';
@@ -620,7 +620,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1367, 653);
+            this.ClientSize = new System.Drawing.Size(1349, 690);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.searchBox);

@@ -51,6 +51,7 @@
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.cancelBtn = new System.Windows.Forms.Button();
             this.createBtn = new System.Windows.Forms.Button();
+            this.foodtypeBtn = new System.Windows.Forms.Button();
             this.infoGroup.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -448,7 +449,7 @@
             this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelBtn.Font = new System.Drawing.Font("Segoe UI Light", 11F);
             this.cancelBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cancelBtn.Location = new System.Drawing.Point(419, 599);
+            this.cancelBtn.Location = new System.Drawing.Point(477, 599);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(165, 46);
             this.cancelBtn.TabIndex = 59;
@@ -462,7 +463,7 @@
             this.createBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.createBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.createBtn.Location = new System.Drawing.Point(152, 599);
+            this.createBtn.Location = new System.Drawing.Point(70, 599);
             this.createBtn.Name = "createBtn";
             this.createBtn.Size = new System.Drawing.Size(165, 46);
             this.createBtn.TabIndex = 58;
@@ -470,12 +471,27 @@
             this.createBtn.UseVisualStyleBackColor = false;
             this.createBtn.Click += new System.EventHandler(this.createBtn_Click);
             // 
+            // foodtypeBtn
+            // 
+            this.foodtypeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.foodtypeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.foodtypeBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.foodtypeBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.foodtypeBtn.Location = new System.Drawing.Point(264, 599);
+            this.foodtypeBtn.Name = "foodtypeBtn";
+            this.foodtypeBtn.Size = new System.Drawing.Size(165, 46);
+            this.foodtypeBtn.TabIndex = 58;
+            this.foodtypeBtn.Text = "Add Food Type";
+            this.foodtypeBtn.UseVisualStyleBackColor = false;
+            this.foodtypeBtn.Click += new System.EventHandler(this.foodTypebtn_Click);
+            // 
             // CreateFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 686);
             this.Controls.Add(this.cancelBtn);
+            this.Controls.Add(this.foodtypeBtn);
             this.Controls.Add(this.createBtn);
             this.Controls.Add(this.infoGroup);
             this.MaximizeBox = false;
@@ -515,5 +531,6 @@
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Button cancelBtn;
         private System.Windows.Forms.Button createBtn;
+        private System.Windows.Forms.Button foodtypeBtn;
     }
 }

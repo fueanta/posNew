@@ -115,6 +115,7 @@
             this.UpdateBtn.TabIndex = 80;
             this.UpdateBtn.Text = "Update";
             this.UpdateBtn.UseVisualStyleBackColor = false;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // cancelBtn
             // 

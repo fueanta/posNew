@@ -298,6 +298,10 @@
             this.stockBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.stockBox.CustomButton.UseSelectable = true;
             this.stockBox.CustomButton.Visible = false;
+<<<<<<< HEAD
+=======
+            this.stockBox.Enabled = false;
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.stockBox.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.stockBox.Lines = new string[0];
             this.stockBox.Location = new System.Drawing.Point(160, 372);

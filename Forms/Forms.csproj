@@ -32,9 +32,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MaterialSkin">
-      <HintPath>..\..\Solution\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
@@ -54,6 +59,7 @@
     <Reference Include="System.DirectoryServices.Protocols" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,6 +76,12 @@
     </Compile>
     <Compile Include="Changelog.Designer.cs">
       <DependentUpon>Changelog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart.Designer.cs">
+      <DependentUpon>Chart.cs</DependentUpon>
     </Compile>
     <Compile Include="CreateChangelog.cs">
       <SubType>Form</SubType>
@@ -221,12 +233,15 @@
     <Compile Include="Login Form.Designer.cs">
       <DependentUpon>Login Form.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="OrderView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OrderView.Designer.cs">
       <DependentUpon>OrderView.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
     <Compile Include="Period.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -261,6 +276,9 @@
     </Compile>
     <EmbeddedResource Include="Changelog.resx">
       <DependentUpon>Changelog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart.resx">
+      <DependentUpon>Chart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateChangelog.resx">
       <DependentUpon>CreateChangelog.cs</DependentUpon>
@@ -337,9 +355,12 @@
     <EmbeddedResource Include="Login Form.resx">
       <DependentUpon>Login Form.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="OrderView.resx">
       <DependentUpon>OrderView.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
     <EmbeddedResource Include="Period.resx">
       <DependentUpon>Period.cs</DependentUpon>
     </EmbeddedResource>
@@ -365,6 +386,7 @@
     <EmbeddedResource Include="Unit_TypeViews.resx">
       <DependentUpon>Unit_TypeViews.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -384,6 +406,15 @@
       <Project>{df11e9a6-33c1-4cbe-8089-8e3718faa808}</Project>
       <Name>Software</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginIconAppl.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

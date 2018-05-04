@@ -118,6 +118,10 @@ namespace Forms
             table.DataSource = selectedCustomers;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

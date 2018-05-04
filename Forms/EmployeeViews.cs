@@ -98,6 +98,7 @@ namespace Forms
 
                         Software.Database.SQL.EmployeeDB.UpdateEmployee(employee);
 
+<<<<<<< HEAD
                         MetroFramework.MetroMessageBox.Show(this, "Your data has been updated successfully.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
@@ -109,6 +110,23 @@ namespace Forms
                 {
                     MetroFramework.MetroMessageBox.Show(this, "You must provide a valid email!", "Invalid Email");
                 }
+=======
+                employee.Id = Convert.ToInt32(Convert.ToString(selectedRow.Cells["Id"].Value));
+                employee.Name = nameBox.Text;
+                employee.Contact_No = contactBox.Text;
+                employee.Email = emailBox.Text;
+                employee.Address = addressBox.Text;
+                employee.Hire_Date = hireDateTime.Value;
+                employee.Commission = Convert.ToInt32(commissionBox.Text);
+                employee.Job_Id = ((Software.Model.Job)jobComboBox.SelectedItem).Id;
+                employee.Picture = pictureBox.ImageLocation;
+                employee.Password = passBox.Text;
+                employee.Authority = authorityBox.Text;
+
+                Software.Database.SQL.EmployeeDB.UpdateEmployee(employee);
+
+                MetroFramework.MetroMessageBox.Show(this, "Your data has been updated successfully.", "Successfully Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             }
             else
                 MetroFramework.MetroMessageBox.Show(this, "You must select a row to update its value!", "Invalid Selection");
@@ -150,9 +168,13 @@ namespace Forms
             table.DataSource = selectedEmployees;
         }
 
+<<<<<<< HEAD
         private void EmployeeViews_Load(object sender, EventArgs e)
         {
 
         }
+=======
+        
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
     }
 }

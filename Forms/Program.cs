@@ -19,7 +19,11 @@ namespace Forms
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new Login_Form());
+=======
+            Application.Run(new HomePage());
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]

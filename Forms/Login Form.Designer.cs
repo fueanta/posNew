@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Form));
+=======
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.LoginBtn = new MetroFramework.Controls.MetroButton();
             this.passBox = new MetroFramework.Controls.MetroTextBox();
@@ -36,8 +39,15 @@
             this.emailBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+=======
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.SuspendLayout();
             // 
             // metroPanel1
@@ -94,7 +104,11 @@
             this.passBox.Location = new System.Drawing.Point(172, 103);
             this.passBox.MaxLength = 32767;
             this.passBox.Name = "passBox";
+<<<<<<< HEAD
             this.passBox.PasswordChar = '*';
+=======
+            this.passBox.PasswordChar = '\0';
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.passBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.passBox.SelectedText = "";
             this.passBox.SelectionLength = 0;
@@ -159,6 +173,7 @@
             // 
             // pictureBox1
             // 
+<<<<<<< HEAD
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(290, 63);
             this.pictureBox1.Name = "pictureBox1";
@@ -167,19 +182,48 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+=======
+            this.pictureBox1.Image = global::Forms.Properties.Resources.LoginIconAppl;
+            this.pictureBox1.Location = new System.Drawing.Point(290, 63);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Forms.Properties.Resources.close_black;
+            this.pictureBox2.Location = new System.Drawing.Point(725, 42);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             // Login_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(801, 599);
+<<<<<<< HEAD
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.metroPanel1);
             this.MaximizeBox = false;
+=======
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.metroPanel1);
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.Name = "Login_Form";
             this.Text = "Login";
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+<<<<<<< HEAD
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.ResumeLayout(false);
 
         }
@@ -192,5 +236,9 @@
         private MetroFramework.Controls.MetroTextBox emailBox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroButton LoginBtn;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.PictureBox pictureBox2;
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
     }
 }

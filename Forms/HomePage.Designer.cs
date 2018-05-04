@@ -39,14 +39,21 @@
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
+<<<<<<< HEAD
             this.userLabel = new MetroFramework.Controls.MetroLabel();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
+=======
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.SuspendLayout();
             // 
             // tileJobs
             // 
             this.tileJobs.ActiveControl = null;
+<<<<<<< HEAD
             this.tileJobs.Location = new System.Drawing.Point(633, 98);
+=======
+            this.tileJobs.Location = new System.Drawing.Point(548, 314);
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.tileJobs.Name = "tileJobs";
             this.tileJobs.Size = new System.Drawing.Size(145, 168);
             this.tileJobs.Style = MetroFramework.MetroColorStyle.Purple;
@@ -58,7 +65,11 @@
             // tileIngredients
             // 
             this.tileIngredients.ActiveControl = null;
+<<<<<<< HEAD
             this.tileIngredients.Location = new System.Drawing.Point(405, 303);
+=======
+            this.tileIngredients.Location = new System.Drawing.Point(378, 314);
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.tileIngredients.Name = "tileIngredients";
             this.tileIngredients.Size = new System.Drawing.Size(164, 164);
             this.tileIngredients.Style = MetroFramework.MetroColorStyle.Green;
@@ -129,7 +140,11 @@
             // metroTile2
             // 
             this.metroTile2.ActiveControl = null;
+<<<<<<< HEAD
             this.metroTile2.Location = new System.Drawing.Point(76, 498);
+=======
+            this.metroTile2.Location = new System.Drawing.Point(49, 509);
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(158, 164);
             this.metroTile2.Style = MetroFramework.MetroColorStyle.Brown;
@@ -141,7 +156,11 @@
             // metroTile3
             // 
             this.metroTile3.ActiveControl = null;
+<<<<<<< HEAD
             this.metroTile3.Location = new System.Drawing.Point(240, 303);
+=======
+            this.metroTile3.Location = new System.Drawing.Point(213, 314);
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.metroTile3.Name = "metroTile3";
             this.metroTile3.Size = new System.Drawing.Size(158, 164);
             this.metroTile3.Style = MetroFramework.MetroColorStyle.Silver;
@@ -153,7 +172,11 @@
             // metroTile4
             // 
             this.metroTile4.ActiveControl = null;
+<<<<<<< HEAD
             this.metroTile4.Location = new System.Drawing.Point(241, 498);
+=======
+            this.metroTile4.Location = new System.Drawing.Point(214, 509);
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.Size = new System.Drawing.Size(158, 164);
             this.metroTile4.Style = MetroFramework.MetroColorStyle.Lime;
@@ -165,7 +188,11 @@
             // metroTile5
             // 
             this.metroTile5.ActiveControl = null;
+<<<<<<< HEAD
             this.metroTile5.Location = new System.Drawing.Point(411, 498);
+=======
+            this.metroTile5.Location = new System.Drawing.Point(384, 509);
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.metroTile5.Name = "metroTile5";
             this.metroTile5.Size = new System.Drawing.Size(158, 164);
             this.metroTile5.Style = MetroFramework.MetroColorStyle.Black;
@@ -174,6 +201,7 @@
             this.metroTile5.UseSelectable = true;
             this.metroTile5.Click += new System.EventHandler(this.metroTile5_Click);
             // 
+<<<<<<< HEAD
             // userLabel
             // 
             this.userLabel.AutoSize = true;
@@ -200,13 +228,18 @@
             this.metroTile1.UseSelectable = true;
             this.metroTile1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
+=======
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 728);
+<<<<<<< HEAD
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.userLabel);
+=======
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
             this.Controls.Add(this.metroTile5);
             this.Controls.Add(this.metroTile4);
             this.Controls.Add(this.metroTile3);
@@ -239,7 +272,10 @@
         private MetroFramework.Controls.MetroTile metroTile3;
         private MetroFramework.Controls.MetroTile metroTile4;
         private MetroFramework.Controls.MetroTile metroTile5;
+<<<<<<< HEAD
         private MetroFramework.Controls.MetroLabel userLabel;
         private MetroFramework.Controls.MetroTile metroTile1;
+=======
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
     }
 }

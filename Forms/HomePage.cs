@@ -47,7 +47,11 @@ namespace Forms
 
         private void tilePayment_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             new OrderView().ShowDialog(this);
+=======
+            new EmployeePaymentViews().ShowDialog(this);
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
         }
 
         private void tileFoods_Click(object sender, EventArgs e)
@@ -82,12 +86,17 @@ namespace Forms
 
         private void metroTile4_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             new PurchaseView().ShowDialog(this);
+=======
+            new CreatePurchase().ShowDialog(this);
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
         }
 
         private void metroTile5_Click(object sender, EventArgs e)
         {
             new Unit_TypeViews().ShowDialog(this);
+<<<<<<< HEAD
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -95,6 +104,8 @@ namespace Forms
             // logout
             new Login_Form().DoRefresh();
             Close();
+=======
+>>>>>>> 4410b8a4bbb75fc029515ceb15b63a9cb2b26558
         }
     }
 }
